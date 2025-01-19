@@ -1,0 +1,358 @@
+---
+title: "Estándar DICOM y Estructura de Datos en Radioterapia"
+subtitle: Física de la Radioterapia. Máster de Física Biomédica
+format: 
+  clean-revealjs:
+    multiplex: true
+    chalkboard: true
+    logo: images/LogoUCM.jpg
+    footer: "Estándar DICOM y Estructura de Datos en Radioterapia . Física de la Radioterapia"
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: César Rodríguez
+    email: cesaro02@ucm.es
+    affiliations: Universidad Complutense de Madrid
+---
+
+## ¿Qué es DICOM?
+
+- **Definición:** **D**igital **I**maging and **Co**mmunications in **M**edicine.
+- **Propósito:** Facilitar la interoperabilidad en imágenes médicas.
+- **Áreas de uso:** Radiología, cardiología, radioterapia, entre otras.
+- **Componentes clave:**
+  - Protocolo de comunicación para transmisión de datos.
+  - Formato de archivo para combinar imágenes y metadatos.
+
+---
+
+## ¿Quién desarrolla el estándar DICOM?
+
+- **Organización:** Comité DICOM
+- **Afiliación:** National Electrical Manufacturers Association (NEMA)
+- **Colaboración:** American College of Radiology (ACR)
+- **Composición del Comité:**
+  - Representantes de la industria de la salud
+  - Fabricantes de equipos médicos
+  - Organizaciones profesionales
+- **Objetivo:** Actualizar y mejorar continuamente el estándar
+
+---
+
+## Características clave de DICOM
+
+- **Interoperabilidad:** Estándar global para dispositivos médicos.
+- **Compatibilidad:** Modalidades como CT, MRI, PET, etc.
+- **Protocolo basado en TCP/IP:** Fiabilidad en transferencia de datos.
+- **Seguridad:** Encriptación y autenticación opcionales.
+
+---
+
+## Modelo de comunicación DICOM
+
+- **Arquitectura Cliente-Servidor:**
+  - **SCU (Service Class User):** Cliente que solicita servicios (e.g., estación de trabajo).
+  - **SCP (Service Class Provider):** Servidor que proporciona servicios (e.g., PACS).
+- **Servicios principales:**
+  - **Almacenamiento:** Envío de imágenes al servidor.
+  - **Consulta/Recuperación:** Acceso a datos almacenados.
+  - **Impresión:** Envío a dispositivos de impresión médica.
+
+---
+
+## Flujo de trabajo General en DICOM
+
+1. **Adquisición:** Modalidad genera imágenes DICOM.
+2. **Transmisión:** Envío de imágenes al servidor o PACS.
+3. **Almacenamiento:** Archivo de imágenes con metadatos.
+4. **Consulta/Recuperación:** Acceso por dispositivos autorizados.
+
+## DICOM Conformance Statement{.smaller}
+
+El protocolo DICOM es implementado por cada fabricante.
+
+Un producto no se considera dentro del protocolo si no cuenta con su DICOM Conformance Statement.
+
+Una Declaración de Conformidad DICOM es un documento proporcionado por el fabricante que describe cómo su producto cumple con el estándar DICOM.
+
+### ¿Por qué se crea?
+
+- **Cumplimiento**: Demuestra que el producto cumple con los estándares requeridos para la imagen médica.
+- **Transparencia**: Proporciona información detallada sobre las capacidades y limitaciones del producto.
+- **Interoperabilidad**: Asegura que diferentes dispositivos y software de imagen médica puedan trabajar juntos sin problemas.
+
+---
+
+## DICOM Conformance Statement{.smaller}
+
+### ¿Para qué se utiliza?
+
+- **Integración**: Ayuda a los los profesionales de la salud y de TI a entender cómo integrar el dispositivo con otros sistemas.
+- **Resolución de Problemas**: Asiste en el diagnóstico y resolución de problemas de compatibilidad.
+- **Adquisición**: Ayuda en el proceso de toma de decisiones al comprar nuevos equipos de imagen médica.
+
+### Componentes clave
+
+- **Servicios DICOM Soportados**: Lista los servicios DICOM que el producto soporta (por ejemplo, almacenamiento de imágenes, consulta/recuperación).
+- **Protocolos de Comunicación**: Detalla los protocolos de red y formatos de datos utilizados.
+- **Opciones de Configuración**: Describe los parámetros y configuraciones que se pueden ajustar.
+- **Niveles de Cumplimiento**: Especifica el nivel de cumplimiento con el estándar DICOM.
+
+------
+
+## ¿Qué es DICOM RT?
+
+- **Extensión de DICOM:** Diseñada para gestionar datos específicos de radioterapia.
+- **Propósito:** Estandarizar el manejo de:
+  - Contornos y volúmenes de interés (VOI).
+  - Distribuciones de dosis.
+  - Planes de tratamiento.
+  - Información de dispositivos.
+- **Uso:** Conectar diferentes modalidades de imagen, sistemas de planificación (TPS) y unidades de tratamiento.
+
+---
+
+## Componentes clave de DICOM RT
+
+1. **RT Structure Set (RTSS):**  
+   - Define contornos anatómicos y regiones de interés.
+2. **RT Plan:**  
+   - Detalles del plan de tratamiento, incluyendo configuraciones del haz.
+3. **RT Dose:**  
+   - Distribuciones de dosis calculadas en el paciente.
+4. **RT Beams Treatment Record:**  
+   - Registro del tratamiento entregado.
+
+---
+
+## Flujo de trabajo en Radioterapia con DICOM RT{.smaller}
+
+1. **Adquisición de imágenes:**  
+   - Modalidades como CT o MRI generan *imágenes* base en formato DICOM.
+2. **Planificación del tratamiento:** 
+   - Registro de imágenes de diferentes modalidades (*cambios de coordenadas*).
+   - Definición de volúmenes y órganos mediante RTSS (*estructuras*).
+   - El software de planificación (TPS) utiliza RTSS y genera RT Plan y RT Dose (*plan* y *dosis*).
+3. **Entrega del tratamiento:**  
+   - Los dispositivos de tratamiento ejecutan el RT Plan (*plan*).
+4. **Verificación y registro:**  
+   - Documentación mediante RT Treatment Record (*registros de tratamiento*).
+
+---
+
+## Flujo de trabajo en Radioterapia con DICOM RT{.smaller}
+
+```{mermaid}
+
+graph TD
+    CT[CT]
+    RM[RM]
+    PET[PET]
+    OIS[OIS]
+    TPS[TPS]
+    LINAC1[LINAC1]
+    LINACn[LINACn]
+    BRAQUI1[BRAQUI1]
+    BRAQUIn[BRAQUIn]
+    
+
+    CT --> OIS
+    RM --> OIS
+    PET --> OIS
+
+    CT --> TPS
+    RM --> TPS
+    PET --> TPS
+
+    OIS -- OIS <--> TPS
+
+    LINAC1 <--> OIS
+    BRAQUI1 <--> OIS
+    LINACn <--> OIS
+    BRAQUIn <--> OIS
+
+
+```
+
+# Seminario DICOM RT
+
+
+{{< embed notebooks/synthManiquiCuba.ipynb#intro >}}
+
+---
+
+{{< embed notebooks/synthManiquiCuba.ipynb#install echo=true >}}
+
+---
+
+{{< embed notebooks/synthManiquiCuba.ipynb#md-createdir >}}
+
+{{< embed notebooks/synthManiquiCuba.ipynb#createdir echo=true >}}
+
+---
+
+## Creación de una estructura de datos RT{.smaller}
+
+### CT sintético
+- Dimensiones:
+    + Lado: 110 voxels en cada dimensión espacial
+    + Tamaño de voxel: 1 mm en cada dirección (110 cortes de CT)
+- Maniquí: cuba (paralelepípedo) de agua
+    + Tamaño: 100 mm en cada dimensión espacial
+    + Demográficos y posición
+
+### Estructuras
+- BODY: contorno externo de la cuba
+- PTV: una esfera centrada en la cuba
+    + Radio: 10  mm 
+        
+---
+
+## Código para la creación de la estructura de datos
+
+{{< embed notebooks/synthManiquiCuba.ipynb#synth echo=true >}}
+
+---
+
+## Operaciones de archivos
+
+- Importación del módulo `google.colab`
+- Comprimir los datos
+- Descargar
+- Limpiar
+
+---
+
+## Código para las operaciones de archivos{.smaller}
+
+Importar módulo
+{{< embed notebooks/synthManiquiCuba.ipynb#google.colab echo=true >}}
+Comprimir archivos
+{{< embed notebooks/synthManiquiCuba.ipynb#zip echo=true >}}
+Descargar archivos
+{{< embed notebooks/synthManiquiCuba.ipynb#download echo=true >}}
+Limpiar (*no ejecutar aún*)
+{{< embed notebooks/synthManiquiCuba.ipynb#rm-cuba echo=true >}}
+{{< embed notebooks/synthManiquiCuba.ipynb#rm-mydata echo=true >}}
+
+---
+
+## Propiedades DICOM Estudio{.smaller}
+
+1. **StudyInstanceUID**: Identificador único para el estudio. Asegura la pertenencia al estudio de las imágenes y series.
+2. **SeriesInstanceUID**: Identificador único para la serie dentro del estudio. Asegura la pertenencia a la serie de las imágenes.
+3. **StudyID**: Identificador del estudio del sistema de gestión de imágenes.
+4. **SeriesNumber**: Número que identifica la serie dentro del estudio.
+5. **InstanceNumber**: Número que identifica la imagen dentro de la serie.
+6. **StudyDate** y **StudyTime**: Fecha y hora en del estudio.
+8. **AccessionNumber**: Identificador del estudio en el sistema de información radiológica (RIS).
+9. **Modality**: CT, MR, PET, US...
+10. **StationName**: Nombre de la estación de trabajo o equipo donde se realizó el estudio.
+
+---
+
+## Inspección propiedades imágenes DICOM{.smaller}
+
+Importar módulo e instalar el módulo `pydicom` 
+{{< embed notebooks/seminarioDICOM.ipynb#installpydicom echo=true >}}
+
+{{< embed notebooks/seminarioDICOM.ipynb#importpydicom echo=true >}}
+
+Leer un archivo de imagen
+{{< embed notebooks/seminarioDICOM.ipynb#readimg echo=true >}}
+
+Explorar propiedades DICOM
+{{< embed notebooks/seminarioDICOM.ipynb#DICOMattribute echo=true >}}
+
+---
+
+## Datos demográficos
+
+Leer datos del paciente de forma estructurada
+{{< embed notebooks/seminarioDICOM.ipynb#demographics echo=true >}}
+
+Normalmente el ID se corresponde con el número de historia del paciente.
+
+## Propiedades DICOM Identificación Paciente
+
+1. **PatientName**: El nombre del paciente.
+2. **PatientID**: Un identificador único para el paciente.
+3. **PatientBirthDate**: La fecha de nacimiento del paciente.
+4. **PatientSex**: El sexo del paciente.
+
+y otras...
+
+---
+
+## Propiedades DICOM Reconstrucción espacial{.smaller}
+
+
+1. **PixelSpacing**: Distancia física (mm) entre píxels adyacentes en la imagen. Dos valores: la distancia en la dirección de las filas (eje X) y en la de las columnas (eje Y).
+
+2. **SliceThickness**: Grosor (mm) de cada corte o sección de la imagen. Relevante para la reconstrucción en 3D.
+
+3. **ImagePositionPatient**: Coordenadas del centro del primer píxel (superior izquierdo) de la imagen en el sistema de coordenadas del paciente, expresadas en milímetros (mm).
+
+4. **ImageOrientationPatient**: Orientación de la imagen en el sistema de coordenadas del paciente: dos vectores que dan la dirección de las filas y las columnas de la imagen en el espacio del paciente.
+
+5. **SliceLocation**: Posición del corte (mm) en el eje Z del sistema de coordenadas del paciente. Útil para ordenar las imágenes en una serie de cortes.
+
+6. **SpacingBetweenSlices**: Distancia (mm) entre centros de cortes adyacentes. Relevante para la reconstrucción 3D.
+
+7. **Rows** y **Columns**: Número de filas y columnas en la imagen.
+
+---
+
+## Identificación de archivos de estructuras RT{.smaller}
+
+1. **StudyInstanceUID**: Identificador único para el estudio
+2. **SeriesInstanceUID**: Identificador único para la serie dentro del estudio.
+3. **ReferencedFrameOfReferenceUID**: Identificador único del marco de referencia al que se refieren las estructuras RT. Asegura que las estructuras están alineadas con las imágenes correspondientes.
+4. **ReferencedSOPInstanceUID**: Identificador único del objeto de servicio (SOP) referenciado, que puede incluir imágenes específicas o series de imágenes a las que se aplican las estructuras RT.
+
+Estas propiedades aseguran que las estructuras se aplican correctamente a las imágenes correspondientes.
+
+---
+
+## Identificación de archivos de dosis
+
+1. **StudyInstanceUID**: Identificador único del estudio al que pertenece el archivo de dosis.
+2. **SeriesInstanceUID**: Identificador único de la serie a la que pertenece el archivo de dosis.
+3. **ReferencedSOPInstanceUID**: Identificador único del objeto de servicio (SOP) referenciado, que puede incluir imágenes específicas o series de imágenes a las que se aplican las estructuras de dosis.
+
+---
+
+## Ventajas de DICOM RT
+
+- **Interoperabilidad:**  
+  - Conecta múltiples sistemas (modalidades de imagen, TPS, unidades de tratamiento).
+- **Estandarización:**  
+  - Simplifica el intercambio de datos entre equipos de distintos fabricantes.
+- **Gestión integral:**  
+  - Facilita planificación, entrega y seguimiento del tratamiento.
+- **Trazabilidad:**  
+  - Registra de forma precisa los datos del tratamiento.
+
+---
+
+## Retos en la implementación de DICOM RT
+
+- **Complejidad del estándar:**  
+  - Requiere formación específica.
+- **Compatibilidad:**  
+  - Dispositivos antiguos pueden tener limitaciones.
+- **Consistencia:**  
+  - Garantizar transferencias y uso de datos sin errores.
+
+---
+
+## DICOM RT y el futuro de la Radioterapia
+
+- **Radioterapia adaptativa:**  
+  - Ajustes en tiempo real basados en cambios anatómicos.
+- **Integración con IA:**  
+  - Análisis de datos para mejorar precisión y personalización.
+- **Conectividad en la nube:**  
+  - Facilitar acceso remoto y colaboración entre equipos.
+
