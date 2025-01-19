@@ -3,6 +3,7 @@ title: "Introducción a la Radioterapia"
 subtitle: Física de la Radioterapia. Máster de Física Biomédica
 format: 
   clean-revealjs:
+    multiplex: true
     chalkboard: true
     logo: images/LogoUCM.jpg
     footer: "Introducción a la Radioterapia. Física de la Radioterapia"
@@ -16,7 +17,7 @@ author:
 ---
 
 ## ¿Qué es la Radioterapia?
-- Técnica médica para el tratamiento del cáncer y otras patologías^[artrosis, papilomas u otras enfermedades resiltentes de la piel, patología *benigna* en general] mediante radiación ionizante.
+- Técnica médica para el tratamiento del cáncer y otras patologías^[artrosis, papilomas u otras enfermedades resistentes de la piel, patología *benigna* en general] mediante radiación ionizante.
 - Actualmente, más del 50% de los pacientes con cáncer reciben radioterapia, sola o combinada con cirugía o quimioterapia.
 - La [radioterapia]{.alert} *sola* contribuye aproximadamente al [30% de las curaciones del cáncer]{.alert}, frente al 60% de la cirugía y el 10% de la quimioterapia.
 
@@ -32,7 +33,7 @@ author:
 ## Origen del cáncer
 - El origen del cáncer suele estar asociado a [alteraciones genéticas que afectan los mecanismos de división celular y la reparación del ADN]{.alert}. 
 - Estos cambios pueden producirse por factores externos (como el tabaco, la radiación o ciertos virus) o internos (errores en la replicación celular o mutaciones heredadas).
-- En muchas ocasiones, un evento iniciador puede permanecer en *estado de latencia* durante muchos años antes de que el cáncer comienze su progresión y evolución.
+- En muchas ocasiones, un evento iniciador puede permanecer en *estado de latencia* durante muchos años antes de que el cáncer comience su progresión y evolución.
 
 ---
 
@@ -48,11 +49,11 @@ author:
 
 ::: {.callout-note icon="false"}
 ## T (Tumor): Tamaño y extensión del tumor primario
-Se clafica de T0 a T4 donde T0 indica que no hay evidencia de tumor primario, T1 indica un tumor pequeño y localizado, y T4 un tumor de gran tamaño o que invade tejidos cercanos. 
+Se clasifica de T0 a T4 donde T0 indica que no hay evidencia de tumor primario, T1 indica un tumor pequeño y localizado, y T4 un tumor de gran tamaño o que invade tejidos cercanos. 
 :::
 
 ::: {.callout-warning icon="false"}
-## N (Nódulos linfáticos): Diseminación por ganglios linfñaticos
+## N (Nódulos linfáticos): Diseminación por ganglios linfáticos
 Se clasifica de N0 a N3, donde N0 significa que no hay compromiso de los ganglios linfáticos y N3 indica una alta diseminación en los ganglios regionales.
 :::
 
@@ -94,7 +95,7 @@ Las *patologías sistémicas* son aquellas no están localizadas en una región 
 ## Clasificación de la Radioterapia según la *intención*
 
 - **Radical**: el objetivo es eliminar por completo el cáncer y lograr la curación del paciente.
-    + **Exclusiva**: se administra como tratamiento principal y único sin acompañarse de cirugía o quimioterapia (túmores de próstata o de cabeza y cuello no operables).
+    + **Exclusiva**: se administra como tratamiento principal y único sin acompañarse de cirugía o quimioterapia (tumores de próstata o de cabeza y cuello no operables).
     + **Adyuvante**: Tras cirugía, elimina células tumorales residuales.
 - **Paliativa**: Alivia síntomas sin intención de curar el cáncer (ej.: dolor, sangrado).
 
@@ -174,7 +175,7 @@ Dependiendo de la secuencia temporal se pueden distinguir también tratamientos 
 :::: {.columns}
 
 ::: {.column width="33%"}
-![Endocavitari. Fuente de alta tasa](images/endocavitaria.jpeg)
+![Endocavitaria. Fuente de alta tasa](images/endocavitaria.jpeg)
 :::
 
 ::: {.column width="33%"}
@@ -417,7 +418,7 @@ Dependiendo de la secuencia temporal se pueden distinguir también tratamientos 
 ---
 
 ##
-![Reflectores de infrarojos para monitorizar la respìración](images/CajaRPM.png)
+![Reflectores de infrarrojos para monitorizar la respìración](images/CajaRPM.png)
 
 ---
 
