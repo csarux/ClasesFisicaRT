@@ -3,6 +3,8 @@ title: "Radiobiología"
 subtitle: Física de la radioterapia. Máster de Física Biomédica
 format: 
   clean-revealjs:
+    multiplex: true
+    chalkboard: true
     logo: images/LogoUCM.jpg
     footer: "Radiobiología. Física de la radioterapia"
 html-math-method:
