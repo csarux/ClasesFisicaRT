@@ -1,7 +1,0 @@
----
-title: "ClasesFisicaRT"
----
-
-## Quarto
-
-Proyecto con las clases de la asignatura de Físca de la Radioterapia. Máster de Física Biomédica. Universidad Complutense de Madrid.
