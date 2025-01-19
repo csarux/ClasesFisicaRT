@@ -1,0 +1,440 @@
+---
+title: "Radiobiología"
+subtitle: Física de la radioterapia. Máster de Física Biomédica
+format: 
+  clean-revealjs:
+    logo: images/LogoUCM.jpg
+    footer: "Radiobiología. Física de la radioterapia"
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: César Rodríguez
+    email: cesaro02@ucm.es
+    affiliations: Universidad Complutense de Madrid
+
+---
+
+## {.smaller} 
+Los *efectos biológicos* sobre el *tejido vivo irradiado* se producen en una secuencia de varias etapas
+
+```{dot}
+digraph G {
+  layout=neato
+  "Ionización" -> "Cambios bioquímicos" [label="Átomos y moléculas"];
+  "Cambios bioquímicos" -> "Alteración funcional"[label="Células"];
+  "Alteración funcional" -> "Efecto biológico"[label="Tejidos"];
+}
+```
+
+La **Radiobiología** estudia los fenómenos que relacionan la *absorción de energía* procedente de *radiaciones ionizantes* con la producción de *efectos biológicos*.
+
+---
+
+## 
+![Fases de la radioterapia](images/RTPhases.png)
+
+---
+
+## 
+
+Los *efectos biológicos* de la radiación provienen casi exclusivamente de la *modificación de la estructura del ADN* 
+
+![Tomado de Cheng, Lei. Factors modifying cellular response to ionizing radiation. 2019. Tesis Doctoral. Department of Molecular Bioscience, The Winner-Gren Institute, Stockholm University.](images/DNADamage.png)
+
+---
+
+##  Mecanismos de interacción radiación-ADN{.smaller}
+
+- **Directo**: la radiación interacciona con el ADN e induce un cambio en su estructura química
+
+- **Indirecto**: la interacción de la radiación con otras moléculas presentes en la célula, fundamentalmente el agua, produce por ionización la producción de radicales libres ($OH^{*}$ principalmente, también $H_3O^{+}$, $H^{+}$, etc). Los radicales libres pueden alterar el ADN si reaccionan con él.
+
+::: aside
+En prácticamente la **totalidad de los haces clínicos aproximadamente $2/3$** de los daños en el ADN se realizan mediante *mecanismos indirectos*. Solo en haces de radiación con altas transferencias lineales de energía (**iones pesados**) predominan los *mecanismos directos*.
+
+La presencia de **oxígeno** disuelto en el medio celular *potencia la actividad de los radicales libres*. Los tejidos con menos suministro de sangre son más resistentes a la radiación
+:::
+
+---
+
+## Daños en el ADN
+
+![Debido a la presencia de *mecanismos de reparación del ADN*, los daños simples **no** suelen dar lugar a efectos biológicos](images/DNADamageGrades.png)
+
+---
+
+## Efectos sobre la célula
+
+```{dot}
+graph CellEffects {
+  layout=neato
+  overlap=scale
+  node [fontname="Helvetica,Arial,sans-serif"]
+  "Célula irradiada" -- {"Reparación", "Muerte", "Fallo reproductivo", "Mutación", "Carcinogénesis"};
+  "Reparación" -- "Irrelevante";
+  "Muerte" -- {"Apoptosis" "Necrosis"};
+  "Fallo reproductivo" -- "Despoblación";
+  "Mutación" -- "Alteración funcional"
+  "Carcinogénesis" -- "Proliferación celular";
+}
+```
+
+---
+
+## Radiosensibilidad celular
+
+![Las células son *más radiosensibles* en las fases **G~2~** y **M** (Mitosis) del *ciclo celular*](images/CellCycle.gif)
+
+## {.smaller}
+
+Las células con **mayor capacidad de proliferación** son **más sensibles** a la radiación, porque los cambios en el ADN se expresan más frecuentemente durante la división celular.
+
+Este efecto *explica la efectividad de la radioterapia contra el cáncer*, puesto que los tumores son siempre procesos proliferativos.
+
+Los tejidos sanos más sensibles a la radiación son aquellos en los que las células se multiplican más deprisa: piel, mucosas del tubo digestivo, médula ósea...
+
+![](images/Cell_proliferation.jpg){fig-align="center"}
+
+---
+
+## Relación entre las magnitudes físicas y los efectos biológicos{.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+Experimentalmente se observó que la magnitud de los efectos biológicos de la radiación se 
+puede relacionar con la *dosis absorbida* $D$ suministrada 
+
+$$D = \frac{E}{M}$$
+
+La dosis absorbida $D$ es un *parámetro puramente* **físico**.
+
+La **prescripción** de los *tratamientos* se expresa en unidades de dosis absorbida, **Gy**
+:::
+
+::: {.column width="40%"}
+![Curvas de control tumoral](images/TCPCurves.png)
+:::
+
+::::
+
+---
+
+## Dosis radiobiológicamente equivalente $D_{\text{RBE}}${.smaller}
+Es fácil observar que, para una misma dosis absorbida administrada $D$, los efectos biológicos dependen mucho del tipo de radiación. 
+
+La *Dosis radiobiológicamente equivalente* $D_{\text{RBE}}$ toma en cuenta las diferencias de  efecto biológico entre distintos tipos de radiación mediante un factor de calidad $F_{\text{RBE}}$ sin unidades.
+
+$$ D_{\text{RBE}} = D\, F_{\text{RBE}}$$
+
+$F_{\text{RBE}} = 1$ para haces de fotones. Para cualquier otra radiación $D_{\text{RBE}}$ representa la dosis $D$ de fotones que tendríamos que dar para obtener el mismo efecto biológico.
+
+---
+
+## Factor de eficiencia radiobiológica $F_{\text{RBE}}${.smaller}
+
+$F_{\text{RBE}}$ depende del tipo y la energía de la radiación
+
+El valor de $F_{\text{RBE}}$ cambia fundamentalmente con la **densidad de energía** depositada a lo largo de la trayectoria de la partícula de radiación, es decir, con la *transferencia lineal de energía*.
+
+![](images/LET.png){fig-align="center"}
+
+---
+
+## Valores típicos de $F_{\text{RBE}}${.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+| Radiación | LET (keV/$\mu$m) |$F_{\text{RBE}}$ |
+|:----------|:----------------:|----------------:|
+| Fotones   | < 10             | 1 (normalización) |
+| Electrones| < 10             | 1               |
+| Protones  | Entre 10 y 100   | 1.2 (convenio)  |
+| Iones C   | > 100            | (2, 3)          |
+
+![](images/RBE.png){width="80%"}
+
+:::
+
+::: {.column width="40%"}
+![Paganetti Phys Med Biol 2014](images/RBE2Gy.png){width="50%"}
+
+::: {style="font-size: 70%;"}
+
+En esta gráfica se representa la diferencia de LET respecto a los fotones.
+
+$\text{LET}_\text{}d$ representa el LET promediado por la dosis.
+:::
+
+:::
+
+::::
+
+---
+
+## LET y efecto biológico
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Alta LET
+
+- **Mayor** efecto biológico
+- Predominio del mecanismo **directo** de interacción con el ADN
+- Lesiones **letales**
+:::
+
+::: {.column width="50%"}
+Baja LET
+
+- **Menor** efecto biológico
+- Predominio del mecanismo **indirecto** de interacción con el ADN
+- Lesiones **reparables**
+
+:::
+
+::::
+
+---
+
+## Estudios experimentales de Radiobiología{.smaller}
+
+La aproximación más simple y directa es la **irradiación de cultivos celulares** *in vitro*
+
+- Se prepara una suspensión de las células de interés
+- Se deposita la suspensión sobre placas de Petri con nutrientes
+- Se observa el crecimiento macroscópico de grupos de células llamados *clonógenos*
+- Se irradian las placas a diferentes valores de dosis
+- Se estudia la variación del número de clonógenos con la dosis de radiación 
+
+![](images/EnsayoClonogenos.jpg){fig-align="center"}
+  
+
+---
+
+## Experimento de supervivencia celular con radiación de alta LET
+
+![](images/FSAltaLet_placas.png){fig-align="center"}
+
+---
+
+## Curva de supervivencia celular con radiación de alta LET{.smaller}
+
+![](images/FSAltaLet_curva.png){fig-align="center"}
+
+Si no hay posibilidad de reparación, la reducción del número de células con la dosis es proporcional a la dosis: **modelo exponencial**
+
+---
+
+## 
+Experimento de supervivencia celular en tejidos de alta proliferación con radiación de baja LET
+
+![](images/FSBajosLetAlphaBeta_placas.png){fig-align="center"}
+
+---
+
+## Curva de supervivencia celular en tejidos de alta proliferación con radiación de baja LET{.smaller}
+
+![](images/FSBajosLetAlphaBeta_curva.png){fig-align="center"}
+
+Podemos interpretar que son necesarios varios daños *subletales* antes de inducir la muerte celular: **modelo más complejo que el exponencial**
+
+---
+
+## 
+Experimento de supervivencia celular en tejidos de baja proliferación con radiación de baja LET
+
+![](images/FSBajoLetAltoAlphaBeta_placas.png){fig-align="center"}
+
+---
+
+## Curva de supervivencia celular en tejidos de baja proliferación con radiación de baja LET{.smaller}
+
+![](images/FSBajoLetAltoAlphaBeta_curva.png){fig-align="center"}
+
+Podemos interpretar que son necesarios varios daños *subletales* antes de inducir la muerte celular: **modelo más complejo que el exponencial**
+
+---
+
+## Radiosensibilidad y proliferación{.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+Cuanto mayor es la capacidad de proliferación menos dosis es necesaria para alcanzar una fracción de supervivencia dada.
+
+$$ FS = e^{-f(D)}$$
+
+donde $f(D)$ es en principio desconocida y propia de cada tejido.
+
+Una posible aproximación es considerar los *primeros términos* del **desarrollo en serie** de $f(D)$.
+
+Los **coeficientes** del desarrollo dependerán de las características de los tejidos.
+
+:::
+
+::: {.column width="40%"}
+![](images/FSvsProliferacion.png)
+:::
+
+::::
+
+---
+
+## Modelo lineal-cuadrático (LQ)
+
+La *fracción de supervivencia* de una población celular irradiada con una dosis $D$ está dada por:
+
+$$
+FS = e^{- \alpha D - \beta D^2}
+$$
+
+donde:
+
+- $\alpha$  mide la **radiosensibilidad celular**.
+-  $\beta$ mide la **capacidad de reparación** de los daños celulares.
+
+Cuanto mayor es el cociente $\alpha / \beta$, menor es la capacidad de reparación celular.
+
+---
+
+## Curva de supervivencia y fraccionamiento{.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+- Desde los comienzos de la radioterapia se conoce experimentalmente que el efecto biológico de una irradiación única con una dosis $D$ es distinto al de una serie de $N$ irradiaciones repetidas, cada una con una dosis $d = \frac{D}{N}$. 
+
+- La diferencia depende del tipo de tejido.​
+
+- La razón es la puesta en marcha de mecanismos de reparación celular tras la irradiación​.
+
+- Este mecanismo se aprovecha para disminuir los efectos secundarios sobre los tejidos sanos.
+:::
+
+::: {.column width="40%"}
+![](images/FSyFraccionamiento.png)
+:::
+
+::::
+
+
+## Supervivencia tras irradiación única
+
+Si $\beta = 0$, el fraccionamiento no tiene efecto sobre la supervivencia celular.
+
+Supervivencia tras **una** sola **irradiación**:
+
+$$
+FS = e^{- \alpha D}
+$$
+
+Supervivencia tras **$N$ irradiaciones iguales** con una dosis total $D$:
+
+$$
+FS = \prod_{i=1}^{N} FS_i = \prod_{i=1}^{N} e^{- \alpha \frac{D}{N}} = e^{- \alpha D}
+$$
+
+---
+
+## Efecto del Fraccionamiento
+
+Si $\beta \neq 0$, el fraccionamiento afecta la supervivencia:
+
+Supervivencia tras **una** sola **irradiación**:
+
+$$
+FS = e^{- \alpha D - \beta  D^2}
+$$
+
+Supervivencia tras **$N$ irradiaciones iguales**:
+
+$$
+FS = \prod_{i=1}^{N} FS_i = \prod_{i=1}^{N} e^{- \alpha \frac{D}{N} - \beta \left(\frac{D}{N}\right)^2} = e^{- \alpha D - \beta  \frac{D^2}{N}} = e^{- \alpha D \left( 1 + \frac{D/N}{\alpha / \beta} \right)} 
+$$
+
+Dos esquemas de tratamiento con la misma fracción de supervivencia producirán el mismo efecto biológico.
+
+
+---
+
+## Dosis Biológica Equivalente (DBE)
+
+La dosis biológica equivalente $DBE$ tras $N$ irradiaciones de la misma dosis se define como:
+
+$$
+DBE_{\alpha / \beta} = D \left( 1 + \frac{d}{\alpha / \beta} \right)
+$$
+
+donde $D$ es la dosis total y $d = \frac{D}{N}$ es la dosis por fracción.
+
+Su valor corresponde a la dosis física $D$ que produciría el mismo efecto biológico si la diéramos de forma continua, haciendo $N \to \infty$, y por tanto $d \to 0$
+
+---
+
+## Sensibilidad de los tejidos
+
+El cociente $\alpha / \beta$ [Gy] determina la sensibilidad del tejido al fraccionamiento:
+
+- **Alto $\alpha / \beta \sim 10$** implica *tejidos poco sensibles* al fraccionamiento: tumores, tejidos sanos de respuesta rápida.
+- **Bajo $\alpha / \beta \sim 2$** implica *tejidos muy sensibles* al fraccionamiento: tejidos sanos de respuesta tardía, tumores lentos como el de próstata.
+
+---
+
+## Dosis Equivalente con 2 Gy/sesión
+
+Para predecir los efectos en la radioterapia, se usa la dosis total que daría una dosis equivalente con un fraccionamiento de 2 Gy/sesión (EQ2 o DBEQ2):
+
+$$
+DBEQ2_{\alpha / \beta} = \frac{DBE_{\alpha / \beta}}{1 + \frac{2 \text{ Gy}}{\alpha / \beta}} = D \times \frac{1 + \frac{d}{\alpha / \beta}}{1 + \frac{2 \text{ Gy}}{\alpha / \beta}}
+$$
+
+Es una forma de renormalizar las $DBE$ para que sus valores sean más cercanos a los fraccionamientos estándar utilizados por los oncólogos de radioterapia.
+
+---
+
+## Modelos de respuesta{.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](images/TCP_NTCP.png)
+:::
+
+::: {.column width="60%"}
+
+La probabilidad de producir un efecto biológico está relacionada con el número de células que sobreviven a la irradiación.
+
+Asumimos que esta probabilidad sigue la estadística de Poisson:
+$$
+P(D) = e^{-N_0\, FS(D)}
+$$
+:::
+
+::::
+
+Podemos definir la *probabilidad de control tumoral* **TCP** y la *probabilidad de complicaciones en tejido sano* **NTCP** a partir de sus correspondientes fracciones de supervivencia. 
+
+---
+
+## Modelos de respuesta
+
+![$1-NTCP$ representa la probabilidad de ausencia de complicaciones en tejido sano](images/TCP_1_NTCP.png){fig-align="center"}
+
+## Modelos de respuesta
+
+![El producto $TCP (1-NTCP)$ representa la probabilidad conjunta de control tumoral y de ausencia de complicaciones en tejido sano, y nos permite definir una ventana terapéutica](images/TherapeuticWindow.png){fig-align="center"}
+
+---
+
+## Objetivo de la radioterapia
+
+Conseguir una máxima probabilidad de control tumoral con una mínima probabilidad de complicación en tejido sano.
+
+La definición de ventana terapéutica asume que ambos tejidos, tumoral y sano, están recibiendo la misma dosis.
+
+En la práctica el tratamiento de radioterapia obtiene su máxima ventaja terapéutica mediante la distribución espacial de la dosis, es decir, concentrando la dosis sobre los volúmenes tumorales y reduciendo todo lo posible la dosis en el tejido sano.
