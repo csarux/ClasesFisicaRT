@@ -1,122 +1,227 @@
 [
   {
-    "objectID": "Temas/PresentacionAsignatura.html#section",
-    "href": "Temas/PresentacionAsignatura.html#section",
-    "title": "Física de la Radioterapia",
+    "objectID": "Temas/Radiobiology.html#section",
+    "href": "Temas/Radiobiology.html#section",
+    "title": "Radiobiología",
     "section": "",
-    "text": "Profesores colaboradores\nLuis Carlos Martínez Gómez\nluiscm01@ucm.es\nProfesor Asociado del Departamento de Radiología, Rehabilitación y Fisioterapia.\nRadiofísico del Hospital Universitario de Doce de Octubre.\nAlfonso López Fernández\nalflopez@ucm.es\nJefe del Servicio de Radiofísica Hospitalaria y Protección Radiológica del Hospital Universitario de Fuenlabrada."
+    "text": "Los efectos biológicos sobre el tejido vivo irradiado se producen en una secuencia de varias etapas\n\n\n\n\n\n\n\nG\n\n\n\nIonización\n\nIonización\n\n\n\nCambios bioquímicos\n\nCambios bioquímicos\n\n\n\nIonización-&gt;Cambios bioquímicos\n\n\nÁtomos y moléculas\n\n\n\nAlteración funcional\n\nAlteración funcional\n\n\n\nCambios bioquímicos-&gt;Alteración funcional\n\n\nCélulas\n\n\n\nEfecto biológico\n\nEfecto biológico\n\n\n\nAlteración funcional-&gt;Efecto biológico\n\n\nTejidos\n\n\n\n\n\n\n\n\nLa Radiobiología estudia los fenómenos que relacionan la absorción de energía procedente de radiaciones ionizantes con la producción de efectos biológicos."
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#estructura-y-objetivos-de-la-asignatura",
-    "href": "Temas/PresentacionAsignatura.html#estructura-y-objetivos-de-la-asignatura",
-    "title": "Física de la Radioterapia",
-    "section": "Estructura y objetivos de la asignatura",
-    "text": "Estructura y objetivos de la asignatura\nBloque 1: Introducción\n\nExplicar los fundamentos físicos y biológicos de las aplicaciones terapéuticas de las radiaciones ionizantes.\nDescribir las diversas técnicas de radioterapia.\n\nBloque 2: Detección\n\nExplicar los equipos y las técnicas utilizadas para la medida de la dosis.\n\nBloque 3: Comisionado\n\nDescribir los aparatos empleados para producir radiaciones aplicadas en teleterapia y qué elementos son claves para modelar las distribuciones dosimétricas que producen.\nExplicar cómo se calibran y caracterizan los haces terapéuticos."
-  },
-  {
-    "objectID": "Temas/PresentacionAsignatura.html#section-1",
-    "href": "Temas/PresentacionAsignatura.html#section-1",
-    "title": "Física de la Radioterapia",
+    "objectID": "Temas/Radiobiology.html#section-1",
+    "href": "Temas/Radiobiology.html#section-1",
+    "title": "Radiobiología",
     "section": "",
-    "text": "Bloque 4: Cálculo de dosis y planificación en teleterapia\n\nExplicar los aspectos relevantes para la planificación de tratamientos en las distintas modalidades.\nExplicar cómo se calcula la distribución de dosis.\nComprender y realizar de forma práctica registros de imágenes de diferentes modalidades y aplicarlos para la adaptación y suma de tratamientos.\nDiseñar de forma práctica tratamientos de pacientes: planificación convencional, planificación inversa y asistida por modelos de base de conocimiento.\n\nBloque 5: Braquiterapia\n\nExplicar las técnicas de braquiterapia\nDescribir los equipos y las fuentes empleadas."
+    "text": "Fases de la radioterapia"
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#section-2",
-    "href": "Temas/PresentacionAsignatura.html#section-2",
-    "title": "Física de la Radioterapia",
+    "objectID": "Temas/Radiobiology.html#section-2",
+    "href": "Temas/Radiobiology.html#section-2",
+    "title": "Radiobiología",
     "section": "",
-    "text": "Competencias\nBásicas\nCB7 - Saber aplicar los conocimientos adquiridos y su capacidad de resolución de problemas en entornos nuevos o poco conocidos dentro de contextos más amplios (o multidisciplinares) relacionados con su área de estudio.\nCB8 - Ser capaces de integrar conocimientos y enfrentarse a la complejidad de formular juicios a partir de una información que, siendo incompleta o limitada, incluya reflexiones sobre las responsabilidades sociales y éticas vinculadas a la aplicación de sus conocimientos y juicios.\nCB9 - Ser capaz de comunicar conclusiones y conocimientos y razones últimas que las sustentan a públicos especializados y no especializados de un modo claro y sin ambigüedades."
+    "text": "Los efectos biológicos de la radiación provienen casi exclusivamente de la modificación de la estructura del ADN\n\nTomado de Cheng, Lei. Factors modifying cellular response to ionizing radiation. 2019. Tesis Doctoral. Department of Molecular Bioscience, The Winner-Gren Institute, Stockholm University."
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#section-3",
-    "href": "Temas/PresentacionAsignatura.html#section-3",
-    "title": "Física de la Radioterapia",
+    "objectID": "Temas/Radiobiology.html#mecanismos-de-interacción-radiación-adn",
+    "href": "Temas/Radiobiology.html#mecanismos-de-interacción-radiación-adn",
+    "title": "Radiobiología",
+    "section": "Mecanismos de interacción radiación-ADN",
+    "text": "Mecanismos de interacción radiación-ADN\n\nDirecto: la radiación interacciona con el ADN e induce un cambio en su estructura química\nIndirecto: la interacción de la radiación con otras moléculas presentes en la célula, fundamentalmente el agua, produce por ionización la producción de radicales libres (\\(OH^{*}\\) principalmente, también \\(H_3O^{+}\\), \\(H^{+}\\), etc). Los radicales libres pueden alterar el ADN si reaccionan con él.\n\n\n\nEn prácticamente la totalidad de los haces clínicos aproximadamente \\(2/3\\) de los daños en el ADN se realizan mediante mecanismos indirectos. Solo en haces de radiación con altas transferencias lineales de energía (iones pesados) predominan los mecanismos directos.\nLa presencia de oxígeno disuelto en el medio celular potencia la actividad de los radicales libres. Los tejidos con menos suministro de sangre son más resistentes a la radiación"
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#daños-en-el-adn",
+    "href": "Temas/Radiobiology.html#daños-en-el-adn",
+    "title": "Radiobiología",
+    "section": "Daños en el ADN",
+    "text": "Daños en el ADN\n\nDebido a la presencia de mecanismos de reparación del ADN, los daños simples no suelen dar lugar a efectos biológicos"
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#efectos-sobre-la-célula",
+    "href": "Temas/Radiobiology.html#efectos-sobre-la-célula",
+    "title": "Radiobiología",
+    "section": "Efectos sobre la célula",
+    "text": "Efectos sobre la célula\n\n\n\n\n\n\n\nCellEffects\n\n\n\nCélula irradiada\n\nCélula irradiada\n\n\n\nReparación\n\nReparación\n\n\n\nCélula irradiada--Reparación\n\n\n\n\nMuerte\n\nMuerte\n\n\n\nCélula irradiada--Muerte\n\n\n\n\nFallo reproductivo\n\nFallo reproductivo\n\n\n\nCélula irradiada--Fallo reproductivo\n\n\n\n\nMutación\n\nMutación\n\n\n\nCélula irradiada--Mutación\n\n\n\n\nCarcinogénesis\n\nCarcinogénesis\n\n\n\nCélula irradiada--Carcinogénesis\n\n\n\n\nIrrelevante\n\nIrrelevante\n\n\n\nReparación--Irrelevante\n\n\n\n\nApoptosis\n\nApoptosis\n\n\n\nMuerte--Apoptosis\n\n\n\n\nNecrosis\n\nNecrosis\n\n\n\nMuerte--Necrosis\n\n\n\n\nDespoblación\n\nDespoblación\n\n\n\nFallo reproductivo--Despoblación\n\n\n\n\nAlteración funcional\n\nAlteración funcional\n\n\n\nMutación--Alteración funcional\n\n\n\n\nProliferación celular\n\nProliferación celular\n\n\n\nCarcinogénesis--Proliferación celular"
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#radiosensibilidad-celular",
+    "href": "Temas/Radiobiology.html#radiosensibilidad-celular",
+    "title": "Radiobiología",
+    "section": "Radiosensibilidad celular",
+    "text": "Radiosensibilidad celular\n\nLas células son más radiosensibles en las fases G2 y M (Mitosis) del ciclo celular"
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#section-3",
+    "href": "Temas/Radiobiology.html#section-3",
+    "title": "Radiobiología",
     "section": "",
-    "text": "Específicas\nCE8 - Adquirir los conocimientos necesarios para evaluar las capacidades de la instrumentación biomédica avanzada y su aplicabilidad en entornos científicos o altamente especializados.\nCE9 - Adquirir la capacidad para analizar señales biomédicas con técnicas avanzadas.\nCE13 - Adquirir conocimientos avanzados de los procesos de interacción de las radiaciones ionizantes con la materia y ser capaz de aplicarlos en entornos de investigación y/o clínicos.\nCE14 - Dominar las técnicas experimentales avanzadas para la medida de la dosis de radiaciones ionizantes y su aplicación en el área de la Radiofísica Hospitalaria.\nCE15 - Aplicar las técnicas de Monte Carlo para la determinación de la dosis de radiaciones ionizantes.\nCE16 - Capacidad para determinar y evaluar, en un contexto multidisciplinar, los efectos de las radiaciones ionizantes sobre los tejidos biológicos."
+    "text": "Las células con mayor capacidad de proliferación son más sensibles a la radiación, porque los cambios en el ADN se expresan más frecuentemente durante la división celular.\nEste efecto explica la efectividad de la radioterapia contra el cáncer, puesto que los tumores son siempre procesos proliferativos.\nLos tejidos sanos más sensibles a la radiación son aquellos en los que las células se multiplican más deprisa: piel, mucosas del tubo digestivo, médula ósea…"
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#desarrollo-del-curso",
-    "href": "Temas/PresentacionAsignatura.html#desarrollo-del-curso",
-    "title": "Física de la Radioterapia",
-    "section": "Desarrollo del curso",
-    "text": "Desarrollo del curso\n\nClases teóricas y cuestionarios.\nSeminarios\n\nTrabajo en común en clase sobre un problema propuesto: cuadernos Colab con apoyo (en ocasiones) de software interactivo para visualización de datos.\nInterpretación individual y diferida de resultados.\n\nTrabajo práctico en el hospital mediante:\n\nVisitas in situ: Interacción con un acelerador lineal. Manejo de instrumentación para calibración de un acelerador lineal.\nConexión remota desde el aula: Interacción con planificadores de uso clínico: resolución de problemas reales de planificación. Interacción con sistemas de radioterapia adaptativa: resolución de problemas de registro de imágenes.\n\nPreparación y exposición de temas propuestos."
+    "objectID": "Temas/Radiobiology.html#relación-entre-las-magnitudes-físicas-y-los-efectos-biológicos",
+    "href": "Temas/Radiobiology.html#relación-entre-las-magnitudes-físicas-y-los-efectos-biológicos",
+    "title": "Radiobiología",
+    "section": "Relación entre las magnitudes físicas y los efectos biológicos",
+    "text": "Relación entre las magnitudes físicas y los efectos biológicos\n\n\nExperimentalmente se observó que la magnitud de los efectos biológicos de la radiación se puede relacionar con la dosis absorbida \\(D\\) suministrada\n\\[D = \\frac{E}{M}\\]\nLa dosis absorbida \\(D\\) es un parámetro puramente físico.\nLa prescripción de los tratamientos se expresa en unidades de dosis absorbida, Gy\n\n\n\n\nCurvas de control tumoral"
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#section-4",
-    "href": "Temas/PresentacionAsignatura.html#section-4",
-    "title": "Física de la Radioterapia",
+    "objectID": "Temas/Radiobiology.html#dosis-radiobiológicamente-equivalente-d_textrbe",
+    "href": "Temas/Radiobiology.html#dosis-radiobiológicamente-equivalente-d_textrbe",
+    "title": "Radiobiología",
+    "section": "Dosis radiobiológicamente equivalente \\(D_{\\text{RBE}}\\)",
+    "text": "Dosis radiobiológicamente equivalente \\(D_{\\text{RBE}}\\)\nEs fácil observar que, para una misma dosis absorbida administrada \\(D\\), los efectos biológicos dependen mucho del tipo de radiación.\nLa Dosis radiobiológicamente equivalente \\(D_{\\text{RBE}}\\) toma en cuenta las diferencias de efecto biológico entre distintos tipos de radiación mediante un factor de calidad \\(F_{\\text{RBE}}\\) sin unidades.\n\\[ D_{\\text{RBE}} = D\\, F_{\\text{RBE}}\\]\n\\(F_{\\text{RBE}} = 1\\) para haces de fotones. Para cualquier otra radiación \\(D_{\\text{RBE}}\\) representa la dosis \\(D\\) de fotones que tendríamos que dar para obtener el mismo efecto biológico."
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#factor-de-eficiencia-radiobiológica-f_textrbe",
+    "href": "Temas/Radiobiology.html#factor-de-eficiencia-radiobiológica-f_textrbe",
+    "title": "Radiobiología",
+    "section": "Factor de eficiencia radiobiológica \\(F_{\\text{RBE}}\\)",
+    "text": "Factor de eficiencia radiobiológica \\(F_{\\text{RBE}}\\)\n\\(F_{\\text{RBE}}\\) depende del tipo y la energía de la radiación\nEl valor de \\(F_{\\text{RBE}}\\) cambia fundamentalmente con la densidad de energía depositada a lo largo de la trayectoria de la partícula de radiación, es decir, con la transferencia lineal de energía."
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#valores-típicos-de-f_textrbe",
+    "href": "Temas/Radiobiology.html#valores-típicos-de-f_textrbe",
+    "title": "Radiobiología",
+    "section": "Valores típicos de \\(F_{\\text{RBE}}\\)",
+    "text": "Valores típicos de \\(F_{\\text{RBE}}\\)\n\n\n\n\n\nRadiación\nLET (keV/\\(\\mu\\)m)\n\\(F_{\\text{RBE}}\\)\n\n\n\n\nFotones\n&lt; 10\n1 (normalización)\n\n\nElectrones\n&lt; 10\n1\n\n\nProtones\nEntre 10 y 100\n1.2 (convenio)\n\n\nIones C\n&gt; 100\n(2, 3)\n\n\n\n\n\n\n\n\nPaganetti Phys Med Biol 2014\n\n\n\nEn esta gráfica se representa la diferencia de LET respecto a los fotones.\n\\(\\text{LET}_\\text{}d\\) representa el LET promediado por la dosis."
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#let-y-efecto-biológico",
+    "href": "Temas/Radiobiology.html#let-y-efecto-biológico",
+    "title": "Radiobiología",
+    "section": "LET y efecto biológico",
+    "text": "LET y efecto biológico\n\n\nAlta LET\n\nMayor efecto biológico\nPredominio del mecanismo directo de interacción con el ADN\nLesiones letales\n\n\nBaja LET\n\nMenor efecto biológico\nPredominio del mecanismo indirecto de interacción con el ADN\nLesiones reparables"
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#estudios-experimentales-de-radiobiología",
+    "href": "Temas/Radiobiology.html#estudios-experimentales-de-radiobiología",
+    "title": "Radiobiología",
+    "section": "Estudios experimentales de Radiobiología",
+    "text": "Estudios experimentales de Radiobiología\nLa aproximación más simple y directa es la irradiación de cultivos celulares in vitro\n\nSe prepara una suspensión de las células de interés\nSe deposita la suspensión sobre placas de Petri con nutrientes\nSe observa el crecimiento macroscópico de grupos de células llamados clonógenos\nSe irradian las placas a diferentes valores de dosis\nSe estudia la variación del número de clonógenos con la dosis de radiación"
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#experimento-de-supervivencia-celular-con-radiación-de-alta-let",
+    "href": "Temas/Radiobiology.html#experimento-de-supervivencia-celular-con-radiación-de-alta-let",
+    "title": "Radiobiología",
+    "section": "Experimento de supervivencia celular con radiación de alta LET",
+    "text": "Experimento de supervivencia celular con radiación de alta LET"
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#curva-de-supervivencia-celular-con-radiación-de-alta-let",
+    "href": "Temas/Radiobiology.html#curva-de-supervivencia-celular-con-radiación-de-alta-let",
+    "title": "Radiobiología",
+    "section": "Curva de supervivencia celular con radiación de alta LET",
+    "text": "Curva de supervivencia celular con radiación de alta LET\n\nSi no hay posibilidad de reparación, la reducción del número de células con la dosis es proporcional a la dosis: modelo exponencial"
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#section-4",
+    "href": "Temas/Radiobiology.html#section-4",
+    "title": "Radiobiología",
     "section": "",
-    "text": "Preparación y exposición de temas propuestos\n\nAl finalizar el primer bloque se publicará una lista de temas.\nCada alumno tiene que elegir un tema. No se admite que dos o más alumnos elijan el mismo tema.\nPara antes de las vacaciones de Semana Santa hay que enviar un pequeño esquema sobre cómo se piensa hacer la presentación: bibliografía y fuentes de información, reparto del tiempo, ideas principales y conclusiones.\nLas dos últimas clases del curso se dedican a que cada alumno presente al resto de la clase su tema.\nCada alumno dispondrá de seis minutos para realizar su exposición."
+    "text": "Experimento de supervivencia celular en tejidos de alta proliferación con radiación de baja LET"
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#section-5",
-    "href": "Temas/PresentacionAsignatura.html#section-5",
-    "title": "Física de la Radioterapia",
+    "objectID": "Temas/Radiobiology.html#curva-de-supervivencia-celular-en-tejidos-de-alta-proliferación-con-radiación-de-baja-let",
+    "href": "Temas/Radiobiology.html#curva-de-supervivencia-celular-en-tejidos-de-alta-proliferación-con-radiación-de-baja-let",
+    "title": "Radiobiología",
+    "section": "Curva de supervivencia celular en tejidos de alta proliferación con radiación de baja LET",
+    "text": "Curva de supervivencia celular en tejidos de alta proliferación con radiación de baja LET\n\nPodemos interpretar que son necesarios varios daños subletales antes de inducir la muerte celular: modelo más complejo que el exponencial"
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#section-5",
+    "href": "Temas/Radiobiology.html#section-5",
+    "title": "Radiobiología",
     "section": "",
-    "text": "Examen final\n\nExamen tipo test de contenido conceptual.\n40-60 preguntas.\nCuatro opciones, una única valida.\nNo restan los errores.\nNo hay nota de corte."
+    "text": "Experimento de supervivencia celular en tejidos de baja proliferación con radiación de baja LET"
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#calificación",
-    "href": "Temas/PresentacionAsignatura.html#calificación",
-    "title": "Física de la Radioterapia",
-    "section": "Calificación",
-    "text": "Calificación\n\nPeso en la nota final:\n\n3/10: Problemas propuestos y prácticas.\n2/10: Presentación del trabajo.\n5/10: Examen final."
+    "objectID": "Temas/Radiobiology.html#curva-de-supervivencia-celular-en-tejidos-de-baja-proliferación-con-radiación-de-baja-let",
+    "href": "Temas/Radiobiology.html#curva-de-supervivencia-celular-en-tejidos-de-baja-proliferación-con-radiación-de-baja-let",
+    "title": "Radiobiología",
+    "section": "Curva de supervivencia celular en tejidos de baja proliferación con radiación de baja LET",
+    "text": "Curva de supervivencia celular en tejidos de baja proliferación con radiación de baja LET\n\nPodemos interpretar que son necesarios varios daños subletales antes de inducir la muerte celular: modelo más complejo que el exponencial"
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#distribución-de-calificaciones",
-    "href": "Temas/PresentacionAsignatura.html#distribución-de-calificaciones",
-    "title": "Física de la Radioterapia",
-    "section": "Distribución de calificaciones",
-    "text": "Distribución de calificaciones\nDatos de los cursos 21/22, 22/23 y 23/24:"
+    "objectID": "Temas/Radiobiology.html#radiosensibilidad-y-proliferación",
+    "href": "Temas/Radiobiology.html#radiosensibilidad-y-proliferación",
+    "title": "Radiobiología",
+    "section": "Radiosensibilidad y proliferación",
+    "text": "Radiosensibilidad y proliferación\n\n\nCuanto mayor es la capacidad de proliferación menos dosis es necesaria para alcanzar una fracción de supervivencia dada.\n\\[ FS = e^{-f(D)}\\]\ndonde \\(f(D)\\) es en principio desconocida y propia de cada tejido.\nUna posible aproximación es considerar los primeros términos del desarrollo en serie de \\(f(D)\\).\nLos coeficientes del desarrollo dependerán de las características de los tejidos."
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#software-para-los-seminarios",
-    "href": "Temas/PresentacionAsignatura.html#software-para-los-seminarios",
-    "title": "Física de la Radioterapia",
-    "section": "Software para los seminarios",
-    "text": "Software para los seminarios"
+    "objectID": "Temas/Radiobiology.html#modelo-lineal-cuadrático-lq",
+    "href": "Temas/Radiobiology.html#modelo-lineal-cuadrático-lq",
+    "title": "Radiobiología",
+    "section": "Modelo lineal-cuadrático (LQ)",
+    "text": "Modelo lineal-cuadrático (LQ)\nLa fracción de supervivencia de una población celular irradiada con una dosis \\(D\\) está dada por:\n\\[\nFS = e^{- \\alpha D - \\beta D^2}\n\\]\ndonde:\n\n\\(\\alpha\\) mide la radiosensibilidad celular.\n\\(\\beta\\) mide la capacidad de reparación de los daños celulares.\n\nCuanto mayor es el cociente \\(\\alpha / \\beta\\), menor es la capacidad de reparación celular."
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#software-de-uso-clínico-para-planificación-de-tratamientos",
-    "href": "Temas/PresentacionAsignatura.html#software-de-uso-clínico-para-planificación-de-tratamientos",
-    "title": "Física de la Radioterapia",
-    "section": "Software de uso clínico para planificación de tratamientos",
-    "text": "Software de uso clínico para planificación de tratamientos\n\n\n\n\n\nEclipse Varian\n\n\n\n\n\n\nRayStation RayLabs"
+    "objectID": "Temas/Radiobiology.html#curva-de-supervivencia-y-fraccionamiento",
+    "href": "Temas/Radiobiology.html#curva-de-supervivencia-y-fraccionamiento",
+    "title": "Radiobiología",
+    "section": "Curva de supervivencia y fraccionamiento",
+    "text": "Curva de supervivencia y fraccionamiento\n\n\n\nDesde los comienzos de la radioterapia se conoce experimentalmente que el efecto biológico de una irradiación única con una dosis \\(D\\) es distinto al de una serie de \\(N\\) irradiaciones repetidas, cada una con una dosis \\(d = \\frac{D}{N}\\).\nLa diferencia depende del tipo de tejido.​\nLa razón es la puesta en marcha de mecanismos de reparación celular tras la irradiación​.\nEste mecanismo se aprovecha para disminuir los efectos secundarios sobre los tejidos sanos."
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#bibliografía",
-    "href": "Temas/PresentacionAsignatura.html#bibliografía",
-    "title": "Física de la Radioterapia",
-    "section": "Bibliografía",
-    "text": "Bibliografía\n\nHendee, W.R.: Radiation therapy physics.\nKhan, Faiz M.: The physics of radiation therapy.\nSEFM: Fundamentos de Física Médica, vols 1 y 3.\nOIEA: Radiation Oncology Physics (Acceso web).\nAttix, F.H.: Introduction to radiological physics and radiation dosimetry.\nPaganeti, H.: Proton Therapy Physics, Second Edition.\nGalle, P. y Paulin R.: Biofísica. Radiobiología y Radiopatología.\nMayles, P., Nahum, A.E., Rosenwald, J-C.: Handbook of radiotherapy physics: theory and practice.\nJayaraman, S., Lanzl, L.H.: Clinical Radiotherapy Physics.\nHuang, H.K.: PACS-Based Multimedia Imaging Informatics."
+    "objectID": "Temas/Radiobiology.html#supervivencia-tras-irradiación-única",
+    "href": "Temas/Radiobiology.html#supervivencia-tras-irradiación-única",
+    "title": "Radiobiología",
+    "section": "Supervivencia tras irradiación única",
+    "text": "Supervivencia tras irradiación única\nSi \\(\\beta = 0\\), el fraccionamiento no tiene efecto sobre la supervivencia celular.\nSupervivencia tras una sola irradiación:\n\\[\nFS = e^{- \\alpha D}\n\\]\nSupervivencia tras \\(N\\) irradiaciones iguales con una dosis total \\(D\\):\n\\[\nFS = \\prod_{i=1}^{N} FS_i = \\prod_{i=1}^{N} e^{- \\alpha \\frac{D}{N}} = e^{- \\alpha D}\n\\]"
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#section-6",
-    "href": "Temas/PresentacionAsignatura.html#section-6",
-    "title": "Física de la Radioterapia",
-    "section": "",
-    "text": "Otros recursos\n\nRevistas:\n\nMedical Physics.\nPhysics in Medicine and Biology.\nPhysica Medica.\nBritish Journal of Radiology.\nRevista de Física Médica.\n\nEnlaces útiles:\n\nSEFM\nAAPM\nEFOMP\nIAEA\nRadiation Physics\nNIST"
+    "objectID": "Temas/Radiobiology.html#efecto-del-fraccionamiento",
+    "href": "Temas/Radiobiology.html#efecto-del-fraccionamiento",
+    "title": "Radiobiología",
+    "section": "Efecto del Fraccionamiento",
+    "text": "Efecto del Fraccionamiento\nSi \\(\\beta \\neq 0\\), el fraccionamiento afecta la supervivencia:\nSupervivencia tras una sola irradiación:\n\\[\nFS = e^{- \\alpha D - \\beta  D^2}\n\\]\nSupervivencia tras \\(N\\) irradiaciones iguales:\n\\[\nFS = \\prod_{i=1}^{N} FS_i = \\prod_{i=1}^{N} e^{- \\alpha \\frac{D}{N} - \\beta \\left(\\frac{D}{N}\\right)^2} = e^{- \\alpha D - \\beta  \\frac{D^2}{N}} = e^{- \\alpha D \\left( 1 + \\frac{D/N}{\\alpha / \\beta} \\right)}\n\\]\nDos esquemas de tratamiento con la misma fracción de supervivencia producirán el mismo efecto biológico."
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#section-7",
-    "href": "Temas/PresentacionAsignatura.html#section-7",
-    "title": "Física de la Radioterapia",
-    "section": "",
-    "text": "Elementos básicos para la instalación\n\nUna instalación de python version 3.9\n\nSe recomienda emplear conda y crear un entorno virtual con python 3.9\nEn el caso de que nuestro ordenador sea un Mac con procesador Apple Silicon (M1, M2, M3…) el entorno virtual se tiene que crear con arquitectura amd.\n\nUna instalación de pip\n\nDocumentación para la instalación\n\nPágina de openTPS &gt; Easy Quickstart"
+    "objectID": "Temas/Radiobiology.html#dosis-biológica-equivalente-dbe",
+    "href": "Temas/Radiobiology.html#dosis-biológica-equivalente-dbe",
+    "title": "Radiobiología",
+    "section": "Dosis Biológica Equivalente (DBE)",
+    "text": "Dosis Biológica Equivalente (DBE)\nLa dosis biológica equivalente \\(DBE\\) tras \\(N\\) irradiaciones de la misma dosis se define como:\n\\[\nDBE_{\\alpha / \\beta} = D \\left( 1 + \\frac{d}{\\alpha / \\beta} \\right)\n\\]\ndonde \\(D\\) es la dosis total y \\(d = \\frac{D}{N}\\) es la dosis por fracción.\nSu valor corresponde a la dosis física \\(D\\) que produciría el mismo efecto biológico si la diéramos de forma continua, haciendo \\(N \\to \\infty\\), y por tanto \\(d \\to 0\\)"
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#section-8",
-    "href": "Temas/PresentacionAsignatura.html#section-8",
-    "title": "Física de la Radioterapia",
-    "section": "",
-    "text": "Instalación de conda\n\nUsuarios que prefieran entornos gráficos de instalación: instalar Anaconda\nAlternativamente, mi recomendación es utilizar miniconda\n\nPara los distintos sistemas operativos utilizar las instrucciones de instalación de miniconda\n\n\nCreación y activación del entorno virtual python 3.9\nCon conda activado, desde la linea de comandos correr\nconda create --name OpenTPS python=3.9\nUsuarios de ordenadores con chips Apple Silicon\nconda create --platform osx-64 --name OpenTPS python=3.9\nActivar el entorno\nconda activate OpenTPS"
+    "objectID": "Temas/Radiobiology.html#sensibilidad-de-los-tejidos",
+    "href": "Temas/Radiobiology.html#sensibilidad-de-los-tejidos",
+    "title": "Radiobiología",
+    "section": "Sensibilidad de los tejidos",
+    "text": "Sensibilidad de los tejidos\nEl cociente \\(\\alpha / \\beta\\) [Gy] determina la sensibilidad del tejido al fraccionamiento:\n\nAlto \\(\\alpha / \\beta \\sim 10\\) implica tejidos poco sensibles al fraccionamiento: tumores, tejidos sanos de respuesta rápida.\nBajo \\(\\alpha / \\beta \\sim 2\\) implica tejidos muy sensibles al fraccionamiento: tejidos sanos de respuesta tardía, tumores lentos como el de próstata."
   },
   {
-    "objectID": "Temas/PresentacionAsignatura.html#section-9",
-    "href": "Temas/PresentacionAsignatura.html#section-9",
-    "title": "Física de la Radioterapia",
-    "section": "",
-    "text": "Instalación de openTPS\nDesde el entorno OpenTSP correr el comando\npip install opentps\nCorrer el programa\nDesde la línea de comandos\nopentps"
+    "objectID": "Temas/Radiobiology.html#dosis-equivalente-con-2-gysesión",
+    "href": "Temas/Radiobiology.html#dosis-equivalente-con-2-gysesión",
+    "title": "Radiobiología",
+    "section": "Dosis Equivalente con 2 Gy/sesión",
+    "text": "Dosis Equivalente con 2 Gy/sesión\nPara predecir los efectos en la radioterapia, se usa la dosis total que daría una dosis equivalente con un fraccionamiento de 2 Gy/sesión (EQ2 o DBEQ2):\n\\[\nDBEQ2_{\\alpha / \\beta} = \\frac{DBE_{\\alpha / \\beta}}{1 + \\frac{2 \\text{ Gy}}{\\alpha / \\beta}} = D \\times \\frac{1 + \\frac{d}{\\alpha / \\beta}}{1 + \\frac{2 \\text{ Gy}}{\\alpha / \\beta}}\n\\]\nEs una forma de renormalizar las \\(DBE\\) para que sus valores sean más cercanos a los fraccionamientos estándar utilizados por los oncólogos de radioterapia."
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#modelos-de-respuesta",
+    "href": "Temas/Radiobiology.html#modelos-de-respuesta",
+    "title": "Radiobiología",
+    "section": "Modelos de respuesta",
+    "text": "Modelos de respuesta\n\n\n\n\nLa probabilidad de producir un efecto biológico está relacionada con el número de células que sobreviven a la irradiación.\nAsumimos que esta probabilidad sigue la estadística de Poisson: \\[\nP(D) = e^{-N_0\\, FS(D)}\n\\]\n\nPodemos definir la probabilidad de control tumoral TCP y la probabilidad de complicaciones en tejido sano NTCP a partir de sus correspondientes fracciones de supervivencia."
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#modelos-de-respuesta-1",
+    "href": "Temas/Radiobiology.html#modelos-de-respuesta-1",
+    "title": "Radiobiología",
+    "section": "Modelos de respuesta",
+    "text": "Modelos de respuesta\n\n\\(1-NTCP\\) representa la probabilidad de ausencia de complicaciones en tejido sano"
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#modelos-de-respuesta-2",
+    "href": "Temas/Radiobiology.html#modelos-de-respuesta-2",
+    "title": "Radiobiología",
+    "section": "Modelos de respuesta",
+    "text": "Modelos de respuesta\n\nEl producto \\(TCP (1-NTCP)\\) representa la probabilidad conjunta de control tumoral y de ausencia de complicaciones en tejido sano, y nos permite definir una ventana terapéutica"
+  },
+  {
+    "objectID": "Temas/Radiobiology.html#objetivo-de-la-radioterapia",
+    "href": "Temas/Radiobiology.html#objetivo-de-la-radioterapia",
+    "title": "Radiobiología",
+    "section": "Objetivo de la radioterapia",
+    "text": "Objetivo de la radioterapia\nConseguir una máxima probabilidad de control tumoral con una mínima probabilidad de complicación en tejido sano.\nLa definición de ventana terapéutica asume que ambos tejidos, tumoral y sano, están recibiendo la misma dosis.\nEn la práctica el tratamiento de radioterapia obtiene su máxima ventaja terapéutica mediante la distribución espacial de la dosis, es decir, concentrando la dosis sobre los volúmenes tumorales y reduciendo todo lo posible la dosis en el tejido sano."
   },
   {
     "objectID": "Temas/IntroduccionRT.html#qué-es-la-radioterapia",
@@ -418,5 +523,124 @@
     "title": "Introducción a la Radioterapia",
     "section": "Trabajo de los Radiofísicos en Radioterapia",
     "text": "Trabajo de los Radiofísicos en Radioterapia\n\nControl de equipos: Supervisión de equipos de radiación y auxiliares.\nDiseño de planes de tratamiento: Planificación y cálculo de dosis personalizadas."
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#section",
+    "href": "Temas/PresentacionAsignatura.html#section",
+    "title": "Física de la Radioterapia",
+    "section": "",
+    "text": "Profesores colaboradores\nLuis Carlos Martínez Gómez\nluiscm01@ucm.es\nProfesor Asociado del Departamento de Radiología, Rehabilitación y Fisioterapia.\nRadiofísico del Hospital Universitario de Doce de Octubre.\nAlfonso López Fernández\nalflopez@ucm.es\nJefe del Servicio de Radiofísica Hospitalaria y Protección Radiológica del Hospital Universitario de Fuenlabrada."
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#estructura-y-objetivos-de-la-asignatura",
+    "href": "Temas/PresentacionAsignatura.html#estructura-y-objetivos-de-la-asignatura",
+    "title": "Física de la Radioterapia",
+    "section": "Estructura y objetivos de la asignatura",
+    "text": "Estructura y objetivos de la asignatura\nBloque 1: Introducción\n\nExplicar los fundamentos físicos y biológicos de las aplicaciones terapéuticas de las radiaciones ionizantes.\nDescribir las diversas técnicas de radioterapia.\n\nBloque 2: Detección\n\nExplicar los equipos y las técnicas utilizadas para la medida de la dosis.\n\nBloque 3: Comisionado\n\nDescribir los aparatos empleados para producir radiaciones aplicadas en teleterapia y qué elementos son claves para modelar las distribuciones dosimétricas que producen.\nExplicar cómo se calibran y caracterizan los haces terapéuticos."
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#section-1",
+    "href": "Temas/PresentacionAsignatura.html#section-1",
+    "title": "Física de la Radioterapia",
+    "section": "",
+    "text": "Bloque 4: Cálculo de dosis y planificación en teleterapia\n\nExplicar los aspectos relevantes para la planificación de tratamientos en las distintas modalidades.\nExplicar cómo se calcula la distribución de dosis.\nComprender y realizar de forma práctica registros de imágenes de diferentes modalidades y aplicarlos para la adaptación y suma de tratamientos.\nDiseñar de forma práctica tratamientos de pacientes: planificación convencional, planificación inversa y asistida por modelos de base de conocimiento.\n\nBloque 5: Braquiterapia\n\nExplicar las técnicas de braquiterapia\nDescribir los equipos y las fuentes empleadas."
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#section-2",
+    "href": "Temas/PresentacionAsignatura.html#section-2",
+    "title": "Física de la Radioterapia",
+    "section": "",
+    "text": "Competencias\nBásicas\nCB7 - Saber aplicar los conocimientos adquiridos y su capacidad de resolución de problemas en entornos nuevos o poco conocidos dentro de contextos más amplios (o multidisciplinares) relacionados con su área de estudio.\nCB8 - Ser capaces de integrar conocimientos y enfrentarse a la complejidad de formular juicios a partir de una información que, siendo incompleta o limitada, incluya reflexiones sobre las responsabilidades sociales y éticas vinculadas a la aplicación de sus conocimientos y juicios.\nCB9 - Ser capaz de comunicar conclusiones y conocimientos y razones últimas que las sustentan a públicos especializados y no especializados de un modo claro y sin ambigüedades."
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#section-3",
+    "href": "Temas/PresentacionAsignatura.html#section-3",
+    "title": "Física de la Radioterapia",
+    "section": "",
+    "text": "Específicas\nCE8 - Adquirir los conocimientos necesarios para evaluar las capacidades de la instrumentación biomédica avanzada y su aplicabilidad en entornos científicos o altamente especializados.\nCE9 - Adquirir la capacidad para analizar señales biomédicas con técnicas avanzadas.\nCE13 - Adquirir conocimientos avanzados de los procesos de interacción de las radiaciones ionizantes con la materia y ser capaz de aplicarlos en entornos de investigación y/o clínicos.\nCE14 - Dominar las técnicas experimentales avanzadas para la medida de la dosis de radiaciones ionizantes y su aplicación en el área de la Radiofísica Hospitalaria.\nCE15 - Aplicar las técnicas de Monte Carlo para la determinación de la dosis de radiaciones ionizantes.\nCE16 - Capacidad para determinar y evaluar, en un contexto multidisciplinar, los efectos de las radiaciones ionizantes sobre los tejidos biológicos."
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#desarrollo-del-curso",
+    "href": "Temas/PresentacionAsignatura.html#desarrollo-del-curso",
+    "title": "Física de la Radioterapia",
+    "section": "Desarrollo del curso",
+    "text": "Desarrollo del curso\n\nClases teóricas y cuestionarios.\nSeminarios\n\nTrabajo en común en clase sobre un problema propuesto: cuadernos Colab con apoyo (en ocasiones) de software interactivo para visualización de datos.\nInterpretación individual y diferida de resultados.\n\nTrabajo práctico en el hospital mediante:\n\nVisitas in situ: Interacción con un acelerador lineal. Manejo de instrumentación para calibración de un acelerador lineal.\nConexión remota desde el aula: Interacción con planificadores de uso clínico: resolución de problemas reales de planificación. Interacción con sistemas de radioterapia adaptativa: resolución de problemas de registro de imágenes.\n\nPreparación y exposición de temas propuestos."
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#section-4",
+    "href": "Temas/PresentacionAsignatura.html#section-4",
+    "title": "Física de la Radioterapia",
+    "section": "",
+    "text": "Preparación y exposición de temas propuestos\n\nAl finalizar el primer bloque se publicará una lista de temas.\nCada alumno tiene que elegir un tema. No se admite que dos o más alumnos elijan el mismo tema.\nPara antes de las vacaciones de Semana Santa hay que enviar un pequeño esquema sobre cómo se piensa hacer la presentación: bibliografía y fuentes de información, reparto del tiempo, ideas principales y conclusiones.\nLas dos últimas clases del curso se dedican a que cada alumno presente al resto de la clase su tema.\nCada alumno dispondrá de seis minutos para realizar su exposición."
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#section-5",
+    "href": "Temas/PresentacionAsignatura.html#section-5",
+    "title": "Física de la Radioterapia",
+    "section": "",
+    "text": "Examen final\n\nExamen tipo test de contenido conceptual.\n40-60 preguntas.\nCuatro opciones, una única valida.\nNo restan los errores.\nNo hay nota de corte."
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#calificación",
+    "href": "Temas/PresentacionAsignatura.html#calificación",
+    "title": "Física de la Radioterapia",
+    "section": "Calificación",
+    "text": "Calificación\n\nPeso en la nota final:\n\n3/10: Problemas propuestos y prácticas.\n2/10: Presentación del trabajo.\n5/10: Examen final."
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#distribución-de-calificaciones",
+    "href": "Temas/PresentacionAsignatura.html#distribución-de-calificaciones",
+    "title": "Física de la Radioterapia",
+    "section": "Distribución de calificaciones",
+    "text": "Distribución de calificaciones\nDatos de los cursos 21/22, 22/23 y 23/24:"
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#software-para-los-seminarios",
+    "href": "Temas/PresentacionAsignatura.html#software-para-los-seminarios",
+    "title": "Física de la Radioterapia",
+    "section": "Software para los seminarios",
+    "text": "Software para los seminarios"
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#software-de-uso-clínico-para-planificación-de-tratamientos",
+    "href": "Temas/PresentacionAsignatura.html#software-de-uso-clínico-para-planificación-de-tratamientos",
+    "title": "Física de la Radioterapia",
+    "section": "Software de uso clínico para planificación de tratamientos",
+    "text": "Software de uso clínico para planificación de tratamientos\n\n\n\n\n\nEclipse Varian\n\n\n\n\n\n\nRayStation RayLabs"
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#bibliografía",
+    "href": "Temas/PresentacionAsignatura.html#bibliografía",
+    "title": "Física de la Radioterapia",
+    "section": "Bibliografía",
+    "text": "Bibliografía\n\nHendee, W.R.: Radiation therapy physics.\nKhan, Faiz M.: The physics of radiation therapy.\nSEFM: Fundamentos de Física Médica, vols 1 y 3.\nOIEA: Radiation Oncology Physics (Acceso web).\nAttix, F.H.: Introduction to radiological physics and radiation dosimetry.\nPaganeti, H.: Proton Therapy Physics, Second Edition.\nGalle, P. y Paulin R.: Biofísica. Radiobiología y Radiopatología.\nMayles, P., Nahum, A.E., Rosenwald, J-C.: Handbook of radiotherapy physics: theory and practice.\nJayaraman, S., Lanzl, L.H.: Clinical Radiotherapy Physics.\nHuang, H.K.: PACS-Based Multimedia Imaging Informatics."
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#section-6",
+    "href": "Temas/PresentacionAsignatura.html#section-6",
+    "title": "Física de la Radioterapia",
+    "section": "",
+    "text": "Otros recursos\n\nRevistas:\n\nMedical Physics.\nPhysics in Medicine and Biology.\nPhysica Medica.\nBritish Journal of Radiology.\nRevista de Física Médica.\n\nEnlaces útiles:\n\nSEFM\nAAPM\nEFOMP\nIAEA\nRadiation Physics\nNIST"
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#section-7",
+    "href": "Temas/PresentacionAsignatura.html#section-7",
+    "title": "Física de la Radioterapia",
+    "section": "",
+    "text": "Elementos básicos para la instalación\n\nUna instalación de python version 3.9\n\nSe recomienda emplear conda y crear un entorno virtual con python 3.9\nEn el caso de que nuestro ordenador sea un Mac con procesador Apple Silicon (M1, M2, M3…) el entorno virtual se tiene que crear con arquitectura amd.\n\nUna instalación de pip\n\nDocumentación para la instalación\n\nPágina de openTPS &gt; Easy Quickstart"
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#section-8",
+    "href": "Temas/PresentacionAsignatura.html#section-8",
+    "title": "Física de la Radioterapia",
+    "section": "",
+    "text": "Instalación de conda\n\nUsuarios que prefieran entornos gráficos de instalación: instalar Anaconda\nAlternativamente, mi recomendación es utilizar miniconda\n\nPara los distintos sistemas operativos utilizar las instrucciones de instalación de miniconda\n\n\nCreación y activación del entorno virtual python 3.9\nCon conda activado, desde la linea de comandos correr\nconda create --name OpenTPS python=3.9\nUsuarios de ordenadores con chips Apple Silicon\nconda create --platform osx-64 --name OpenTPS python=3.9\nActivar el entorno\nconda activate OpenTPS"
+  },
+  {
+    "objectID": "Temas/PresentacionAsignatura.html#section-9",
+    "href": "Temas/PresentacionAsignatura.html#section-9",
+    "title": "Física de la Radioterapia",
+    "section": "",
+    "text": "Instalación de openTPS\nDesde el entorno OpenTSP correr el comando\npip install opentps\nCorrer el programa\nDesde la línea de comandos\nopentps"
   }
 ]
