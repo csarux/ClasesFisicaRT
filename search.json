@@ -343,6 +343,188 @@
     "text": "Instalación de openTPS\nDesde el entorno OpenTSP correr el comando\npip install opentps\nCorrer el programa\nDesde la línea de comandos\nopentps"
   },
   {
+    "objectID": "Temas/DICOM.html#qué-es-dicom",
+    "href": "Temas/DICOM.html#qué-es-dicom",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "¿Qué es DICOM?",
+    "text": "¿Qué es DICOM?\n\nDefinición: Digital Imaging and Communications in Medicine.\nPropósito: Facilitar la interoperabilidad en imágenes médicas.\nÁreas de uso: Radiología, cardiología, radioterapia, entre otras.\nComponentes clave:\n\nProtocolo de comunicación para transmisión de datos.\nFormato de archivo para combinar imágenes y metadatos."
+  },
+  {
+    "objectID": "Temas/DICOM.html#quién-desarrolla-el-estándar-dicom",
+    "href": "Temas/DICOM.html#quién-desarrolla-el-estándar-dicom",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "¿Quién desarrolla el estándar DICOM?",
+    "text": "¿Quién desarrolla el estándar DICOM?\n\nOrganización: Comité DICOM\nAfiliación: National Electrical Manufacturers Association (NEMA)\nColaboración: American College of Radiology (ACR)\nComposición del Comité:\n\nRepresentantes de la industria de la salud\nFabricantes de equipos médicos\nOrganizaciones profesionales\n\nObjetivo: Actualizar y mejorar continuamente el estándar"
+  },
+  {
+    "objectID": "Temas/DICOM.html#características-clave-de-dicom",
+    "href": "Temas/DICOM.html#características-clave-de-dicom",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Características clave de DICOM",
+    "text": "Características clave de DICOM\n\nInteroperabilidad: Estándar global para dispositivos médicos.\nCompatibilidad: Modalidades como CT, MRI, PET, etc.\nProtocolo basado en TCP/IP: Fiabilidad en transferencia de datos.\nSeguridad: Encriptación y autenticación opcionales."
+  },
+  {
+    "objectID": "Temas/DICOM.html#modelo-de-comunicación-dicom",
+    "href": "Temas/DICOM.html#modelo-de-comunicación-dicom",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Modelo de comunicación DICOM",
+    "text": "Modelo de comunicación DICOM\n\nArquitectura Cliente-Servidor:\n\nSCU (Service Class User): Cliente que solicita servicios (e.g., estación de trabajo).\nSCP (Service Class Provider): Servidor que proporciona servicios (e.g., PACS).\n\nServicios principales:\n\nAlmacenamiento: Envío de imágenes al servidor.\nConsulta/Recuperación: Acceso a datos almacenados.\nImpresión: Envío a dispositivos de impresión médica."
+  },
+  {
+    "objectID": "Temas/DICOM.html#flujo-de-trabajo-general-en-dicom",
+    "href": "Temas/DICOM.html#flujo-de-trabajo-general-en-dicom",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Flujo de trabajo General en DICOM",
+    "text": "Flujo de trabajo General en DICOM\n\nAdquisición: Modalidad genera imágenes DICOM.\nTransmisión: Envío de imágenes al servidor o PACS.\nAlmacenamiento: Archivo de imágenes con metadatos.\nConsulta/Recuperación: Acceso por dispositivos autorizados."
+  },
+  {
+    "objectID": "Temas/DICOM.html#dicom-conformance-statement",
+    "href": "Temas/DICOM.html#dicom-conformance-statement",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "DICOM Conformance Statement",
+    "text": "DICOM Conformance Statement\nEl protocolo DICOM es implementado por cada fabricante.\nUn producto no se considera dentro del protocolo si no cuenta con su DICOM Conformance Statement.\nUna Declaración de Conformidad DICOM es un documento proporcionado por el fabricante que describe cómo su producto cumple con el estándar DICOM.\n¿Por qué se crea?\n\nCumplimiento: Demuestra que el producto cumple con los estándares requeridos para la imagen médica.\nTransparencia: Proporciona información detallada sobre las capacidades y limitaciones del producto.\nInteroperabilidad: Asegura que diferentes dispositivos y software de imagen médica puedan trabajar juntos sin problemas."
+  },
+  {
+    "objectID": "Temas/DICOM.html#dicom-conformance-statement-1",
+    "href": "Temas/DICOM.html#dicom-conformance-statement-1",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "DICOM Conformance Statement",
+    "text": "DICOM Conformance Statement\n¿Para qué se utiliza?\n\nIntegración: Ayuda a los los profesionales de la salud y de TI a entender cómo integrar el dispositivo con otros sistemas.\nResolución de Problemas: Asiste en el diagnóstico y resolución de problemas de compatibilidad.\nAdquisición: Ayuda en el proceso de toma de decisiones al comprar nuevos equipos de imagen médica.\n\nComponentes clave\n\nServicios DICOM Soportados: Lista los servicios DICOM que el producto soporta (por ejemplo, almacenamiento de imágenes, consulta/recuperación).\nProtocolos de Comunicación: Detalla los protocolos de red y formatos de datos utilizados.\nOpciones de Configuración: Describe los parámetros y configuraciones que se pueden ajustar.\nNiveles de Cumplimiento: Especifica el nivel de cumplimiento con el estándar DICOM."
+  },
+  {
+    "objectID": "Temas/DICOM.html#qué-es-dicom-rt",
+    "href": "Temas/DICOM.html#qué-es-dicom-rt",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "¿Qué es DICOM RT?",
+    "text": "¿Qué es DICOM RT?\n\nExtensión de DICOM: Diseñada para gestionar datos específicos de radioterapia.\nPropósito: Estandarizar el manejo de:\n\nContornos y volúmenes de interés (VOI).\nDistribuciones de dosis.\nPlanes de tratamiento.\nInformación de dispositivos.\n\nUso: Conectar diferentes modalidades de imagen, sistemas de planificación (TPS) y unidades de tratamiento."
+  },
+  {
+    "objectID": "Temas/DICOM.html#componentes-clave-de-dicom-rt",
+    "href": "Temas/DICOM.html#componentes-clave-de-dicom-rt",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Componentes clave de DICOM RT",
+    "text": "Componentes clave de DICOM RT\n\nRT Structure Set (RTSS):\n\nDefine contornos anatómicos y regiones de interés.\n\nRT Plan:\n\nDetalles del plan de tratamiento, incluyendo configuraciones del haz.\n\nRT Dose:\n\nDistribuciones de dosis calculadas en el paciente.\n\nRT Beams Treatment Record:\n\nRegistro del tratamiento entregado."
+  },
+  {
+    "objectID": "Temas/DICOM.html#flujo-de-trabajo-en-radioterapia-con-dicom-rt",
+    "href": "Temas/DICOM.html#flujo-de-trabajo-en-radioterapia-con-dicom-rt",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Flujo de trabajo en Radioterapia con DICOM RT",
+    "text": "Flujo de trabajo en Radioterapia con DICOM RT\n\nAdquisición de imágenes:\n\nModalidades como CT o MRI generan imágenes base en formato DICOM.\n\nPlanificación del tratamiento:\n\nRegistro de imágenes de diferentes modalidades (cambios de coordenadas).\nDefinición de volúmenes y órganos mediante RTSS (estructuras).\nEl software de planificación (TPS) utiliza RTSS y genera RT Plan y RT Dose (plan y dosis).\n\nEntrega del tratamiento:\n\nLos dispositivos de tratamiento ejecutan el RT Plan (plan).\n\nVerificación y registro:\n\nDocumentación mediante RT Treatment Record (registros de tratamiento)."
+  },
+  {
+    "objectID": "Temas/DICOM.html#flujo-de-trabajo-en-radioterapia-con-dicom-rt-1",
+    "href": "Temas/DICOM.html#flujo-de-trabajo-en-radioterapia-con-dicom-rt-1",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Flujo de trabajo en Radioterapia con DICOM RT",
+    "text": "Flujo de trabajo en Radioterapia con DICOM RT\n\n\n\n\n\ngraph TD\n    CT[CT]\n    RM[RM]\n    PET[PET]\n    OIS[OIS]\n    TPS[TPS]\n    LINAC1[LINAC1]\n    LINACn[LINACn]\n    BRAQUI1[BRAQUI1]\n    BRAQUIn[BRAQUIn]\n    \n\n    CT --&gt; OIS\n    RM --&gt; OIS\n    PET --&gt; OIS\n\n    CT --&gt; TPS\n    RM --&gt; TPS\n    PET --&gt; TPS\n\n    OIS -- OIS &lt;--&gt; TPS\n\n    LINAC1 &lt;--&gt; OIS\n    BRAQUI1 &lt;--&gt; OIS\n    LINACn &lt;--&gt; OIS\n    BRAQUIn &lt;--&gt; OIS"
+  },
+  {
+    "objectID": "Temas/DICOM.html#instalación-de-plastimatch-en-colab",
+    "href": "Temas/DICOM.html#instalación-de-plastimatch-en-colab",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Instalación de plastimatch en Colab",
+    "text": "Instalación de plastimatch en Colab\nGoogle Colab utiliza una distribución Ubuntu sin paquete plastimatch. Si intentamos apt install plastimatch nos devuelve Package 'plastimatch' has no installation candidate.\nAfortunadamente el módulo pyplastimatch resuelve esta limitación empequetando su propia compilación.\nLa siguiente celda instala el ejecutable plastimatch y el módulo pyplastimatch que lo encapsula."
+  },
+  {
+    "objectID": "Temas/DICOM.html#creación-de-una-estructura-de-datos-rt",
+    "href": "Temas/DICOM.html#creación-de-una-estructura-de-datos-rt",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Creación de una estructura de datos RT",
+    "text": "Creación de una estructura de datos RT\nCT sintético\n\nDimensiones:\n\nLado: 110 voxels en cada dimensión espacial\nTamaño de voxel: 1 mm en cada dirección (110 cortes de CT)\n\nManiquí: cuba (paralelepípedo) de agua\n\nTamaño: 100 mm en cada dimensión espacial\nDemográficos y posición\n\n\nEstructuras\n\nBODY: contorno externo de la cuba\nPTV: una esfera centrada en la cuba\n\nRadio: 10 mm"
+  },
+  {
+    "objectID": "Temas/DICOM.html#código-para-la-creación-de-la-estructura-de-datos",
+    "href": "Temas/DICOM.html#código-para-la-creación-de-la-estructura-de-datos",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Código para la creación de la estructura de datos",
+    "text": "Código para la creación de la estructura de datos\n\n\n# Creación de la estructura DICOM de datos. Plastimatch crea los archivos de imagen, un archivo de estructuras y otro de dosis.\n!plastimatch synth \\\n  --background -1000 \\\n  --foreground 0 \\\n  --pattern rect \\\n  --output-dicom \"mydata/cuba\" \\\n  --rect-size \"-50 50 -50 50 -50 50\" \\\n  --origin \"-55 -55 -55\" \\\n  --spacing \"1 1 1\" \\\n  --dim \"110 110 110\" \\\n  --patient-id \"TestDICOM01\" \\\n  --patient-name \"CUBA^MANIQUI\" \\\n  --patient-pos \"hfs\"\n\n# plastimatch ha creado un archivo de estructurs y uno de dosis que no queremos\n!rm -f mydata/cuba/rtss*.dcm\n!rm -f mydata/cuba/dose*.dcm\n\n# Creación de la máscara para el contorno externo\n!plastimatch synth \\\n  --background 0 \\\n  --foreground 1 \\\n  --pattern rect \\\n  --output \"mydata/cuba/ss/BODY.mha\" \\\n  --rect-size \"-50 50 -50 50 -50 50\" \\\n  --origin \"-55 -55 -55\" \\\n  --spacing \"1 1 1\" \\\n  --dim \"500 500 500\"\n\n# Creación de la máscara para el PTV\n!plastimatch synth \\\n  --background 0 \\\n  --foreground 1 \\\n  --pattern \"sphere\" \\\n  --output \"mydata/cuba/ss/PTV.mha\" \\\n  --radius \"10\" \\\n  --center \"0 0 0\" \\\n  --origin \"-55 -55 -55\" \\\n  --spacing \"1 1 1\" \\\n  --dim \"500 500 500\"\n\n# Creación de un archivo DICOM de estructuras a partir de las máscaras manteniendo los demográficos del paciente.\n!plastimatch convert \\\n  --input-prefix mydata/cuba/ss \\\n  --output-dicom mydata/cuba \\\n  --referenced-ct mydata/cuba"
+  },
+  {
+    "objectID": "Temas/DICOM.html#operaciones-de-archivos",
+    "href": "Temas/DICOM.html#operaciones-de-archivos",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Operaciones de archivos",
+    "text": "Operaciones de archivos\n\nImportación del módulo google.colab\nComprimir los datos\nDescargar\nLimpiar"
+  },
+  {
+    "objectID": "Temas/DICOM.html#código-para-las-operaciones-de-archivos",
+    "href": "Temas/DICOM.html#código-para-las-operaciones-de-archivos",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Código para las operaciones de archivos",
+    "text": "Código para las operaciones de archivos\nImportar módulo\n\n\nfrom google.colab import files\n\n\nComprimir archivos\n\n\n!zip -q -j /content/cuba.zip /content/mydata/cuba/*\n\n\nDescargar archivos\n\n\nfiles.download('/content/cuba.zip')\n\n\n\n\n\n\n\n\nLimpiar (no ejecutar aún)\n\n\n!rm -f /content/cuba.zip\n\n\n\n\n!rm -rf mydata"
+  },
+  {
+    "objectID": "Temas/DICOM.html#propiedades-dicom-estudio",
+    "href": "Temas/DICOM.html#propiedades-dicom-estudio",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Propiedades DICOM Estudio",
+    "text": "Propiedades DICOM Estudio\n\nStudyInstanceUID: Identificador único para el estudio. Asegura la pertenencia al estudio de las imágenes y series.\nSeriesInstanceUID: Identificador único para la serie dentro del estudio. Asegura la pertenencia a la serie de las imágenes.\nStudyID: Identificador del estudio del sistema de gestión de imágenes.\nSeriesNumber: Número que identifica la serie dentro del estudio.\nInstanceNumber: Número que identifica la imagen dentro de la serie.\nStudyDate y StudyTime: Fecha y hora en del estudio.\nAccessionNumber: Identificador del estudio en el sistema de información radiológica (RIS).\nModality: CT, MR, PET, US…\nStationName: Nombre de la estación de trabajo o equipo donde se realizó el estudio."
+  },
+  {
+    "objectID": "Temas/DICOM.html#inspección-propiedades-imágenes-dicom",
+    "href": "Temas/DICOM.html#inspección-propiedades-imágenes-dicom",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Inspección propiedades imágenes DICOM",
+    "text": "Inspección propiedades imágenes DICOM\nImportar módulo e instalar el módulo pydicom\n\n\n!pip install pydicom\n\n\n\n\nimport pydicom as dcm\n\n\nLeer un archivo de imagen\n\n\nimgds = dcm.dcmread('image0041_1.2.826.0.1.3680043.8.274.1.1.481037312.1974.1734464449.301060.dcm')\n\n\nExplorar propiedades DICOM\n\n\nimgds.StudyInstanceUID\n\n'1.2.826.0.1.3680043.8.274.1.1.481037312.1974.1734464449.300955'"
+  },
+  {
+    "objectID": "Temas/DICOM.html#datos-demográficos",
+    "href": "Temas/DICOM.html#datos-demográficos",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Datos demográficos",
+    "text": "Datos demográficos\nLeer datos del paciente de forma estructurada\n\n\nprint(f'ID: {imgds.PatientID}, Apellido^Nombre: {imgds.PatientName}')\n\nID: TestDICOM01, Apellido^Nombre: CUBA^MANIQUI\n\n\n\nNormalmente el ID se corresponde con el número de historia del paciente."
+  },
+  {
+    "objectID": "Temas/DICOM.html#propiedades-dicom-identificación-paciente",
+    "href": "Temas/DICOM.html#propiedades-dicom-identificación-paciente",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Propiedades DICOM Identificación Paciente",
+    "text": "Propiedades DICOM Identificación Paciente\n\nPatientName: El nombre del paciente.\nPatientID: Un identificador único para el paciente.\nPatientBirthDate: La fecha de nacimiento del paciente.\nPatientSex: El sexo del paciente.\n\ny otras…"
+  },
+  {
+    "objectID": "Temas/DICOM.html#propiedades-dicom-reconstrucción-espacial",
+    "href": "Temas/DICOM.html#propiedades-dicom-reconstrucción-espacial",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Propiedades DICOM Reconstrucción espacial",
+    "text": "Propiedades DICOM Reconstrucción espacial\n\nPixelSpacing: Distancia física (mm) entre píxels adyacentes en la imagen. Dos valores: la distancia en la dirección de las filas (eje X) y en la de las columnas (eje Y).\nSliceThickness: Grosor (mm) de cada corte o sección de la imagen. Relevante para la reconstrucción en 3D.\nImagePositionPatient: Coordenadas del centro del primer píxel (superior izquierdo) de la imagen en el sistema de coordenadas del paciente, expresadas en milímetros (mm).\nImageOrientationPatient: Orientación de la imagen en el sistema de coordenadas del paciente: dos vectores que dan la dirección de las filas y las columnas de la imagen en el espacio del paciente.\nSliceLocation: Posición del corte (mm) en el eje Z del sistema de coordenadas del paciente. Útil para ordenar las imágenes en una serie de cortes.\nSpacingBetweenSlices: Distancia (mm) entre centros de cortes adyacentes. Relevante para la reconstrucción 3D.\nRows y Columns: Número de filas y columnas en la imagen."
+  },
+  {
+    "objectID": "Temas/DICOM.html#identificación-de-archivos-de-estructuras-rt",
+    "href": "Temas/DICOM.html#identificación-de-archivos-de-estructuras-rt",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Identificación de archivos de estructuras RT",
+    "text": "Identificación de archivos de estructuras RT\n\nStudyInstanceUID: Identificador único para el estudio\nSeriesInstanceUID: Identificador único para la serie dentro del estudio.\nReferencedFrameOfReferenceUID: Identificador único del marco de referencia al que se refieren las estructuras RT. Asegura que las estructuras están alineadas con las imágenes correspondientes.\nReferencedSOPInstanceUID: Identificador único del objeto de servicio (SOP) referenciado, que puede incluir imágenes específicas o series de imágenes a las que se aplican las estructuras RT.\n\nEstas propiedades aseguran que las estructuras se aplican correctamente a las imágenes correspondientes."
+  },
+  {
+    "objectID": "Temas/DICOM.html#identificación-de-archivos-de-dosis",
+    "href": "Temas/DICOM.html#identificación-de-archivos-de-dosis",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Identificación de archivos de dosis",
+    "text": "Identificación de archivos de dosis\n\nStudyInstanceUID: Identificador único del estudio al que pertenece el archivo de dosis.\nSeriesInstanceUID: Identificador único de la serie a la que pertenece el archivo de dosis.\nReferencedSOPInstanceUID: Identificador único del objeto de servicio (SOP) referenciado, que puede incluir imágenes específicas o series de imágenes a las que se aplican las estructuras de dosis."
+  },
+  {
+    "objectID": "Temas/DICOM.html#ventajas-de-dicom-rt",
+    "href": "Temas/DICOM.html#ventajas-de-dicom-rt",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Ventajas de DICOM RT",
+    "text": "Ventajas de DICOM RT\n\nInteroperabilidad:\n\nConecta múltiples sistemas (modalidades de imagen, TPS, unidades de tratamiento).\n\nEstandarización:\n\nSimplifica el intercambio de datos entre equipos de distintos fabricantes.\n\nGestión integral:\n\nFacilita planificación, entrega y seguimiento del tratamiento.\n\nTrazabilidad:\n\nRegistra de forma precisa los datos del tratamiento."
+  },
+  {
+    "objectID": "Temas/DICOM.html#retos-en-la-implementación-de-dicom-rt",
+    "href": "Temas/DICOM.html#retos-en-la-implementación-de-dicom-rt",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "Retos en la implementación de DICOM RT",
+    "text": "Retos en la implementación de DICOM RT\n\nComplejidad del estándar:\n\nRequiere formación específica.\n\nCompatibilidad:\n\nDispositivos antiguos pueden tener limitaciones.\n\nConsistencia:\n\nGarantizar transferencias y uso de datos sin errores."
+  },
+  {
+    "objectID": "Temas/DICOM.html#dicom-rt-y-el-futuro-de-la-radioterapia",
+    "href": "Temas/DICOM.html#dicom-rt-y-el-futuro-de-la-radioterapia",
+    "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
+    "section": "DICOM RT y el futuro de la Radioterapia",
+    "text": "DICOM RT y el futuro de la Radioterapia\n\nRadioterapia adaptativa:\n\nAjustes en tiempo real basados en cambios anatómicos.\n\nIntegración con IA:\n\nAnálisis de datos para mejorar precisión y personalización.\n\nConectividad en la nube:\n\nFacilitar acceso remoto y colaboración entre equipos."
+  },
+  {
     "objectID": "Temas/IntroduccionRT.html#qué-es-la-radioterapia",
     "href": "Temas/IntroduccionRT.html#qué-es-la-radioterapia",
     "title": "Introducción a la Radioterapia",
