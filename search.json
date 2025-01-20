@@ -588,6 +588,223 @@
     "text": "Detectores de diamante\n\n\n\nBasados en el cambio de resistencia de una pieza de diamante debido a la radiación.\nLa respuesta no depende de la energía, la orientación o la temperatura.\nTamaño muy pequeño (algunos mm\\({}^3\\)), muy útiles para la medida de dosis en zonas de alto gradiente.\nNo pierden señal con la dosis acumulada.\nComposición equivalente a tejido.\n\n\n\n\n\nExigen una irradiación previa para eliminar efectos de polarización.\nPor sus características son los detectores ideales para medidas relativas puntuales."
   },
   {
+    "objectID": "Temas/CamarasIonizacion.html#introducción",
+    "href": "Temas/CamarasIonizacion.html#introducción",
+    "title": "Detectores",
+    "section": "Introducción",
+    "text": "Introducción\n\nRelevancia: Las cámaras de ionización son el detector estándar para realizar medidas de dosis absoluta en entornos clínicos. \nFuncionamiento:\n\nLas cámaras de ionización son básicamente (ver esquema adjunto) capacitores en los que el dieléctrico que separa los electrodos es un gas, normalmente aire.\nLas cámaras que se emplean en los Hospitales para la medida de haces clínicos son abiertas, la cantidad de aire que contienen depende de las condiciones ambientales de presión y temperatura.\nPara funcionar una cámara de ionización tiene que estar polarizada. El voltaje de polarización lo proporciona un electrómetro al que está conectada la cámara.\nCon el paso de la radiación el gas que contienen se ioniza. La polarización de los electrodos recolecta los iones produciendo una corriente que es recogida por el electrómetro.\nLa cantidad de carga recolectada es muy pequeña, del orden de nC/Gy, por lo que se necesita un electrómetro de precisión.\nLa corriente producida depende de la tasa de dosis."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section",
+    "href": "Temas/CamarasIonizacion.html#section",
+    "title": "Detectores",
+    "section": "",
+    "text": "Dependencia con el voltaje\nEl voltaje aplicado está en el rango donde los iones no adquieren suficiente energía para crear nuevos iones. En estas condiciones, la corriente recogida no depende del voltaje.\n\n\n\nRespuesta de un detector de ionización en función del voltaje aplicado."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-1",
+    "href": "Temas/CamarasIonizacion.html#section-1",
+    "title": "Detectores",
+    "section": "",
+    "text": "Características generales\n\nSon el método más antiguo para medir la radiación con precisión \nSu comportamiento es conocido en profundidad, se ha estudiado en detalle teórica y experimentalmente.\nVentajas:\n\nAlta fiabilidad.\nAlta precisión: 2% o mejor para medidas en hospitales, incluida toda la cadena metrológica.\n\nDesventajas:\n\nRequiere aparataje relativamente complejo (fuente estable de voltaje, electrómetro de alta precisión).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNotas históricas\n\n\nLos Curie pudieron construir cámaras de ionización [imagen superior] porque contaban con un electrómetro de alta precisión hecho con cuarzo piezoeléctrico, desarrollado por Pierre Curie en sus estudios sobre piezoelectricidad.\nEstas cámaras de ionización, ver una reproducción en la imagen de la izquierda, actuando como protoactivímetros, permitieron a Marie realizar su tesis sobre radiactividad que eventualmente condujeron al descubrimiento del Polonio y Radio, la fundación del Instituto del Radio y a los primeros pasos de la Radioterapia."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-2",
+    "href": "Temas/CamarasIonizacion.html#section-2",
+    "title": "Detectores",
+    "section": "",
+    "text": "Tipos de cámaras de ionización\n\n\nCámaras abiertas\n\nUtilizadas como patrones primarios.\nÚtiles solo para bajas energías.\n\nCámaras cilíndricas\n\nDiseño robusto y fiable.\nTamaños diversos para campos grandes o pequeños.\nSimetría axial.\n\nCámaras planas\n\nMenos fiables.\nUso en electrones de baja energía.\n\n\n\n\n\nCámara abierta. Tomado de N. Takata\n\n\n\n\n\nCámara cilíndrica. Radiation Oncology Physics Handbook IAEA\n\n\n\n\n\nCámara plana. Tomado de RadiologyKey"
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-3",
+    "href": "Temas/CamarasIonizacion.html#section-3",
+    "title": "Detectores",
+    "section": "",
+    "text": "Paredes de la cavidad\n\nLa cavidad se suele construir con materiales conductores equivalentes a tejido (bajo Z): grafito, aluminio.\nLas paredes se hacen lo más finas posible para evitar perturbaciones en la fluencia.\n\nElectrodos en cámaras planas\nEs frecuente separar cada electrodo en dos zonas:\n\n\n\nZona central: Conectada al electrómetro que mide la corriente.\nZona de guarda: El borde, polarizada con el mismo voltaje pero no conectada al electrómetro.\nLa zona del borde del campo eléctrico (con menor eficiencia de colección de iones) no contribuye a la medida.\n\n\n\n\n\n\n\n\n\nSe reduce la corriente de fuga o corriente que lee la cámara en ausencia de radiación."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-4",
+    "href": "Temas/CamarasIonizacion.html#section-4",
+    "title": "Detectores",
+    "section": "",
+    "text": "Fluido Interno\n\nPor sencillez se suele utilizar el aire; en algunas aplicaciones especiales se emplean líquidos.\n\nCámaras de aire\n\nAbiertas:\n\nLa cantidad total de aire contenido en la cámara y con ella su respuesta, varía con la presión y la temperatura.\nLa mayoría de las cámaras utilizada en la dosimetría de campos de teleterapia son de este tipo.\n\nHerméticas:\n\nLa cantidad de aire es constante y no es necesario aplicar un factor de corrección.\nSon más frágiles.\nLas cámaras monitoras de los aceleradores, las cámaras que actúan como detectores de realimentación en el bucle de control de los aceleradores lineales y monitorizan la cantidad de radiación emitida, suelen ser cámaras herméticas.\nSu sensibilidad puede cambiar por procesos de contaminación activada por la propia radiación."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-5",
+    "href": "Temas/CamarasIonizacion.html#section-5",
+    "title": "Detectores",
+    "section": "",
+    "text": "Cámaras líquidas\nEmplean agua o algún otro líquido adecuado para la detección de radiación ionizante.\n\n\n\n\n\nGonzález-Castaño et al. En este diseño el líquido llena unas pequeñas cavidades del soporte.\n\n\n\nVentajas\n\nMayor densidad: Permite una mayor eficiencia de detección y una mejor resolución espacial.\nEstabilidad: No son sensible a variaciones de presión y temperatura.\nEquivalencia tisular: Algunos líquidos pueden ser seleccionados para ser equivalentes a tejido humano, útiles para aplicaciones en dosimetría médica.\n\n\nDesventajas\n\nComplejidad: Las cámaras de ionización líquidas pueden ser más complejas de fabricar y mantener debido a la necesidad de manejar y contener el líquido.\nFragilidad: Pueden ser más frágiles y susceptibles a daños en comparación con las cámaras de aire.\nCalibración: La calibración es mas complicada debido a las propiedades específicas del líquido.\n\nSe usan para investigación y en medidas exigentes en resolución espacial y perturbación de la fluencia (radiocirugía). Dura competencia con los detectores de diamante, mucho más robustos."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-6",
+    "href": "Temas/CamarasIonizacion.html#section-6",
+    "title": "Detectores",
+    "section": "",
+    "text": "Caperuza de Equilibrio\n\n\nRecubrimiento que se coloca sobre la cámara de ionización cuando se quiere medir en aire para asegurar que se alcance el equilibrio de partículas cargadas en el volumen de medición.\n\nProtección: Protegen la cámara de ionización de posibles daños mecánicos y contaminación.\n\n\n\n\nLa caperuza de equilibrio suele estar hecha de materiales de número atómico bajo como plástico (PMMA), grafito o aluminio. En ocasiones emplean metales más pasados como latón o incluso plomo.\nLimitaciones para potenciales de aceleración superiores a 4-6 MV\n\nEquilibrio de partículas cargadas alterado por la aparición de contaminación electrónica proveniente del cabezal del acelerador.\nProducción de neutrones: por encima de potenciales de 10 MV se induce la producción de neutrones en los materiales de la caperuza de equilibrio, que pueden contribuir a la lectura.\nMateriales de la caperuza: Los materiales de bajo Z pueden no ser adecuados para energías altas, y el uso de materiales de Z alto podría introducir mayor producción de radiación secundaria no deseada."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-7",
+    "href": "Temas/CamarasIonizacion.html#section-7",
+    "title": "Detectores",
+    "section": "",
+    "text": "Holders\n\n\n  \n\nOrientación\nLas cámaras planas se orientan con su plano de medida perpendicular al eje del haz de radiación.\nLas cámaras cilíndricas se pueden orientar con su electrodo central paralelo o perpendicular al eje del haz.\nPara facilitar su sujeción y posibilitar su desplazamiento en el seno del agua los sistemas de medida están provistos de holders que aseguran la reproducibilidad geométrica.\nEn el sistema de PTW un conjunto de posicionadores y dedales aseguran la reproducibilidad de la colocación en el intercambio de orientación o de detector."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-8",
+    "href": "Temas/CamarasIonizacion.html#section-8",
+    "title": "Detectores",
+    "section": "",
+    "text": "Conjunto de cámaras y caperuzas1\n\n\n\n\n\nCámara cilíndrica sumergible tipo Farmer y caperuza de equilibrio. El exterior de la cámara es de grafito recubierto de PMMA. Volumen 0.6 cc\n\n\n\n\n\n\nCámara cilíndrica sumergible Semiflex 3D y caperuza de equilibrio. Dependencia con la orientación mínima. Volumen 0.07 cc.\n\n\n\n\n\n\nCámara cilíndrica sumergible PinPoint 3D y caperuza de equilibrio. Dependencia con la orientación mínima. Volumen 0.016 cc.\n\n\n\n\n\n\n\n\nCámara plana y cubierta de impermeabilización. Volumen 0.02 cc\n\n\n\n\n\n\nCámara plana sumergible para electrones. Volumen 0.35 cc.\n\n\n\nCatálogo de PTW"
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-9",
+    "href": "Temas/CamarasIonizacion.html#section-9",
+    "title": "Detectores",
+    "section": "",
+    "text": "Diagramas de las cámaras de mayor uso1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCámara Farmer\n\n\n\n\n\n\nCámara Semiflex 3D\n\n\n\n\n\n\nCámara Roos\n\n\n\nCatálogo de PTW"
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-10",
+    "href": "Temas/CamarasIonizacion.html#section-10",
+    "title": "Detectores",
+    "section": "",
+    "text": "Cámaras de pozo. Geometría \\(4\\pi\\)\n\n\n\n\n\n\nCámara de pozo de PTW1\n\n\n\n\nCámaras abiertas en forma de pozo con simetría cilíndrica.\nDiseñadas para la comprobación de la TKRA (tasa de referencia de kerma en aire) de fuentes de baja tasa para braquiterapia.\nPor su geometría \\(4\\pi\\) recogen prácticamente toda la emisión de la fuente reduciendo la dificultad asociada a la rápida variación de la tasa de dosis con la posición que muestran las fuentes de braquiterapia.\nPresentan una curva de respuesta con la posición en el pozo.\n\n\n\n\nDependencia de la respuesta con la posición de la fuente2\n\n\n\nCatálogo PTWDosimetry in Brachytherapy. TRS 492 IAEA"
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#factores-que-influyen-en-la-medida",
+    "href": "Temas/CamarasIonizacion.html#factores-que-influyen-en-la-medida",
+    "title": "Detectores",
+    "section": "Factores que influyen en la medida",
+    "text": "Factores que influyen en la medida\nPresión y temperatura\n\nLas cámaras abiertas tiene volumen de aire en su interior constante, pero la masa de aire no lo es.\nEs necesario corregir la lectura de la cámara por un factor igual al inverso del cociente de densidades entre las condiciones de medida y las de calibración:\n\n\\[\nk_{TP} = \\frac{(273.2 + t_{\\text{med}}) \\times P_{\\text{cal}}}{(273.2 + t_{\\text{cal}}) \\times P_{\\text{med}}}\n\\]\n\nNormalmente, \\(t_{\\text{cal}} = 20 \\, ^\\circ\\text{C}\\) y \\(P_{\\text{cal}} = 101.3 \\, \\text{kPa}\\). En cualquier caso serán los valores especificados en el certificado de calibración.\nLa temperatura especificada es la del medio que rodea a la cámara, no la del aire ambiental."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-11",
+    "href": "Temas/CamarasIonizacion.html#section-11",
+    "title": "Detectores",
+    "section": "",
+    "text": "Humedad\n\nLa humedad relativa del aire afecta a la medida de la cámara, porque influye en la tasa de recombinación de iones.\nSi el factor de calibración se da para una humedad relativa del 50%, no es necesaria corrección siempre que la humedad ambiental se mantenga entre el 20% y el 80%. Los Hospitales, como la mayoría de los ediciones de trabajo actuales, son instalaciones con el aire acondicionado con el objetivo de mantener una humedad relativa del 50%.\nSi el factor de calibración se da para aire seco, se multiplica por 0.997 para obtener el factor correspondiente a una humedad del 50%.\n\nEnergía de la radiación\n\nLa respuesta de la cámara para una dosis dada depende en general de la energía y el tipo de la radiación.\nEn esta dependencia influye sobre todo la composición de la cámara (y de la caperuza de equilibrio).\nPara las cámaras usadas habitualmente, la variación sobre el rango de energías terapéuticas suele ser inferior al 5%.\nLos factores de corrección para cada modelo y cada energía están medidos con precisiones del orden del 0.3% o mejores, y se pueden encontrar en protocolos de medida."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-12",
+    "href": "Temas/CamarasIonizacion.html#section-12",
+    "title": "Detectores",
+    "section": "",
+    "text": "Signo del voltaje de polarización\n\nHay varios efectos que pueden hacer que la respuesta de una cámara dependa del signo del voltaje utilizado para polarizarla:\n\nLa corriente creada por electrones Compton absorbidos en los electrodos.\nLas corrientes inducidas en el cable de la cámara.\n\nSi las lecturas con las dos polarizaciones son diferentes, se toma como valor correcto el promedio de las dos; a las lecturas se les aplica un factor de corrección:\n\n\\[\nk_{\\text{pol}} = \\frac{M_+ + M_-}{2 M_{\\text{cal}}}\n\\]\ndonde \\(M_+\\) es la respuesta con polarización positiva, \\(M_-\\) con negativa, y \\(M_{\\text{cal}}\\) con la polarización que se usó al calibrar la cámara.\n\n\n\n\n\n\nNecesidad del factor de corrección por polaridad\n\n\nDefinido de esta manera se establece una vez, durante la caracterización del detector, un factor de corrección por polaridad y a partir de ahí no es necesario medir con las dos polaridades.\nUn planteamiento posible pero menos eficiente sería medir siempre con las dos polaridades, obtener el promedio de las dos medidas y no emplear el factor de corrección."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-13",
+    "href": "Temas/CamarasIonizacion.html#section-13",
+    "title": "Detectores",
+    "section": "",
+    "text": "Recombinación de iones\n\nLos iones producidos por la radiación pueden recombinarse antes de llegar a los electrodos, reduciendo la carga total recogida. La probabilidad de recombinación depende de:\n\nLa tasa de dosis emitida por el acelerador.\nEl tipo de haz producido (pulsado, barrido o continuo).\nEl voltaje de polarización de la cámara.\n\nEl factor por recombinación \\(k_{\\text{s}}\\) se calcula mediante un tratamiento semiempírico.\n\nRecombinación de iones: aproximación lineal\nPara unas condiciones de medida al representar la variación del inverso de la lectura \\(1/M\\) en función del inverso de la tensión de polarización \\(1/V\\) se observa una dependencia lineal\n\\[\n\\frac{1}{M} = \\frac{1}{M_{\\text{sat}}} + \\frac{C}{V}\n\\]\n\n\\(M\\) es la corriente medida a un voltaje de polarización \\(V\\).\n\\(M_{\\text{sat}}\\) es la corriente corregida por saturación.\n\\(C\\) es una constante que depende de las características de la cámara y de la irradiación."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-14",
+    "href": "Temas/CamarasIonizacion.html#section-14",
+    "title": "Detectores",
+    "section": "",
+    "text": "Resolviendo la ecuación anterior realizando medidas en dos tensiones se obtiene\n\\[\nk_s = \\frac{1 - (V_1 / V_2)}{(M_1 / M_2) - (V_1 / V_2)}\n\\]\nEl método tiene incertidumbres asociadas al rango de tensiones elegidas. Más riguroso es realizar varias medidas a diferentes tensiones y realizar un ajuste lineal.\nRecombinación de iones: aproximación cuadrática\n\\[\nk_s = a_0 + a_1\\, \\left(\\frac{M_1}{M_2}\\right) + a_2 \\left(\\frac{M_1}{M_2}\\right)^2\n\\]\n\n\\(M_1\\) corresponde a la medida realizada a una tensión \\(V_1\\) y \\(M_2\\) a una medida realizada a una fracción conocida de la tensión \\(V_1\\), \\(V_2 = V_1/n\\).\nLos valores de los coeficientes \\(a_0\\), \\(a_1\\), \\(a_2\\) están recogidos en los protocolos de medida para valores concretos de \\(n\\) y distinguiendo entre haces pulsados y haces pulsados y barridos.\n\n\n\n\n\n\n\nEquivalencia de las dos aproximaciones\n\n\nPara \\(k_s &lt;\\) 1.03 las dos aproximaciones produces resultados con diferencias inferiores al 0.1%."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-15",
+    "href": "Temas/CamarasIonizacion.html#section-15",
+    "title": "Detectores",
+    "section": "",
+    "text": "Corriente de fugas\n\nDebido a fallos de aislamiento entre los electrodos, o en el cable de alimentación de la cámara, puede producirse corriente en la cámara en ausencia de radiación.\nDicha corriente se denomina corriente de fuga, y debe restarse a la corriente medida cuando hay radiación; así la corriente real será:\n\n\\[\nI_{\\text{real}} = I_{\\text{med}} - I_{\\text{fuga}}\n\\]\n\nSi la lectura se realiza en carga total acumulada, habrá que restar, a la medida de la carga con radiación, la medida de la carga recogida sin radiación durante un tiempo igual al que se usó para registrar la señal.\nLos electrómetros modernos vienen provistos de una función de cero que estima esta valor de fondo mediante una lectura que se realiza antes de comenzar las mediciones.\n\nEfecto tallo\n\nAlteraciones en la lectura introducidos por los cables que conectan a la cámara con el electrómetro:\n\nLa producción en el cable de radiación dispersa que llega a la cámara.\nLa producción en el cable de pares de iones que contribuyen a la corriente.\n\nSe estima estudiando cómo varía la respuesta al cambiar la posición del cable."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-16",
+    "href": "Temas/CamarasIonizacion.html#section-16",
+    "title": "Detectores",
+    "section": "",
+    "text": "Relación entre carga y dosis absorbida\n\nLa relación entre la carga recogida por una cámara, \\(Q\\), y la dosis absorbida es:\n\n\\[\nD_{\\text{aire}} = \\frac{Q}{m_{\\text{aire}}} \\cdot \\left(\\frac{W_{\\text{aire}}}{e}\\right) \\cdot \\prod k_i\n\\]\n\ndonde \\(m_{\\text{aire}}\\) es la masa de aire dentro del volumen de colección, \\(W_{\\text{aire}}\\) es la energía media necesaria para crear un par de iones y los \\(k_i\\) son factores de corrección que toman en cuenta los efectos descritos anteriormente.\n\\(W_{\\text{aire}}/e = (33.97 \\pm 0.06) \\, \\text{J/C}\\) para aire seco a 20ºC y 1 atm.\n\\(W_{\\text{aire}}/e = (33.77 \\pm 0.06) \\, \\text{J/C}\\) para aire a 20ºC y 1 atm con un 50% de humedad relativa.\n\nMedida absoluta de la dosis\n\nSi se conoce con precisión el volumen de la cámara, es posible realizar una medida absoluta de la dosis a partir de la ecuación anterior, solo factible para cámaras especiales (cámaras abiertas o cámaras esféricas) utilizadas en los laboratorios primarios de calibración.\nLas cámaras empleadas en los hospitales basan su calibración en la comparación con un patrón primario o secundario."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-17",
+    "href": "Temas/CamarasIonizacion.html#section-17",
+    "title": "Detectores",
+    "section": "",
+    "text": "Definición de incertidumbre: Intervalo probable donde se encuentra el valor real.\n\n\n\n\n\n\n\nDefinición operativa\n\n\nEstimación de las variaciones que pueden introducir las correcciones no realizadas.\n\n\n\n\nEn el mundo macroscópico las relaciones entre las variables son deterministas.\nLas variables aleatorias muestran la presencia de variables ocultas o de las que desconocemos su valor actual.\n\nEjemplo\n\nMedimos la dosis con una cámara de ionización pero no disponemos de barómetro. Tomamos la presión normal corregida por la altitud y no consideramos la posible variación respecto al valor promedio.\nIncluso aunque la dosis que queremos medir no cambie realmente observaremos variaciones asociadas a los cambios de presión.\n\nPlanteamiento erróneo: considerar que la dosis está cambiando\nPlanteamiento correcto: hacer una estimación de cuánto puede variar la presión respecto al valor tomado, estimar su impacto sobre y asignarlo como incertidumbre."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-18",
+    "href": "Temas/CamarasIonizacion.html#section-18",
+    "title": "Detectores",
+    "section": "",
+    "text": "Clasificación de incertidumbres\n\nLas incertidumbres de las mediciones se expresan como incertidumbres estándar relativas y la evaluación de las incertidumbres estándar se clasifica en tipo A y tipo B.\n\n\n\n\n\n\n\nTipo A\n\n\nLas incertidumbres estándar tipo A son aquellas que se evalúan mediante análisis estadístico de una serie de observaciones.\n\n\n\n\n\n\n\n\n\nTipo B\n\n\nLas incertidumbres estándar tipo A son aquellas que se evalúan por otros medios: conocimiento previo, experiencia, documentación, referencias, etc.\n\n\n\nEn nuestro ejemplo anterior la incertidumbre será de tipo B porque necesitaremos información que no proviene de nuestros datos sobre la variación normal de la presión en el sitio de medida.\n\n\n\n\n\n\nCategorización tradicional\n\n\nSe considera inadecuado distinguir entre contribuciones aleatorias y sistemáticas. Por ejemplo, una componente aleatoria de incertidumbre en una medición puede convertirse en una componente sistemática de incertidumbre en otra medición en la que el resultado de la primera medición se utiliza como un dato de entrada."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-19",
+    "href": "Temas/CamarasIonizacion.html#section-19",
+    "title": "Detectores",
+    "section": "",
+    "text": "Estimación de incertidumbres tipo A1\n\nEn una serie de \\(n\\) mediciones, con valores observados \\(x_i\\), la mejor estimación de la cantidad \\(x\\) se da generalmente por el valor medio aritmético:\n\n\\[\n\\bar{x} = \\frac{1}{n} \\sum_{i=1}^{n} x_i\n\\]\n\nLa dispersión de los n valores medidos \\(x_i\\) alrededor de su media \\(\\bar{x}\\) se puede caracterizar por la desviación estándar:\n\n\\[\ns(x_i) = \\sqrt{\\frac{1}{n-1} \\sum_{i=1}^{n} (x_i - \\bar{x})^2}\n\\]\n\nLa cantidad \\(s^2(x_i)\\) se llama varianza de la muestra.\n\nIAEA TRS398"
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-20",
+    "href": "Temas/CamarasIonizacion.html#section-20",
+    "title": "Detectores",
+    "section": "",
+    "text": "A menudo estamos interesados en la desviación estándar del valor medio, escrita como \\(s(\\bar{x})\\), para la cual se aplica la relación general:\n\n\\[\ns(\\bar{x}) = \\frac{s(x_i)}{\\sqrt{n}}\n\\]\n\nUna forma alternativa de estimar \\(s(\\bar{x})\\) se basaría en el resultado de varios grupos de mediciones. Si todos son del mismo tamaño, las fórmulas anteriores aún se pueden usar, siempre que \\(x_i\\) se tome como la media del grupo \\(i\\) y \\(\\bar{x}\\) sea la media general (o media de las medias) de los n grupos. Para grupos de diferentes tamaños, se tendrían que usar pesos estadísticos.\nLa incertidumbre estándar de tipo A, denotada aquí por \\(u_A\\), se identificará con la desviación estándar del valor medio; es decir:\n\n\\[\nu_A = s(\\bar{x})\n\\]\n\nUna determinación empírica de una incertidumbre no puede esperarse que dé su valor verdadero; por definición, es solo una estimación. Esto es válido tanto para las incertidumbres de tipo A como para las de tipo B.\nLa incertidumbre de tipo A en la medición de una cantidad puede, en principio, reducirse aumentando el número n de lecturas individuales."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-21",
+    "href": "Temas/CamarasIonizacion.html#section-21",
+    "title": "Detectores",
+    "section": "",
+    "text": "Estimación de incertidumbres tipo B1\n\nPara poder estimarse la incertidumbre estándar debe asumirse primero unos límites de variación y algún tipo de distribución de probabilidad. En nuestro ejemplo la presión en Madrid varía de forma normal con una variación máxima de 60 hPa.\nPor sencillez se suelen considerar distribuciones simples.\nSi se toma una distribución rectangular, igual probabilidad en cualquier lugar dentro de los límites máximos dados \\(-M\\) y \\(+M\\):\n\n\\[\nu_B = \\frac{M}{\\sqrt{3}}\n\\]\n\nSi la distribución asumida es triangular (con los mismos límites):\n\n\\[\nu_B = \\frac{M}{\\sqrt{6}}\n\\]\nIAEA TRS398"
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-22",
+    "href": "Temas/CamarasIonizacion.html#section-22",
+    "title": "Detectores",
+    "section": "",
+    "text": "Para una distribución Gaussiana (normal) la incertidumbre estándar se puede derivar estimando primero algunos límites \\(\\pm L\\) y luego dividiendo ese límite por un número adecuado:\n\n\\[\nu_B = \\frac{L}{k}\n\\]\n\ndonde \\(k = 2\\) si el experimentador está bastante seguro y \\(k = 3\\) si el experimentador está casi seguro de sus límites.1\nGeneralmente no se usan divisores distintos de 2 o 3 debido a la naturaleza aproximada de la estimación.\n\nEn nuestro ejemplo, el valor de \\(60\\) hPa ó \\(\\pm30\\) hPa corresponde a límites muy seguros (\\(k = 3\\)), llegaríamos al mismo resultado considerando un límite de \\(40\\) hPa tomando (\\(k = 2\\))"
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-23",
+    "href": "Temas/CamarasIonizacion.html#section-23",
+    "title": "Detectores",
+    "section": "",
+    "text": "Incertidumbres combinadas y expandidas\n\nDado que las incertidumbres de tipo A y tipo B son desviaciones estándar estimadas, se combinan para obtener una incertidumbre combinada \\(u_c\\) utilizando las reglas estadísticas para combinar varianzas:\n\n\\[\nu_c = \\sqrt{u_A^2 + u_B^2}\n\\]\n\nLa incertidumbre estándar combinada todavía tiene el carácter de una desviación estándar. Si se asume que tiene una densidad de probabilidad Gaussiana, la desviación estándar corresponde a un límite de confianza de aproximadamente el 68%.\nEs frecuente multiplicar la incertidumbre estándar combinada por un factor de cobertura \\(k\\) para obtener una incertidumbre expandida\n\n\\[\nu = k\\cdot u_c\n\\]\n\nLos valores del factor de cobertura de \\(k = 2\\) o \\(k = 3\\) corresponden a límites de confianza de aproximadamente el 95% o el 99%.\nEl valor numérico tomado para el factor de cobertura debe indicarse claramente."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-24",
+    "href": "Temas/CamarasIonizacion.html#section-24",
+    "title": "Detectores",
+    "section": "",
+    "text": "Tolerancia y rangos de aceptabilidad\n\n\n\n\n\n\nTolerancia\n\n\nRango en el que se debe encontrar el valor real para que el resultado de una prueba se considere aceptable.\n\n\n\n\nLa tolerancia se define por criterios externos al procedimiento de medida.\nTolerancia e incertidumbre son en principio dos conceptos independientes aunque en general consideramos deseable que la incertidumbre sea apreciablemente menor que la tolerancia.\n\nTolerancia modificada por la incertidumbre\n\nLa incertidumbre en las mediciones puede ampliar o reducir los intervalos de tolerancia, en función de la no criticidad o criticidad del resultado, para reflejar la variabilidad adicional introducida por factores desconocidos o no controlados y aumentar la confianza en obtener un resultado aceptable.\n\nPara ampliar la tolerancia por la incertidumbre (resultado no crítico), se puede sumar y restar la incertidumbre estimada a los límites de tolerancia originales. Por ejemplo, si el intervalo de tolerancia original es [L, U] y la incertidumbre es ±Δ, el intervalo modificado sería [L-Δ, U+Δ].\nPara reducir la tolerancia (resultado crítico) el intervalo modificado sería [L+Δ, U-Δ]"
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-25",
+    "href": "Temas/CamarasIonizacion.html#section-25",
+    "title": "Detectores",
+    "section": "",
+    "text": "Consideramos aceptable una pequeña posibilidad de que el resultado real caiga dentro de la tolerancia original\n\n\n\n\n\nConsideramos inaceptable una pequeña posibilidad de que el resultado real caiga fuera de la tolerancia original"
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-26",
+    "href": "Temas/CamarasIonizacion.html#section-26",
+    "title": "Detectores",
+    "section": "",
+    "text": "Control estadístico de procesos\nCausas asignables\n\nDefinición: Las causas asignables, también conocidas como causas especiales o causas específicas, son fuentes de variación en un proceso que pueden ser identificadas y eliminadas. Estas causas son distintas de las causas comunes, que son inherentes al proceso por no poder ser identificadas.\nIdentificación: Las herramientas de control estadístico, como los gráficos de control, son herramientas que ayudan en la identificación de las causas asignables por ejemplo mediante la correlación de variables.\nAcción Correctiva: Una vez identificadas, las causas asignables deben ser investigadas y eliminadas mediante la introducción de la correspondiente corrección para mejorar la calidad de nuestra medida.\n\n\n\n\n\n\n\nImportancia de las causas asignables en relación a la incertidumbre\n\n\nLa identificación y eliminación de las causas asignables reduce la incertidumbre.\nLas causas asignables son correcciones que nos acercan al valor verdadero.\nUna incertidumbre debería ser siempre de naturaleza puramente aleatoria\n\n\n\n\n\n\n\n\n\nIncertidumbres sistemáticas\n\n\nSe desaconseja la referencia de incertidumbres sistemáticas. Una incertidumbre sistemática es una causa asignable, una corrección a realizar y por tanto eliminar."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-27",
+    "href": "Temas/CamarasIonizacion.html#section-27",
+    "title": "Detectores",
+    "section": "",
+    "text": "La serie temporal permite identificar un incremento lineal en el tiempo, causa asignable, y eliminarla acercando la variación residual a una variación normal que se centra en cero."
+  },
+  {
+    "objectID": "Temas/CamarasIonizacion.html#section-28",
+    "href": "Temas/CamarasIonizacion.html#section-28",
+    "title": "Detectores",
+    "section": "",
+    "text": "En esta figura se muestra lo que ocurre al intentar corregir la deriva basándose únicamente en la medida del instante anterior. Al no identificarse la causa asignable, la componente aleatoria predomina y por su naturaleza esta componente no se puede corregir. Los histogramas no muestran reducción de la varianza."
+  },
+  {
     "objectID": "Temas/DICOM.html#qué-es-dicom",
     "href": "Temas/DICOM.html#qué-es-dicom",
     "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
