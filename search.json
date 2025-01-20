@@ -343,6 +343,251 @@
     "text": "Instalación de openTPS\nDesde el entorno OpenTSP correr el comando\npip install opentps\nCorrer el programa\nDesde la línea de comandos\nopentps"
   },
   {
+    "objectID": "Temas/DetectoresGeneraliadades.html#problema-de-la-cavidad",
+    "href": "Temas/DetectoresGeneraliadades.html#problema-de-la-cavidad",
+    "title": "Detectores",
+    "section": "Problema de la cavidad",
+    "text": "Problema de la cavidad\nMedida de la dosis en haces de fotones o partículas cargadas\n\nPara medir la dosis en un punto de un medio tenemos que introducir un detector dentro de él. Pero en general la composición del detector será distinta de la del medio.\n¿Qué pasa con la dosis en un punto de un medio, si sustituimos una región pequeña en torno a ese punto por otro medio distinto?\n\n\n\n\nQueremos determinar la dosis \\(D(P)\\) conocida \\(D(P')\\)"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#fundamentos-de-detección",
+    "href": "Temas/DetectoresGeneraliadades.html#fundamentos-de-detección",
+    "title": "Detectores",
+    "section": "Fundamentos de detección",
+    "text": "Fundamentos de detección\nRelación entre la sección eficaz de interacción total atómica (magnitud microscópica) y el coeficiente de atenuación lineal másico (magnitud macroscópica) para fotones.\nLa radiación interacciona con los átomos independientemente del estado de agregación y molecular.\nEl número de átomos presentes en una unidad de volumen \\(N\\) será el número de moles en la unidad de volumen multiplicado, \\(\\frac{\\rho}{A}\\), \\(\\rho\\) densidad másica, \\(A\\) número másico o peso atómico, por el número de Avogadro \\(N_A\\)\n\\[\\begin{equation}\n  N = N_A\\, \\frac{\\rho}{A}\n\\end{equation}\\]\nLa probabilidad de interacción en la unidad de volumen \\(dV = S\\, dx\\) o fracción del área \\(S\\) ocupada por la sección eficaz total \\(\\sigma_t\\) será\n\\[\\begin{equation}\n  \\phi = \\frac{N \\, \\sigma_t}{S}\n\\end{equation}\\]"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section",
+    "href": "Temas/DetectoresGeneraliadades.html#section",
+    "title": "Detectores",
+    "section": "",
+    "text": "Multiplicando el número de fotones que inciden por unidad de área \\(\\Phi\\) por el área eficaz total de interacción del volumen \\(dV\\) tendremos \\(d\\Phi\\) número de fotones que interaccionan por unidad de recorrido \\(dx\\)\n\\[\\begin{equation}\n  d\\Phi = \\Phi \\, N_A \\, \\frac{\\rho}{A} \\, \\sigma_t \\, dx\n\\end{equation}\\]\nAl producto \\(\\mu = N_A \\, \\frac{\\rho}{A} \\, \\sigma_t\\) lo llamamos coeficiente de interacción lineal. \\(\\mu\\) es proporcional a la densidad del medio. Dividiendo por la densidad obtenemos \\(\\mu / \\rho = \\frac{N_A}{A} \\, \\sigma_t\\) y lo denominamos coeficiente de atenuación lineal másico.\nLa ecuación anterior nos dice también que la fluencia (y veremos, la dosis) varía de forma exponencial con la distancia bajo condiciones de haz estrecho y monocromático.\nLa sección eficaz total es la suma de las contribuciones fotoeléctrica, Compton, creación de pares:\n\\[\\begin{equation}\n  \\sigma_t = \\sigma_{\\text{pe}} + \\sigma_{\\text{C}} + \\sigma_{\\text{pp}}\n\\end{equation}\\]\nla podemos encontrar tabulada1 en función de la energía para todos los elementos y algunos compuestos.\nX-Ray Mass Attenuation Coefficients. NIST Standard Reference Database 126"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-1",
+    "href": "Temas/DetectoresGeneraliadades.html#section-1",
+    "title": "Detectores",
+    "section": "",
+    "text": "Poder másico de frenado para partículas cargadas\nCantidad de energía que una partícula cargada pierde por unidad de longitud recorrida en un medio, dividida por la densidad del medio.\n\nExpresión de Bethe para protones y partículas pesadas\n\n\\[\n\\frac{S_{\\text{col}}}{\\rho} = \\frac{4 \\pi N_A Z^2 e^4}{m_e c^2 \\beta^2} \\left[ \\ln \\left( \\frac{2 m_e c^2 \\beta^2 \\gamma^2 T_{\\text{max}}}{I^2} \\right) - \\beta^2 \\right]\n\\]\n\nModificación para electrones\n\n\\[\n\\frac{S_{\\text{col}}}{\\rho} = \\frac{4 \\pi N_A r_e^2 m_e c^2}{\\beta^2} \\left[ \\ln \\left( \\frac{2 m_e c^2 \\beta^2 \\gamma^2 T_{\\text{max}}}{I^2} \\right) - 2 \\beta^2 \\right]\n\\]"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-2",
+    "href": "Temas/DetectoresGeneraliadades.html#section-2",
+    "title": "Detectores",
+    "section": "",
+    "text": "Relación entre dosis y fluencia energética en el medio\nPara fotones, bajo condiciones de equilibrio de partículas cargadas (CPE), la dosis absorbida en el medio \\(D_{\\text{med}}\\) se relaciona con la fluencia energética \\(\\Phi_{h\\nu, \\text{med}}\\):\n\\[\nD_{\\text{med}} = \\Phi_{h\\nu, \\text{med}} \\cdot \\left(\\frac{\\mu_{en}}{\\rho}\\right)_{\\text{med}}\n\\]\nPara un espectro de energías de fotones:\n\\[\nD_{\\text{med}} = \\int \\Phi_{h\\nu}(E) \\cdot \\frac{\\mu_{en}}{\\rho}(E) \\, dE\n\\]\nPara partículas cargadas, bajo condiciones de equilibrio de rayos \\(\\delta\\):\n\\[\nD_{\\text{med}} = \\Phi \\cdot \\left( \\frac{S_{\\text{col}}}{\\rho} \\right)_{\\text{med}}\n\\]\nY para un espectro de energías:\n\\[\nD_{\\text{med}} = \\int \\Phi(E) \\cdot \\frac{S_{\\text{col}}}{\\rho}(E) \\, dE\n\\]"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-3",
+    "href": "Temas/DetectoresGeneraliadades.html#section-3",
+    "title": "Detectores",
+    "section": "",
+    "text": "Ejemplificación del equilibrio electrónico. Modelo simplificado unidimensional\nSupongamos que las partículas primarias (fotones, protones, hadrones) lanzan hacia delante (modelo unidimensional) electrones secundarios con un poder de frenado de valor constante.\nImaginemos que la energía que las partículas primarias ceden a los electrones se reparte en tres centímetros de profundidad, es decir, la energía depositada por centímetro es la tercera parte de la energía cedida por el fotón.\n\n\n\nPor sencillez y claridad se ha asumido que las partículas primarias son fotones monoenergéticos y que por tanto, se atenúan exponencialmente con la profundidad."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-4",
+    "href": "Temas/DetectoresGeneraliadades.html#section-4",
+    "title": "Detectores",
+    "section": "",
+    "text": "Hasta que la profundidad no es igual al alcance de las partículas secundarias tenemos pérdidas locales de energía.\nA partir de ahí llegamos a una situación de equilibrio transitorio en la que se deposita la energía cedida por las partículas primarias en la zona de influencia fijada por el alcance de las partículas secundarias.\n\n\n\n\n\n\n\nNecesidad del equilibrio electrónico\n\n\nEl equilibrio electrónico nos permite entender y relacionar de forma sencilla lo que podemos detectar, deposición de energía por partículas secundarias en el detector, con lo que queremos medir, dosis absorbida en el medio.\n\n\n\n\n\n\n\n\n\nAusencia de equilibrio electrónico\n\n\nSin equilibrio electrónico los detectores miden algo próximo a la dosis en la situación de medida, con la fluencia perturbada por el detector. Lo que no sabemos es, de forma analítica, relacionar esa dosis con la dosis que realmente se deposita en el medio si el detector no está presente."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-5",
+    "href": "Temas/DetectoresGeneraliadades.html#section-5",
+    "title": "Detectores",
+    "section": "",
+    "text": "Detectores fotónicos o densos\n\n\n\n\n\n^1(https://www.aapm.org/meetings/09SS/documents/03Nahum-CavityTheorywithCorrections.pdf)\n\n\n\n\nDetectores en los que se alcanza el equilibrio electrónico en su interior.\nTamaño superior al rango de las partículas secundarias\n\n\\[\nD_{\\text{det}} = \\Psi_{\\text{det}} \\cdot \\left(\\frac{\\mu_{en}}{\\rho}\\right)_{\\text{det}}\n\\]\n\nCon \\(\\Psi\\) fluencia energética y \\(\\mu_{en}/\\rho\\) coeficiente másico de absorción de energía.\nEl factor de corrección para el medio será \\[\nf(Q) = \\frac{D_{\\text{med}}}{D_{\\text{det}}} = \\frac{\\Psi_{\\text{med}}(\\mu_{en}/\\rho)_{\\text{med}}}{\\Psi_{\\text{det}}(\\mu_{en}/\\rho)_{\\text{det}}} \\cong \\frac{(\\mu_{en}/\\rho)_{\\text{med}}}{(\\mu_{en}/\\rho)_{\\text{det}}}\n\\]"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-6",
+    "href": "Temas/DetectoresGeneraliadades.html#section-6",
+    "title": "Detectores",
+    "section": "",
+    "text": "Construcción de detectores fotónicos\n\n\nLos detectores se tienen que diseñar para que apenas introduzcan perturbaciones, de forma que la fluencia en el detector \\(\\Psi_{\\text{det}}\\) sea prácticamente igual a la fluencia en el medio \\(\\Psi_{\\text{med}}\\)\n\n\n\nEl cociente entre dosis en el medio y en el detector se suele expresar de forma abreviada como:\n\\[\nf(Q) = \\left( \\frac{\\mu_{en}}{\\rho}\\right)^{\\text{med}}_{\\text{det}}\n\\]\nPara haces polienergéticos, se considera el valor promediado sobre todo el espectro:\n\\[\n\\left(\\overline{ \\frac{\\mu_{en}}{\\rho}} \\right)^{\\text{med}}_{\\text{det}} =\n\\frac{\\int^{E_{\\text{max}}}_0 \\frac{d\\Psi_{\\text{med}}}{dE} \\cdot (\\frac{\\mu_{en}(E)}{\\rho})_{\\text{med}} \\, dE }\n{\\int^{E_{\\text{max}}}_0  \\frac{d\\Psi_{\\text{med}}}{dE} \\cdot (\\frac{\\mu_{en}(E)}{\\rho})_{\\text{det}} \\, dE} =\n\\]"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-7",
+    "href": "Temas/DetectoresGeneraliadades.html#section-7",
+    "title": "Detectores",
+    "section": "",
+    "text": "Dependencia con \\(E\\) de \\(f(Q)\\) para detectores fotónicos en diferentes medios\n\n\nEjemplos típicos de detectores fotónicos:\n\nCámaras de ionización abiertas (detector gaseoso grande)\nDosímetros de termoluminiscencia de LiF (detector denso)"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-8",
+    "href": "Temas/DetectoresGeneraliadades.html#section-8",
+    "title": "Detectores",
+    "section": "",
+    "text": "Detectores electrónicos o gaseosos\n\n\n\n\n\nDetectores en los que no se alcanza el equilibrio electrónico en su interior.\nTamaño inferior al rango de las partículas secundarias\n\n\n\n\n\n\n\n\nLas partículas secundarias generadas en el propio detector son despreciables.\nLa energía en el detector la depositan partículas secundarias producidas en su exterior."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-9",
+    "href": "Temas/DetectoresGeneraliadades.html#section-9",
+    "title": "Detectores",
+    "section": "",
+    "text": "Factor de corrección para detectores gaseosos\n\\[\nf(Q) = \\frac{D_{\\text{med}}}{D_{\\text{gas}}} = \\frac{\\Phi_{\\text{med}}(S_{\\text{col}}/\\rho)_{\\text{med}}}{\\Phi_{\\text{gas}}(S_{\\text{gas}}/\\rho)_{\\text{gas}}}\n\\]\ndonde \\(\\Phi\\) se refiere a la fluencia de partículas secundarias sin incluir rayos \\(\\delta\\).\nDecimos que estamos bajo condiciones de Bragg-Gary si en el detector se verifica en términos prácticos \\[\n\\Phi_{\\text{med}} \\cong \\Phi_{\\text{gas}}\n\\] \\[\nf(Q) = \\frac{(S_{\\text{col}}/\\rho)_{\\text{med}}}{(S_{\\text{gas}}/\\rho)_{\\text{gas}}} =\n\\left( \\frac{S_{\\text{col}}}{\\rho}\\right)^{\\text{med}}_{\\text{gas}}\n\\]\nPara un caso realista de un haz polienergético se toma un cociente de poderes de frenado promedio \\[\n\\left(\\overline{ \\frac{S_{col}}{\\rho}} \\right)^{\\text{med}}_{\\text{det}} =\n\\frac{\\int^{E_{\\text{max}}}_0 \\Phi \\cdot (S_{\\text{col}}(E)/\\rho)_{\\text{med}} \\, dE }\n{\\int^{E_{\\text{max}}}_0 \\Phi \\cdot (S_{\\text{col}}(E)/\\rho)_{\\text{det}} \\, dE }\n\\]"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-10",
+    "href": "Temas/DetectoresGeneraliadades.html#section-10",
+    "title": "Detectores",
+    "section": "",
+    "text": "Condiciones para poder considerar que una cavidad verifica Bragg-Gray\n\nLa cavidad no debe alterar la fluencia de partículas cargadas (incluida su distribución en energía) que existiría en ausencia de la cavidad.\nLa dosis absorbida en la cavidad es depositada en su totalidad por la partículas cargadas que la cruzan.\n\n\n\n\n\n\n\nEquilibrio electrónico en ausencia de la cavidad\n\n\nPara aplicar Bragg-Gray no es necesario que exista equilibrio electrónico en ausencia de la cavidad.\nEl problema en ausencia de equilibrio electrónico es que es difícil determinar (requiere simulación Montecarlo) el espectro de las partículas cargadas.\n\n\n\nEn la práctica esto se traduce en que la cavidad debe ser pequeña en comparación al rango de los electrones secundarios.\nPara el caso de haces de fotones solo las cámaras de ionización llenas de gas cumplen las condiciones de Bragg-Gray."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-11",
+    "href": "Temas/DetectoresGeneraliadades.html#section-11",
+    "title": "Detectores",
+    "section": "",
+    "text": "Problema con los rayos \\(\\delta\\)\n\n\n\n\n\nLas expresiones anteriores son válidas bajo rayos \\(\\delta\\) en equilibrio.\nEn esas condiciones la deposición de la fluencia de electrones secundarios se puede considerar local.\nEn la práctica se observa una dependencia con el tamaño de la cavidad, por pérdida de energía a través de los rayos \\(\\delta\\).\n\n\nAproximación de Spencer Attix\nCorrección analítica consistente en definir una energía de corte \\(\\Delta\\) por debajo de la cual la deposición se considera local y por encima de la que no es necesario incluir en la fluencia de partículas secundarias los rayos \\(\\delta\\)\n\\[\nf(Q) = \\left(\\overline{ \\frac{L_\\Delta}{\\rho}} \\right)^{\\text{med}}_{\\text{gas}} =\n\\frac{\\int^{E_{\\text{max}}}_\\Delta \\Phi(E) \\cdot (L_\\Delta(E)/\\rho)_{\\text{med}} \\, dE +\n\\left[ \\Phi(\\Delta) \\cdot (S_{\\text{col}}(\\Delta)/\\rho)_{\\text{med}} \\, \\Delta \\right]}\n{\\int^{E_{\\text{max}}}_\\Delta \\Phi(E) \\cdot (L_\\Delta(E)/\\rho)_{\\text{gas}} \\, dE +\n\\left[ \\Phi(\\Delta) \\cdot (S_{\\text{col}}(\\Delta)/\\rho)_{\\text{gas}} \\, \\Delta \\right]}\n\\]"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-12",
+    "href": "Temas/DetectoresGeneraliadades.html#section-12",
+    "title": "Detectores",
+    "section": "",
+    "text": "Razones del poder de frenado de colisión relativos al agua\n\n\n\n\n\nRazones de poderes de frenado relativos al agua para distintos materiales y energías.\n\n\n\n\n\n\nRazones de poderes de frenado agua aire con aproximación Spencer-Attix y sin corregir.\n\n\n\nLas cámaras de ionización abiertas van llenas de aire.\nLos haces de fotones clínicos que se usan en la actualidad con mayor frecuencia corresponden a potenciales de aceleración de 6 a 10 MV que suponen energías promedio del espectro de fotones de 2 a 3 MeV. Spencer-Attix supone correcciones inferiores al 1%."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-13",
+    "href": "Temas/DetectoresGeneraliadades.html#section-13",
+    "title": "Detectores",
+    "section": "",
+    "text": "Variación con la profundidad de la razón del poder de frenado de colisión agua aire\n\n\n\n\n\nVariación con la profundidad de la razón de poderes de frenado relativos agua aire para distintas calidades del haz de fotones primario. La calidad típica de los haces de fotones clínicos más frecuentes en la actualidad está en el orden de TPR20,10=0.6\n\n\n\n\n\n\nVariación con la profundidad de la razón de poderes de frenado Spencer-Attix agua aire derivado por simulación Montecarlo para haces anchos plano paralelos de electrones monoenergéticos (Andreo (1990))\n\n\n\nAl medir la variación en profundidad de haces clínicos con una cámara de ionización:\n\nPara haces de fotones la respuesta del detector no varía.\nPara haces de electrones es necesario tener en cuenta la variación de la razón de poderes de frenado."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#funcionamiento-general-de-los-detectores",
+    "href": "Temas/DetectoresGeneraliadades.html#funcionamiento-general-de-los-detectores",
+    "title": "Detectores",
+    "section": "Funcionamiento general de los detectores",
+    "text": "Funcionamiento general de los detectores\nEl detector se compone de un elemento sensible que se altera al recibir la radiación y un elemento lector que procesa la señal producida. Efectos sobre el elemento sensible:\n\n\n\n\n\n\n\ngraph TD\n    subgraph Detector\n        style Detector fill:#f9f9f9,stroke:#333,stroke-width:2px;\n        A[Elemento sensible] --&gt; B[Lector]\n        style A fill:#f9f9f9,stroke:#333,stroke-width:1px;\n        style B fill:#f9f9f9,stroke:#333,stroke-width:1px;\n    end\n\n\n\n\n\n\n\n\nAumento de temperatura\nProducción de iones\nInducción de reacciones químicas\nCreación de defectos en la red cristalina\nProducción de reacciones radiactivas\n\n\n\nSe establece una relación cuantitativa entre el parámetro que mide el efecto y la dosis absorbida: curva de calibración\nPueden medir la dosis absorbida total (dosímetros integradores) o la tasa de dosis por unidad de tiempo."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-14",
+    "href": "Temas/DetectoresGeneraliadades.html#section-14",
+    "title": "Detectores",
+    "section": "",
+    "text": "Precisión\n\n\nGrado de coincidencia entre los resultados obtenidos al realizar varias medidas de la misma cantidad.\n\n\n\n\nDos componentes:\nRepetibilidad: Capacidad para repetir el resultado de una medida bajo condiciones establecidas por y para el mismo experimentador.\n\nNo implica intervalos cortos de repetición necesariamente.\nPuede arrastrar incertidumbres sistemáticas externas grandes, como por ejemplo un certificado de calibración externo con un incertidumbre grande que no se refleja al utilizar siempre el mismo valor.\n\nReproducibilidad: Capacidad de un experimentador para reproducir el resultado de una medida bajo las condiciones establecidas por otro experimentador.\n\nLa reproducibilidad es en general mayor que la repetibilidad\nPor ejemplo dos experimentadores que utilizan factores de calibración proporcionados por diferentes laboratorios incluyen en sus incertidumbres las reproducibilidades de estos laboratorios."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-15",
+    "href": "Temas/DetectoresGeneraliadades.html#section-15",
+    "title": "Detectores",
+    "section": "",
+    "text": "Exactitud\n\n\nCapacidad del detector para hacer que el resultado de la medición refleje el valor real de la magnitud que se está midiendo.\n\n\n\n\nPuesto que en general no se conoce el valor real solo podemos obtener una estimación de la exactitud del detector.\nEn la práctica es difícil distinguirla de la reproducibilidad, entendida como la hemos introducido. Una posibilidad es tomar como valor real el promedio de determinaciones realizadas por diferentes experimentadores y como exactitud de un experimentador, su diferencia respecto al valor promedio.\nEn ocasiones se piensa en la exactitud en términos de errores sistemáticos. Recordemos que experimentos con suficiente estadística deberían permitir identificar estas desviaciones sistemáticas y corregirlas. Por tanto esta componente de la exactitud debería ser a largo plazo igual a cero."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-16",
+    "href": "Temas/DetectoresGeneraliadades.html#section-16",
+    "title": "Detectores",
+    "section": "",
+    "text": "Sensibilidad\n\n\nLa sensibilidad de un detector es la capacidad del detector para responder a pequeñas cantidades de radiación.\nSe define como la relación entre la señal de salida del detector y la cantidad de radiación incidente.\n\n\n\n\n\nImportancia:\n\nDetección para bajos niveles: En aplicaciones de dosimetría ambiental y protección radiológica.\nPrecisión La sensibilidad afecta la precisión de las mediciones. Los detectores más sensibles tienden a ser más ruidosos.\n\nRango de medida: La sensibilidad condiciona el extremo inferior del rango de medida de un detector a través del denominado nivel de detección.\n\n\n\n\n\n\n\n\nNivel de Detección\n\n\nEl nivel de detección de un detector es la cantidad mínima de radiación que el detector puede medir con una certeza razonable. Este nivel está determinado por la relación señal-ruido del detector."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-17",
+    "href": "Temas/DetectoresGeneraliadades.html#section-17",
+    "title": "Detectores",
+    "section": "",
+    "text": "Linealidad\n\n\nConstancia del cociente entre el incremento del parámetro medido y el incremento de la dosis.\n\n\n\n\nLa linealidad no es imprescindible pero facilita la calibración del detector y el tratamiento de las incertidumbres.\nLinealidad vs. faltas de linealidad"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-18",
+    "href": "Temas/DetectoresGeneraliadades.html#section-18",
+    "title": "Detectores",
+    "section": "",
+    "text": "Dependencia energética\n\n\nVariación que presenta la respuesta del detector con los cambios de energía\n\n\n\n\n\nEn general se prefieren detectores con dependencia energética pequeña para hacerlos menos sensibles a variaciones no controlables de la energía, por ejemplo los cambios de energía que se producen con el transporte de radiación en el medio."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-19",
+    "href": "Temas/DetectoresGeneraliadades.html#section-19",
+    "title": "Detectores",
+    "section": "",
+    "text": "Dependencia con la tasa de dosis\n\n\nVariación de la respuesta del detector a medida que la tasa de radiación aumenta.\n\n\n\nLos detectores tienden a tener a efectos de saturación a medida que la tasa de dosis aumenta que suponen pérdidas de lectura.\nEste efecto es especialmente importante en haces pulsados en los que la tasa sobre el detector alcanza valores muy elevados en breves periodos de tiempo y prácticamente no está expuesto a la radiación en periodos relativamente largos."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-20",
+    "href": "Temas/DetectoresGeneraliadades.html#section-20",
+    "title": "Detectores",
+    "section": "",
+    "text": "Dependencia con el tipo de radiación\n\nLa respuesta del detector depende en general del tipo de radiación.\nSi la sensibilidad del detector es suficiente en general el detector nos producirá algún tipo de señal, pero solo si contamos con la calibración adecuada la señal es interpretable.\n\n\n\n\n\n\n\nVersatilidad\n\n\nLas cámaras de ionización se pueden usar para medir campos de fotones o de electrones.\n\n\n\n\nAlgunos detectores por su propia naturaleza y diseño son completamente inadecuados para medir algunos tipos de radiación\n\n\n\n\n\n\n\nEspecificidad\n\n\nLos detectores de neutrones, como los dosímetros de burbujas, son completamente inadecuados para la medida de campos de fotones."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-21",
+    "href": "Temas/DetectoresGeneraliadades.html#section-21",
+    "title": "Detectores",
+    "section": "",
+    "text": "Tamaño y resolución espacial\n\nLos detectores tienen un tamaño finito y miden la dosis promediada sobre su volumen activo. Se produce una degradación espacial de la medida en zonas de alto gradiente.\nLa respuesta no tiene por qué ser uniforme y normalmente se caracteriza mediante un núcleo de respuesta que normalmente es algún tipo de aproximación analítica: gaussiano, parabólico\nEn ocasiones se puede intentar deconvolucionar la respuesta del detector para recuperar la medida no degradada."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-22",
+    "href": "Temas/DetectoresGeneraliadades.html#section-22",
+    "title": "Detectores",
+    "section": "",
+    "text": "Disposición espacial\n\nPuntuales: Proporcionan la lectura del punto en el que se encuentran. El tamaño del punto depende de la resolución espacial del detector.\nExtensos Proporcionan simultáneamente información de cómo se distribuye espacialmente la dosis. La distribución aparece muestreada por la frecuencia espacial del detector y degradada por la resolución espacial del detector.\n\n\nFrecuencia espacial de muestreo: Las flechas representan los puntos en los que el detector produce una lectura. Las gaussianas los núcleos de respuesta del detector en cada uno de esos puntos. La resolución espacial establece un límite a la degradación espacial de la medida que es independiente de la frecuencia de muestreo."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-23",
+    "href": "Temas/DetectoresGeneraliadades.html#section-23",
+    "title": "Detectores",
+    "section": "",
+    "text": "Tipo de lectura\n\nLectura directa: El dosímetro procesa su señal y proporciona el valor de la medida durante la irradiación o inmediatamente a su finalización. Las cámaras de ionización conectadas a un electrómetro o los dosímetros de burbujas para campos de neutrones son ejemplos de este tipo.\nLectura diferida: El dosímetro acumula durante la irradiación algún tipo de perturbación que se mantiene en el tiempo. Mediante un proceso de lectura posterior se extrae la información que se relaciona con la dosis recibida. Como ejemplos podemos dar los dosímetros por termoluminiscencia o las películas radiocrómicas.\n\nOtras características\nFragilidad\nPuede afectar tanto a las condiciones de medida, transporte y almacenamiento.\nFacilidad de manipulación\nAlguno detectores presentan dependencias de orientación y con las condiciones ambientales que complican su uso e interpretación."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-24",
+    "href": "Temas/DetectoresGeneraliadades.html#section-24",
+    "title": "Detectores",
+    "section": "",
+    "text": "Dosímetros absolutos\n\n\nDetectores que metrológicamente corresponden a la definición de la magnitud dosis absoluta, es decir, permiten determinar de forma directa la cantidad de energía que se absorbe y la masa en la que la energía se absorbe.\n\n\n\nDetectores Calorimétricos\n\nLos más directos: Medida de la energía depositada en forma de calor.\nExigen medir pequeñas diferencias de temperatura:\n\n1 Gy = 0.2 cal/kg ⇒ Δt = 2×10⁻⁴ ºC en agua.\n\n\nTipos\n\nCalorímetros de agua\nDetectores de grafito calibrados mediante calentamiento óhmico\n\nUso\n\nUtilizados como patrón primario en los laboratorios nacionales de calibración."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#dosímetros-químicos",
+    "href": "Temas/DetectoresGeneraliadades.html#dosímetros-químicos",
+    "title": "Detectores",
+    "section": "Dosímetros Químicos",
+    "text": "Dosímetros Químicos\nBasados en reacciones químicas inducidas por la radiación\nDosímetros basados en la reacción de Fricke\n\nReacción de reducción: Fe²⁺ → Fe³⁺\nDisoluciones en agua para patrones de calibración primaria\nDisoluciones en gel para medir distribuciones espaciales tridimensionales de dosis.\n\nLectura\n\nAbsorción óptica del Fe³⁺ en 304 nm para medidas en agua\nLectura mediante equipos de resonancia magnética para medidas de distribuciones espaciales tridimensionales en gel\nResolución espacial: Limitada por la difusión de los iones de Fe³⁺ tras la irradiación"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-29",
+    "href": "Temas/DetectoresGeneraliadades.html#section-29",
+    "title": "Detectores",
+    "section": "",
+    "text": "Hay empresas que ofrecen servicios para externalizar este tipo de dosimetría de alta especialización\n\n\n\nDosímetros:\n\nGel\nPelícula radiocrómica"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-30",
+    "href": "Temas/DetectoresGeneraliadades.html#section-30",
+    "title": "Detectores",
+    "section": "",
+    "text": "Proceso de QA mediante RTSafe"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-31",
+    "href": "Temas/DetectoresGeneraliadades.html#section-31",
+    "title": "Detectores",
+    "section": "",
+    "text": "Dosímetros de estado sólido\nDiodos\n\n\n\nElemento sensible formado por la unión de dos zonas de Si dopadas respectivamente con dopantes tipo p y tipo n.\nPor difusión los electrones de la región n (donde hay un exceso de electrones) se recombinan con los huecos de la región p (donde hay un exceso de huecos) cerca de la unión, creando una región libre de portadores de carga y con un campo eléctrico creado por el transporte de carga.\n\n\n\n\n\nEsta zona, denominada zona de depleción, crece hasta que el campo eléctrico compensa la difusión. Se puede aplicar un voltaje de polarización (inversa) para aumentar el tamaño de la zona de depleción\nLa radiación genera pares electrón-hueco en la zona de depleción\nPor efecto del campo eléctrico los electrones y los huecos se mueven en direcciones distintas y producen una corriente eléctrica medible mediante un amplificador.\nLos diodos son capaces de medir en ausencia de polarización.\nTienen alta resolución espacial, son robustos pero su respuesta cambia con el tiempo por lo que se suelen dedicar a medidas relativas."
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-32",
+    "href": "Temas/DetectoresGeneraliadades.html#section-32",
+    "title": "Detectores",
+    "section": "",
+    "text": "Montaje experimental para realizar medidas relativas mediante diodos en cuba de agua con ejes motorizados"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-33",
+    "href": "Temas/DetectoresGeneraliadades.html#section-33",
+    "title": "Detectores",
+    "section": "",
+    "text": "Detectores MOSFET\n\n\n\n\n\n\n\n\nTransistor MOSFET\n\n\nMetal-Oxide-Semiconductor Field Effect Transistor\n\n\n\n\nBasados en el cambio del voltaje umbral del transistor debido a la acumulación de cargas en la región de transición.\nRobustos, pequeños (buena resolución espacial), poca dependencia con la energía, la orientación o la tasa de dosis.\nLa respuesta depende del tiempo transcurrido desde la irradiación.\nSólo miden dosis integrada; no permiten medir tasa de dosis.\nRequieren un lector para medir la señal, que suministra el voltaje de polarización y mide el voltaje umbral.\nSe emplean sobre todo para dosimetría in vivo.\nPueden ser medidos a distancia con antenas de radiofrecuencia (dosímetros internos implantables)"
+  },
+  {
+    "objectID": "Temas/DetectoresGeneraliadades.html#section-35",
+    "href": "Temas/DetectoresGeneraliadades.html#section-35",
+    "title": "Detectores",
+    "section": "",
+    "text": "Detectores de diamante\n\n\n\nBasados en el cambio de resistencia de una pieza de diamante debido a la radiación.\nLa respuesta no depende de la energía, la orientación o la temperatura.\nTamaño muy pequeño (algunos mm\\({}^3\\)), muy útiles para la medida de dosis en zonas de alto gradiente.\nNo pierden señal con la dosis acumulada.\nComposición equivalente a tejido.\n\n\n\n\n\nExigen una irradiación previa para eliminar efectos de polarización.\nPor sus características son los detectores ideales para medidas relativas puntuales."
+  },
+  {
     "objectID": "Temas/DICOM.html#qué-es-dicom",
     "href": "Temas/DICOM.html#qué-es-dicom",
     "title": "Estándar DICOM y Estructura de Datos en Radioterapia",
