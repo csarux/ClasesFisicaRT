@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.39">
+
+  <meta name="author" content="César Rodríguez">
+  <title>ClasesFisicaRT – Dosimetría con películas radiocrómicas</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-e6ec3429f00f3dae4ab744fc8c423248.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Dosimetría con películas radiocrómicas</h1>
+  <p class="subtitle">Fundamentos sobre dosimetría fotográfica y control de calidad de distribuciones de dosis</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+César Rodríguez 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:cesaro02@ucm.es">cesaro02@ucm.es</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Universidad Complutense de Madrid
+          </p>
+    </div>
+</div>
+
+</section>
+<section id="características-de-los-sistemas-basados-en-películas" class="slide level2">
+<h2>Características de los sistemas basados en películas</h2>
+<ul>
+<li>El material sensible está repartido uniformemente sobre una superficie</li>
+<li>Permiten la medida de la distribución espacial de la dosis</li>
+<li>La radiación modifica de manera permanente el material sensible</li>
+<li>La deposición de energía de la radiación en el material sensible se puede cuantificar mediante propiedades ópticas no destructivas: absorción o reflexión de luz</li>
+</ul>
+</section>
+<section id="radiocromicidad" class="slide level2">
+<h2>Radiocromicidad</h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Definición de la radiocromicidad</strong></p>
+</div>
+<div class="callout-content">
+<p>Propiedad por la que un material cambia de color directamente al absorber energía.</p>
+</div>
+</div>
+</div>
+<ul>
+<li>Se ha intentado emplear desde el inicio de la fotografía</li>
+<li>Los plásticos cambian de color al ser irradiados</li>
+<li>Investigación continua hacia materiales de mayor sensibilidad</li>
+</ul>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Modelo</th>
+<th style="text-align: center;">Rango [Gy]</th>
+<th style="text-align: center;">Década</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DM-1260</td>
+<td style="text-align: center;">50 - 2500</td>
+<td style="text-align: center;">1970</td>
+</tr>
+<tr class="even">
+<td>MD-55-1</td>
+<td style="text-align: center;">10 - 100</td>
+<td style="text-align: center;">1980-90</td>
+</tr>
+<tr class="odd">
+<td>MD-55-2</td>
+<td style="text-align: center;">3 - 100</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>EBT 1-2-3</td>
+<td style="text-align: center;">0.5 - 20</td>
+<td style="text-align: center;">2000</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="estructura-de-la-película-radiocrómica" class="slide level2 smaller">
+<h2>Estructura de la película radiocrómica</h2>
+
+<img data-src="images/EBTModels.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><ul>
+<li>La película presenta una disposición en capas
+<ul>
+<li>Una o varias capas activas: contienen el material radiocrómico</li>
+<li>Una o varias capas inactivas: elementos adhesivos, protectores y funciones auxiliares. Introducen una atenuación que no varía con la dosis.</li>
+</ul></li>
+<li>El fabricante ha ido añadiendo elementos para minimizar el impacto de ciertos problemas identificados en el procesado de la señal de la película
+<ul>
+<li>Aumento del grosor del elemento sensible: mayor sensibilidad</li>
+<li>Tinte amarillo: corrección de uniformidad</li>
+<li>Disposición simétrica: mayor independencia de la colocación en la digitalización</li>
+<li>Superficie rugosa: evitar la formación de anillos de Newton</li>
+</ul></li>
+</ul>
+</section>
+<section id="composición" class="slide level2">
+<h2>Composición</h2>
+<ul>
+<li>Están constituidas por elementos ligeros</li>
+<li>Composición similar a la del tejido biológico</li>
+<li>El material activo no irradiado se presenta como monómeros dispuestos en microcristales en forma de bastón (2 μm de diámetro y 15 μm de largo) con una dirección preferente.</li>
+</ul>
+
+<img data-src="images/MonomerMicrocristalsRS.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:40.0%"></section>
+<section id="sistemas-lectores" class="slide level2">
+<h2>Sistemas lectores</h2>
+<h4 id="digitalizador">Digitalizador</h4>
+<div class="columns">
+<div class="column" style="width:32%;">
+<p><strong>Flatbed scanner</strong></p>
+<p><img data-src="images/Epson.jpg"></p>
+</div><div class="column" style="width:66%;">
+<ul>
+<li>Calidad fotográfica</li>
+<li>Preferiblemente de tamaño A3</li>
+<li>Digitalización en color</li>
+<li>Profundidad de color por canal <span class="math inline">\(2^{16}\)</span></li>
+<li>Posibilidad de digitalización en modo de reflexión o transmisión</li>
+</ul>
+</div></div>
+</section>
+<section id="bases-físicas" class="slide level2 smaller">
+<h2>Bases físicas</h2>
+<h4 id="respuesta-a-la-absorción-de-la-radiación">Respuesta a la absorción de la radiación</h4>
+<ul>
+<li>La radiación induce una reacción de polimerización</li>
+<li>Los monómeros presentes en los microcristales se unen formando polímeros que pueden llegar a ocupar todo el cristal</li>
+<li>La configuración electrónica de los microcristales cambia y altera las propiedades ópticas de la capa activa</li>
+<li>El principio de medida se basa en que a mayor dosis absorbida, mayor formación de polímeros, mayor alteración de las propiedades ópticas</li>
+</ul>
+
+<img data-src="images/ReaccionPolimerizacion.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
+<section class="slide level2">
+
+<h4 id="absorbancia-de-la-capa-activa-mathcala_a">Absorbancia de la capa activa <span class="math inline">\(\mathcal{A}_a\)</span></h4>
+<div class="columns">
+<div class="column" style="width:28%;">
+<p><span class="math display">\[
+\mathcal{A}(\lambda)=\log_{10}\frac{I_0(\lambda)}{I(\lambda)}
+\]</span></p>
+</div><div class="column" style="width:71%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="images/PeakAbsorbance.png" class="quarto-figure quarto-figure-right" style="width:70.0%"></p>
+</figure>
+</div>
+</div></div>
+<ul>
+<li>Absorción de la intensidad de la luz para cada longitud de onda. <span class="math inline">\(I_0\)</span> intensidad incidente, <span class="math inline">\(I\)</span> intensidad transmitida.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h4 id="relación-entre-la-absorbancia-y-la-dosis">Relación entre la absorbancia y la dosis</h4>
+
+<img data-src="images/AbsorbanceDose.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p>La absorbancia, y por tanto la atenuación de la luz que atraviesa la película, se incrementa con la dosis.</p>
+</section>
+<section id="section" class="slide level2 smaller">
+<h2></h2>
+<h4 id="cuantificación-de-la-absorción-de-luz">Cuantificación de la absorción de luz</h4>
+<p>Para un escáner con una lámpara de intensidad <span class="math inline">\(I_0(\lambda)\)</span>, la cantidad de luz absorbida por la película se cuantifica mediante la señal digital producida por el escáner</p>
+<p><span class="math display">\[
+S = \left \lfloor 2^{n} \cdot \left(\frac{\int I_0(\lambda) 10^{-(\mathcal{A}_\text{Bkg}(\lambda)+\mathcal{A}_a(\lambda, D))}R(\lambda)d\lambda}{\int I_0(\lambda)
+R(\lambda)d\lambda}\right)^{\gamma} \right \rfloor
+\]</span></p>
+<p><span class="math inline">\(n\)</span> número de bits, <span class="math inline">\(\gamma\)</span> exponente de contraste, <span class="math inline">\(R\)</span> respuesta espectral del filtro de color, <span class="math inline">\(\mathcal{A}_{\text{Bkg}}\)</span> y <span class="math inline">\(\mathcal{A}_a\)</span> absorbancia de las capas no activas y activas de la película.</p>
+
+<img data-src="images/SpecsScanner.png" class="quarto-figure quarto-figure-center r-stretch" style="width:60.0%"></section>
+<section id="calibración-del-sistema" class="slide level2 smaller">
+<h2>Calibración del sistema</h2>
+<h3 id="definición-y-procedimientos-de-calibración">Definición y procedimientos de calibración</h3>
+<p>Establecer la <span class="alert"><em>relación biunívoca</em></span> entre la <span class="alert"><em>lectura</em></span> que produce el sistema y la <span class="alert"><em>dosis</em></span> recibida</p>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><strong>Muestras de dosis</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/CalSample_rot.jpg" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+<p><strong>Distribución espacial de dosis conocida</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/ps+1-1_Calibration_rot.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:66%;">
+<p><strong>Procedimiento</strong></p>
+<ul>
+<li>Irradiar muestras de películas a valores dosis controlados (películas al eje del haz) o una distribución espacial de dosis conocidas (película al eje del haz). El rango de dosis tiene que ser adecuado a la calibración</li>
+<li>Leer las muestras o la película con la distribución espacial conocida</li>
+<li>Establecer una curva que relacione dosis y lectura</li>
+</ul>
+</div></div>
+</section>
+<section class="slide level2">
+
+<h3 id="modelos-sensitométricos">Modelos sensitométricos</h3>
+<h4 id="modelo-sensitométrico-basado-en-dos-absorbentes">Modelo sensitométrico basado en dos absorbentes</h4>
+<p>Densidad óptica definida a partir de la señal digital</p>
+<p><span class="math display">\[
+d = \log_{10}\frac{S_{\text{Bkg}}}{S}
+\]</span></p>
+<p>Densidad óptica en función de la dosis</p>
+<p><span class="math display">\[
+d(D) = \Phi_R \cdot (1 - e^{-k_{R} \cdot D}) + \Phi_B \cdot (1 - e^{-k_{B} \cdot D})
+\]</span></p>
+<p>Los parámetros <span class="math inline">\(k_{R}\)</span> y <span class="math inline">\(k_{B}\)</span> son característicos del material sensible y no dependen del lote de fabricación.</p>
+</section>
+<section id="section-1" class="slide level2 smalller">
+<h2></h2>
+<h4 id="otros-modelos-sensitométricos">Otros modelos sensitométricos</h4>
+<table class="caption-top">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 63%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>Expresión Matemática</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rational</td>
+<td><span class="math inline">\(d = - \log_{10}\frac{a+bD}{c+D}\)</span></td>
+<td>Micke et al.</td>
+</tr>
+<tr class="even">
+<td>Polynomial</td>
+<td><span class="math inline">\(d = a + b\: D + c\: D^2 + + d\: D^3\)</span></td>
+<td>Borca et al.</td>
+</tr>
+<tr class="odd">
+<td>Linear power</td>
+<td><span class="math inline">\(D = a\: d + b\: d^c\)</span></td>
+<td>Devic et al.</td>
+</tr>
+<tr class="even">
+<td>Exponential</td>
+<td><span class="math inline">\(d = a - b\:e^{-c\:D}\)</span></td>
+<td>Poppinga et al.</td>
+</tr>
+<tr class="odd">
+<td>Tamponi</td>
+<td><span class="math inline">\(\epsilon(R) = \frac{\log\left[1+(A_c-1)\:R\right]}{\log(A_c)}\)</span></td>
+<td>Tamponi et al.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><span class="math inline">\(A_c = 1 + h_c \, D_r \text{, } R = \frac{D}{D_r}\text{, } \epsilon(R) = \frac{d(D)}{d(D_r)}\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>SHGD</td>
+<td><span class="math inline">\(d(D) = c\left(1-\frac{a^b}{(a+D)^b}\right)\)</span></td>
+<td>del Moral et al.</td>
+</tr>
+</tbody>
+</table>
+<p>Diferentes modelos densidad óptica <span class="math inline">\(d\)</span> <em>vs</em> dosis absorbida <span class="math inline">\(D\)</span>. SHGD (<em>Single Hit Gamma Distributed</em>) es un modelo basado en teoría de percolación.</p>
+</section>
+<section id="section-2" class="slide level2 smaller">
+<h2></h2>
+<h3 id="curvas-de-calibración">Curvas de calibración</h3>
+<div class="columns">
+<div class="column" style="width:49%;">
+<p><img data-src="images/CalibCurves.png" style="width:85.0%"></p>
+<p>Distintos lotes de fabricación medidos mediante muestras de dosis</p>
+</div><div class="column" style="width:49%;">
+<p><img data-src="images/DensidadOpticaMicrotekEpson.png" style="width:85.0%"></p>
+<p>Misma película en distintos escáneres medida mediante distribuciones espaciales de dosis</p>
+</div></div>
+</section>
+<section id="usos-prácticos" class="slide level2">
+<h2>Usos prácticos</h2>
+<h3 id="dosimetría-de-campos-de-radiación">Dosimetría de campos de radiación</h3>
+<h4 id="distribuciones-de-dosis-en-campos-cuadrados">Distribuciones de dosis en campos cuadrados</h4>
+
+<img data-src="images/toma2.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:95.0%"></section>
+<section class="slide level2">
+
+<h4 id="validación-como-sistema-de-dosimetría">Validación como sistema de dosimetría</h4>
+
+<img data-src="images/FieldMeas.png" class="quarto-figure quarto-figure-center r-stretch" style="width:95.0%"></section>
+<section class="slide level2">
+
+<h3 id="verificación-de-distribuciones-de-dosis-absorbida">Verificación de distribuciones de dosis absorbida</h3>
+<h4 id="cálculo-de-la-distribución-de-dosis-en-el-paciente">Cálculo de la distribución de dosis en el paciente</h4>
+
+<img data-src="images/LinfPat.jpg" style="width:95.0%" class="r-stretch"></section>
+<section class="slide level2">
+
+<h4 id="recálculo-de-la-distribución-de-dosis-en-el-maniquí">Recálculo de la distribución de dosis en el maniquí</h4>
+
+<img data-src="images/LinfPhantom.jpg" style="width:95.0%" class="r-stretch"></section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<h3 id="ejemplo-irradiación-de-radiocirugía-cerebral">Ejemplo: Irradiación de radiocirugía cerebral</h3>
+<h4 id="movimientos-de-gantry-y-mesa">Movimientos de gantry y mesa</h4>
+<video width="740" height="500" controls="">
+<source src="videos/DryRun.mp4" type="video/mp4">
+<p>Your browser does not support the video tag. </p>
+</video></section>
+<section class="slide level2">
+
+<h3 id="ejemplo-irradiación-de-radiocirugía-cerebral-1">Ejemplo: Irradiación de radiocirugía cerebral</h3>
+<h4 id="movimientos-del-colimador-multilámina">Movimientos del colimador multilámina</h4>
+<video width="740" height="500" controls="">
+<source src="videos/DemoTrat.mp4" type="video/mp4">
+<p>Your browser does not support the video tag. </p>
+</video></section>
+<section class="slide level2">
+
+<h4 id="recálculo-de-la-distribución-de-dosis-en-el-maniquí-1">Recálculo de la distribución de dosis en el maniquí</h4>
+
+<img data-src="images/CapturaCubo.jpg" style="width:95.0%" class="r-stretch"></section>
+<section class="slide level2">
+
+<h4 id="irradiación-de-las-películas">Irradiación de las películas</h4>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><img data-src="images/ManiquiCerrado.jpg"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/ManiquiAbierto.jpg" style="width:95.0%"></p>
+</div></div>
+</section>
+<section id="section-4" class="slide level2 smaller">
+<h2></h2>
+<h4 id="digitalización-de-las-películas">Digitalización de las películas</h4>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p>Coronal 2.5 cm posterior al isocentro.</p>
+<p><img data-src="images/c-2_5.png" style="width:75.0%"></p>
+</div><div class="column" style="width:50%;">
+<p>Coronal 4.5 cm posterior al isocentro.</p>
+<p><img data-src="images/c-4_5.png" style="width:72.0%"></p>
+</div></div>
+</section>
+<section id="section-5" class="slide level2 smaller">
+<h2></h2>
+<h4 id="análisis-tiras-de-control">Análisis: Tiras de control</h4>
+<p>Trozos de películas del mismo lote de fabricación irradiadas bajo condiciones controladas con una dosis conocida y procesadas a la vez que las del ensayo</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/ControlStrips.png"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/ControlStripHist.png" style="width:72.0%"></p>
+</div></div>
+<p>Las tiras de control sirven como comprobación de la estabilidad del procesado y para tener una estimación de incertidumbres</p>
+</section>
+<section class="slide level2">
+
+<h4 id="análisis-señales-digitales">Análisis: Señales digitales</h4>
+
+<img data-src="images/SignalProfiles.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"><div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Control del ruido</strong></p>
+</div>
+<div class="callout-content">
+<p>La <span class="alert"><em>señal digital</em></span> producida por el escáner <span class="alert"><em>presenta ruido</em></span>. Se emplean algoritmos como el <em>análisis multicanal</em> propuesto por Micke o el de <em>promedios no locales</em>.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<h4 id="análisis-distribución-de-dosis">Análisis: Distribución de dosis</h4>
+
+<img data-src="images/DoseDist.png" style="width:90.0%" class="r-stretch"></section>
+<section id="section-6" class="slide level2 smaller">
+<h2></h2>
+<h4 id="análisis-distribución-de-diferencias-de-dosis">Análisis: Distribución de diferencias de dosis</h4>
+<div class="{.text=&quot;center&quot;}">
+<p><strong>Dosis medida - Dosis planificada</strong></p>
+</div>
+
+<img data-src="images/DoseDiff.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%"><p>Es muy sensible a pequeños desplazamientos en las regiones de alto gradiente de dosis</p>
+</section>
+<section id="section-7" class="slide level2 smaller">
+<h2></h2>
+<h4 id="análisis-mapa-gamma">Análisis: mapa gamma</h4>
+<p>Para criterios de aceptación <span class="math inline">\(\delta D\)</span> y <span class="math inline">\(\delta d\)</span>, el índice <span class="math inline">\(\gamma(\delta d, \delta D)\)</span> es una métrica conjunta de la diferencia de dosis <span class="math inline">\(\Delta D(\mathbf{r}_e, \mathbf{r}_r)\)</span> y la distancia <span class="math inline">\(d(\mathbf{r}_e, \mathbf{r}_r)\)</span>, con <span class="math inline">\(\mathbf{r}_e\)</span>, <span class="math inline">\(\mathbf{r}_r\)</span> puntos del espacio de evaluación y de referencia respectivamente, definida como</p>
+<p><span class="math display">\[
+\gamma(\mathbf{r}_r,\delta d, \delta D) = \text{min}\{ \sqrt{\frac{d^2(\mathbf{r}_e, \mathbf{r}_r)}{\delta d^2}+\frac{\Delta D^2(\mathbf{r}_e, \mathbf{r}_r)}{\delta D^2}} \} \forall \mathbf{r}_e
+\]</span></p>
+<p>Por ejemplo, un píxel con <span class="math inline">\(\gamma(3, 3) &lt; 1\)</span> indica que en un entorno de menos de 3 mm podemos encontrar otro píxel con una diferencia relativa de dosis menor al 3%.</p>
+
+<img data-src="images/GammaDist.png" class="quarto-figure quarto-figure-center r-stretch" style="width:60.0%"></section>
+<section class="slide level2">
+
+<h4 id="análisis-comparación-de-perfiles-de-dosis">Análisis: Comparación de perfiles de dosis</h4>
+
+<img data-src="images/DoseProfiles.png" class="quarto-figure quarto-figure-center r-stretch" style="width:85.0%"></section>
+<section class="slide level2">
+
+<h3 id="sistemas-comerciales-de-procesado-filmqapro">Sistemas comerciales de procesado: FilmQAPro</h3>
+
+<img data-src="images/FilmQAPro.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<section class="slide level2">
+
+<h3 id="sistemas-comerciales-de-procesado-filmqapro-1">Sistemas comerciales de procesado: FilmQAPro</h3>
+
+<img data-src="images/FilmQAProCal.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:55.0%"></section>
+<section class="slide level2">
+
+<h3 id="sistemas-comerciales-de-procesado-filmqapro-2">Sistemas comerciales de procesado: FilmQAPro</h3>
+
+<img data-src="images/FilmQAProResult.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:85.0%"></section>
+<section class="slide level2">
+
+<h3 id="aplicaciones-web-comerciales-radiochromic.com">Aplicaciones web comerciales: radiochromic.com</h3>
+
+<img data-src="images/webapp.png" class="quarto-figure quarto-figure-center r-stretch" style="width:85.0%"></section>
+<section class="slide level2">
+
+<h3 id="aplicaciones-web-de-libre-uso-filmqap">Aplicaciones web de libre uso: <a href="https://pychromic.streamlit.app">FilmQAp</a></h3>
+<p>Aplicación en desarrollo construida mediante <strong>streamlit</strong> para realizar procesamiento de películas radiocrómicas mediante un protocolo de digitalización única.</p>
+
+<img data-src="images/pychromic.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
+<section id="resumen" class="slide level2 smaller">
+<h2>Resumen</h2>
+<h3 id="dosimetría-fotográfica">Dosimetría fotográfica</h3>
+<ul>
+<li>Las películas radiocrómicas permiten medir con alta resolución distribuciones espaciales de dosis absorbida</li>
+<li>Por su composición son una alternativa a valorar en situaciones con falta de equilibrio electrónico</li>
+<li>Requieren elaborados procedimientos de manipulación y análisis</li>
+</ul>
+<h3 id="control-de-calidad-de-distribuciones-de-dosis">Control de calidad de distribuciones de dosis</h3>
+<ul>
+<li>El índice gamma es una métrica que simultáneamente informa sobre diferencias relativas de dosis y distancia al acuerdo.</li>
+</ul>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/LogoUCM.jpg" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Dosimetría radiocrómica y control de distribuciones de dosis. Física de la radioterapia</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/multiplex/socket.io.js"></script>
+  <script src="../site_libs/revealjs/plugin/multiplex/multiplex.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'multiplex': {"secret":null,"id":"b88d3333a6109c25","url":"https://reveal-multiplex.glitch.me/"},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/csarux\.github\.io\/ClasesFisicaRT\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
