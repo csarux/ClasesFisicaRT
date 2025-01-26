@@ -644,6 +644,181 @@
     "text": "DICOM RT y el futuro de la Radioterapia\n\nRadioterapia adaptativa:\n\nAjustes en tiempo real basados en cambios anatómicos.\n\nIntegración con IA:\n\nAnálisis de datos para mejorar precisión y personalización.\n\nConectividad en la nube:\n\nFacilitar acceso remoto y colaboración entre equipos."
   },
   {
+    "objectID": "Temas/Aceleradores.html#section",
+    "href": "Temas/Aceleradores.html#section",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Requisitos\n\nPara tratar pacientes con haces de fotones necesitamos al menos energías promedio del orden de 1 a 2 MeV. Considerando que aproximadamente el espectro de frenado tiene una energía media de entre la mitad y un tercio del potencial de aceleración, necesitaremos generadores con potenciales de 4-6 MV al menos.\nTambién son deseables tasas de dosis del orden de varios Grays por minuto. En algunas aplicaciones (radiocirugía) las tasas pueden doblarse o incluso cuadriplicarse.\nLos generadores electrostáticos (Van de Graff) o aceleradores directos no satisfacen estos requisitos. Se prefieren los generadores en los que la fuerza de aceleración se repite un número de veces:\n\nCíclicos: betatrones, ciclotrones, sincrotrones\nLineales: aceleradores lineales\n\nLos aceleradores lineales1 son los generadores más extendidos, por sus características de alta tasa de dosis, diseño compacto y fiabilidad.\nLa mayoría van montados sobre cabezales (gantries) isocéntricos.\n\nSalvo que se diga lo contrario, el material de esta clase está tomado de Radiation Therapy Physics. Third Edition. William R. Handee. Geoffrey S. Ibbott. Eric G. Handee. Wiley 2005."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-1",
+    "href": "Temas/Aceleradores.html#section-1",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Principios de operación\n\n\n\n\n\n\nAcelerador de electrones mediante microondas\n\n\n\nLos campos de microondas son guiados por un tubo metálico con cavidades resonantes denominado guía de aceleración.\nAdemás del campo de microondas inyectado se produce un campo reflejado\nLos electrones se introducen por uno de los extremos de la guía.\nEn las paredes de la guía el campo electromagnético induce una corriente que a su vez genera un campo eléctrico que puede propagarse o ser campo un campo estacionario.\nEl campo eléctrico ejerce una fuerza sobre los electrones y los acelera hasta velocidades próximas a la de la luz.\n\n\n\n\nLa potencia consumida por el acelerador\n\\[\nP = \\frac{V^2}{Z\\,L}\n\\]\n\n\\(V\\) potencial de aceleración\n\\(Z\\) Impedancia de shunt\n\\(L\\) Longitud de la guía de aceleración\n\nUn potencial de aceleración \\(V\\) en el orden de 10 MV, con una impedancia de shunt \\(Z\\) = 100 M\\(\\Omega\\)/m y una guía de 1 metro de longitud consumiría una potencia de 1 MW. Otros componentes del acelerador consumen potencias similares. Se requieren potencias del orden de 10 MW."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-2",
+    "href": "Temas/Aceleradores.html#section-2",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "La velocidad de fase (propagación del campo eléctrico de aceleración inducido) está determinada por el diseño de las cavidades de la guía.\nUna longitud de onda ocupa dos cavidades.  \\[\nL = \\frac{v}{2\\,\\nu}\n\\]\nSiendo \\(L\\) la longitud de una cavidad, \\(v\\) la velocidad de las partículas y \\(\\nu\\) la frecuencia del campo de microondas. Para \\(v\\) próxima a \\(c\\), \\(L\\) deja de crecer"
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-3",
+    "href": "Temas/Aceleradores.html#section-3",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Componentes generadores del acelerador lineal\nModulador\n\nEs el circuito encargado de proporcionar la potencia necesaria para la aceleración (megawatios) en forma de pulsos cuadrados (el acelerador funciona por impulsos, no de forma continua).\nEl primer elemento del modulador es un rectificador para pasar de la corriente alterna de alimentación a corriente continua.\nEl elemento de potencia se compone de un banco de capacitores que se descargan secuencialmente mediante un circuito de inductores que los conecta, para hacer el pulso cuadrado y con una duración suficiente.\nLa descarga de los capacitores se produce cuando se abre un tubo interruptor (thyratron) que consiste en un tubo triodo lleno de gas. Dos terminales polarizan una rejilla. Si la rejilla está polarizada positivamente fluyen electrones que ionizan el gas del tubo permitiendo el paso de las corrientes elevadas asociadas a los pulsos de potencia. Mientras la polaridad es negativa no fluye corriente y los capacitores se vuelven a cargar.\nEl ciclo se repite de unas 50 a 500 veces por segundo y es controlado por un circuito de sincronización.\nEl modulador alimenta el circuito generador de microondas de alta potencia, que puede ser un magnetron o un klystron"
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-4",
+    "href": "Temas/Aceleradores.html#section-4",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Magnetron\n\n\n\n\n\nPropio de aceleradores con menores exigencias de potencia (2 MW).\nDiodo cilíndrico con un cátodo central calentado mediante filamentos internos\nÁnodo externo con cavidades resonantes\nUn intenso campo magnético axial hace que la trayectoria de los electrones que se mueven hacia el ánodo cuando el modulador proporcionan un pulso DC sea una trayectoria espiral con cicloides.\nLos electrones emiten radiación en forma de microondas que resuena en las cavidades del ánodo.\nLa resonancia se complementa con componentes alternas de campo eléctrico sobre el ánodo que concentran los electrones, producen canales que los guían e intensifican sus emisiones.\nUn antena de espira acoplada a las cavidades extrae las microondas que son guiadas hasta la guía de aceleración.\nLa frecuencia se mantiene sintonizada con la guía mediante un circuito de realimentación."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-5",
+    "href": "Temas/Aceleradores.html#section-5",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Klystron\n\n\n\n\n\nNo son osciladores, son amplificadores de potencia. Requieren un oscilador de microondas de baja potencia.\nEste oscilador inyecta microondas en la primera cavidad denominada buncher.\nSe inyectan electrones en el buncher acelerados por el pulso DC proporcionado por el modulador.\nLa velocidad de los electrones (energía de varios keV) se modula por el campo eléctrico de microondas agrupando los electrones (bunches).\nAl llegar a la segunda cavidad (catcher) los electrones agrupados han perdido parte de la energía emitiéndola como un pulso de microondas amplificado.\nMediante la sucesión de varias cavidades se pueden llegar a producir picos de potencia de hasta 25 MW."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-6",
+    "href": "Temas/Aceleradores.html#section-6",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Selectores de potencia\n\n\n\n\n\n\n\n\n\n\nÓrdenes de magnitud de frecuencia y dimensiones del acelerador\n\n\n\nLos aceleradores funcionan con campos de microondas con \\(\\nu\\) = 3000 MHz, \\(\\lambda\\) = 10 cm.\nLas cavidades son algo menores porque la velocidad de fase en la guía se reduce.\nLas guías rectangulares son 0.6 \\(\\lambda\\) de ancho y entre (0.2-0.5) \\(\\lambda\\) de alto.\n\n\n\n\n\nLos campos de microondas de alta potencia (salida del magnetron o el klystron) son llevados hasta la guía aceleradora (sección circular) mediante guías rectangulares. Todos estos circuitos van llenos de un gas dieléctrico, normalmente SF\\({}_6\\).\n\n\n\nLos campos magnéticos son perpendiculares a la guía y los eléctricos (aceleración de los electrones) paralelos a la dirección longitudinal de la guía.\n\n\n\n\nEn aceleradores multienergéticos la cantidad de potencia que se inyecta se selecciona mediante un power splitter, dispositivo que refleja parte de la potencia a la guía y parte a una carga para su absorción.\nTambién es necesario absorber la potencia reflejada en la guía para evitar pérdidas en el magnetron o el klystron"
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-7",
+    "href": "Temas/Aceleradores.html#section-7",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Bombas de vacío\n\n\n\n\n\nLa guía requiere presiones del orden de \\(10^{-10}\\) mm Hg para evitar arcos por ionización de gases, presiones difíciles de conseguir mediante métodos puramente mecánicos.\nSe utilizan sputter-ion pumps.\nSe componen de electrodos: cátodo de titanio, ánodo formado por cilindros conductores.\nLos electrodos se colocan en el seno de un campo magnético.\nLos electrones circulan entre cátodo y ánodo siguiendo trayectorias espirales e ionizan las moléculas de gas con las que interaccionan.\nLos iones gaseosos son intercambiados por átomos neutros de titanio cuando los iones golpean el cátodo.\nLos átomos de titanio se depositan sobre el ánodo."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-8",
+    "href": "Temas/Aceleradores.html#section-8",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Sección de aceleración\n\n\n\n\n\n\nConjunto de cavidades acopladas donde se produce la aceleración del haz de electrones.\nEn aceleradores con guías pequeñas, potenciales de aceleración de no más de 6 MV, la guía puede estar orientada en la dirección del haz de terapia.\nAceleradores con energías superiores requieren guías en direcciones diferentes y necesitan una sección de deflexión.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\n\nTomado de Radiation Oncology Physics Handbook IAEA"
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-9",
+    "href": "Temas/Aceleradores.html#section-9",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Sección de deflexión, bending magnet\n\n\n\n\n\nDispositivo que cambia la dirección del haz de electrones mediante la aplicación de un campo magnético.\nPara cambiar de una haz con orientación horizontal a uno vertical, el ángulo de deflexión puede ser de 90º o de 270º.\nEl radio de giro \\(r\\) está relacionado con la velocidad de los electrones \\(v\\), y la intensidad del campo magnético \\(B\\) \\[\nr = \\frac{m_e\\,v}{e\\, B}\n\\]\nNo todos los electrones llegan con la misma velocidad por lo que en bending magnets de 90º se produce una dispersión del haz. En los diseños de 270º hay un punto denominado foco triple en el que el haz vuelve a converger.\nEl foco triple es el punto óptimo para colocar el blanco para la producción de fotones."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-10",
+    "href": "Temas/Aceleradores.html#section-10",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Componentes del cabezal del acelerador\nBlanco\n\nCuando se quiere tratar mediante un haz de fotones la energía que portan los electrones acelerados se tiene que convertir en rayos X.\nEl haz de electrones se hace interaccionar con un material de número atómico medio elevado para producir radiación de frenado.\nEn estas energías los fotones se emiten principalmente en la dirección de propagación de los electrones, por lo que el blanco se comporta como un filtro de transmisión.\nEl espesor óptimo del blanco es el detiene todos los electrones sin atenuar en exceso la radiación emitida. Blancos diferentes para diferentes energías.\n\nLámina dispersora, scattering foil\n\nCuando se quiere tratar mediante un haz de electrones el haz primario se dispersa en una lámina para que adquiera las condiciones de uniformidad y tamaño necesarias para el tratamiento.\nEn este caso se quiere evitar la presencia de radiación de frenado y la degradación de la energía del haz primario."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-11",
+    "href": "Temas/Aceleradores.html#section-11",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Colimador primario\n\nEs un bloque de blindaje tronco-cónico que define el tamaño de campo máximo diponible\nEn los aceleradores modernos proyecta un campo circular en el plano del isocentro con un radio entre 20 y 28 cm.\n\nFiltro aplanador, flattening filter\n\nFiltro encargado de homogeneizar la intensidad del haz emitido desde el blanco.\nTiene forma de cono para compensar la distribución de radiación de frenado\n\nCarrusel\n\nEs un sistema móvil que coloca la combinación adecuada de blanco, lámina dispersora y filtro aplanador en función de la energía seleccionada."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-12",
+    "href": "Temas/Aceleradores.html#section-12",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Cámaras monitoras\n\n\n\n\n\nLa tasa de dosis se controla nominalmente mediante el número de pulsos inyectados en la guía. Los aceleradores disponen de una selección de valores prefijados de tasa.\nSin embargo, el valor real de la tasa de dosis depende de muchos factores: intensidad de los pulsos de electrones, sintonización de la energía o ajuste de la velocidad de fase al tamaño de las cavidades resonantes que a su vez depende de la temperatura, enfoque del bending magnet, acoples mecánicos…\n\nPor debajo del filtro aplanador los aceleradores disponen de cámaras monitoras, cámaras de ionización que monitorizan la intensidad y estado del haz.\nMiden la cantidad de radiación emitida e interrumpen la irradiación al llegar a la cantidad programada.\nLas cámaras realimentan también sistemas de control para mantener la condiciones del haz (homogeneidad y simetría) e interrumpir la radiación en caso de inestabilidad.\nLas cámaras monitoras están divididas en sectores para poder medir simetría y homogeneidad."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-13",
+    "href": "Temas/Aceleradores.html#section-13",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Parámetros controlados por las cámaras monitoras\n\n\n\n\n\n\nUnidad monitor\n\n\nUnidad arbitraria de cuenta proporcionada por la cámara monitora relacionada con la cantidad de radiación que la atraviesa.\n\n\n\n\n\n\n\n\n\nCalibración del acelerador\n\n\nProceso por el que se establece la relación entre la dosis especificada en unas condiciones concretas dadas y las unidades monitor.\n\n\n\n\n\n\n\n\nHaz homogéneo y simétrico\n\n\n\n\n\n\nHaz con faltas de homogeneidad y simetría\n\n\n\n\n\n\nHomogeneidad con y sin filtro aplanador\n\n\n\n\n\n\n\n\n\nSimetría y Homogeneidad\n\n\n\nSimetría: Parámetro que mide cuanto de iguales son las dosis en un haz en punto a la misma distancia del eje.\nHomogeneidad: Parámetro que mide la diferencia entre la dosis máxima y la mínima en la región útil del haz.\n\n\n\n\n\n\n\n\n\n\nControl sobre la simetría y la homogeneidad\n\n\nAmbos parámetros se ajustan cambiando la incidencia del haz de electrones sobre el blanco y la dirección del haz de fotones sobre el filtro aplanador."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-14",
+    "href": "Temas/Aceleradores.html#section-14",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Espejo\n\nLámina semiplateada que forma un ángulo de 45º con el eje del haz en la que se refleja la luz emitida por una fuente colocada a la misma distancia del espejo que el foco.\n\n\n\n\n\n\n\nLuz de simulación\n\n\nLuz que permite visualizar la proyección de los campos de radiación sobre una superficie.\n\n\n\nColimación secundaria. Mordazas, Yaws\n\nDos pares de bloques de material de alta atenuación (Z elevado) en dirección X e Y.\nEstán motorizados y permiten definir tamaños de campo de forma rectangular de cualquier dimensión hasta 40x40 cm\\({}^2\\)\n\n\n\n\n\n\n\n\nFactor de campo\n\n\nLas mordazas está colocadas por detrás de las cámaras monitoras. La intensidad de radiación medida es previa a su colimación por las mordazas. La calibración va a depender del tamaño de campo."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-15",
+    "href": "Temas/Aceleradores.html#section-15",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Colimación terciaria. Colimador multilámina, MLC\n\n\n\nConjunto de dos bancos opuestos de bloques contiguos (láminas) de material de alta atenuación.\nLas láminas van machihembradas para reducir la transmisión interlámina.\nSu extremo está diseñado para optimizar la penumbra.\nUn motor mueve cada bancada (carro) y otro individual cada lámina.\n\n\n\n\n\n\n\n\n\nPermiten definir formas arbitrarias dentro de la resolución del ancho de las láminas (0.25, 0.5, 1 y 2 cm).\nSon dispositivos dinámicos: se pueden mover durante la irradiación. Un sistema de control coordina y vigila su posición en relación al cabezal y a las unidades monitor.\n\n\n\n\n\n\n\nModulación de intensidad\n\n\nPermiten producir perfiles arbitrarios de intensidad mediante la combinación de multiples haces con las formas adecuadas."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-16",
+    "href": "Temas/Aceleradores.html#section-16",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Elementos estáticos del acelerador\nEstativo, Stand\n\n\n\n\n\n\n\n\n\nImportancia del estativo\n\n\nLa estabilidad del estativo asegura la precisión del giro del cabezal que es especialmente relevante cuando se combinan haces para conseguir distribuciones de dosis optimizadas.\n\n\n\n\n\nEs la estructura fija del acelerador lineal que soporta el cabezal y permite su movimiento.\nContiene los elementos de generación de potencia.\nSu función es proporcionar estabilidad y soporte estructural al acelerador, asegurando que todos los componentes se mantengan en la posición correcta durante el tratamiento.\nComponentes:\n\nBase: Es la parte que se ancla firmemente al suelo para conferir estabilidad al acelerador.\nColumna: Es la parte vertical del estativo que soporta el gantry y permite su rotación.\nSistema de rotación: Permite que el gantry gire 360º alrededor del paciente y conecta el sistema generador con la guía de aceleración."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-17",
+    "href": "Temas/Aceleradores.html#section-17",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Elementos móviles del acelerador\n\n\n\n\nCabezal, Gantry\nDe la guía aceleradora en adelante todos los elementos del acelerador se mueven solidariamente alrededor de un eje perpendicular a la dirección de propagación del haz formando un conjunto al que se le denomina cabezal.\nColimador\nEl conjunto formado por el espejo, las mordazas y el MLC pueden girar solidariamente alrededor de un eje que contiene la dirección de propagación del haz.\nMesa de tratamiento\nAparte de desplazamientos lineales, la mesa de tratamiento puede realizar giros alrededor de un eje perpendicular al suelo.\n\n\n\n\n\n\n\nIsocentro\n\n\nPunto en el que se cruzan los ejes de giro del cabezal, del colimador y de la mesa de tratamiento."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-18",
+    "href": "Temas/Aceleradores.html#section-18",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Sistemas de refrigeración\n\nVarios componentes del acelerador (blanco, sección de deflección, guía de aceleración, la fuente de potencia de microondas) disipan cantidades apreciables de calor que tienen que ser evacuadas.\nSe utilizan varios circuitos con intercambiadores de calor entre ellos:\n\nCircuito primario con aceite.\nCircuito secundario con agua\nCircuito terciario con agua: propio del edificio en el que se encuentra la instalación de radioterapia, no la proporciona el suministrador del acelerador. Se tienen que verificar una serie de especificaciones (caudal, presión y temperatura del agua). Este circuito evacúa el calor al medio ambiente. En caso de necesidad suelen estar diseñados con la posibilidad de funcionar en agua perdida."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-19",
+    "href": "Temas/Aceleradores.html#section-19",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Integración de sistemas\n\n\n\nVan Dyk, J. The modern technology of radiation oncology Madison, WI, USA: Medical Physics Publishing; 1999. p1073."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-20",
+    "href": "Temas/Aceleradores.html#section-20",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Elementos reales\n\n\n\n\n\nEstativo y cabezal\n\n\n\n\n\n\nModulador. En este diseño el modulador no está integrado en el estativo."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-21",
+    "href": "Temas/Aceleradores.html#section-21",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Cuba contenedora del klystron\n\n\n\n\n\n\nSalida del klystron. Los tubos de colores forman parte del circuito de refrigeración"
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-22",
+    "href": "Temas/Aceleradores.html#section-22",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Divisor de potencia. El brazo inferior termina en una carga de agua.\n\n\n\n\n\n\nVista al otro lado de la salida del klystron en la que se ve el extremo de la carga de agua."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-23",
+    "href": "Temas/Aceleradores.html#section-23",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Detalle de la guía de ondas rectangular que transporta la potencia hasta la guía de aceleración\n\n\n\n\n\n\nDetalle del acople de la guía de ondas rectangular con el cilindro centrado con el eje de giro del cabezal"
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-24",
+    "href": "Temas/Aceleradores.html#section-24",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Cabezal del acelerador sin carcasa y girado a 270º. El cilindro rojo es la sección de aceleración. La sección de deflexión está contenida bajo la estructura blindada en el extremos del cabezal.\n\n\n\n\n\n\nCabezal del acelerador sin carcasa. En la parte inferior se aprecia la electrónica de control del MLC."
+  },
+  {
     "objectID": "Temas/CamarasIonizacion.html#introducción",
     "href": "Temas/CamarasIonizacion.html#introducción",
     "title": "Detectores",
