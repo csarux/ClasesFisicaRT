@@ -644,265 +644,6 @@
     "text": "DICOM RT y el futuro de la Radioterapia\n\nRadioterapia adaptativa:\n\nAjustes en tiempo real basados en cambios anatómicos.\n\nIntegración con IA:\n\nAnálisis de datos para mejorar precisión y personalización.\n\nConectividad en la nube:\n\nFacilitar acceso remoto y colaboración entre equipos."
   },
   {
-    "objectID": "Temas/Calibracion.html#section",
-    "href": "Temas/Calibracion.html#section",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Factores que afectan a la dosis medida en un punto\n\nEl medio en que se mide la dosis.\nLa profundidad a la que se mide la dosis.\nLa distancia desde el foco de radiación al punto de medida.\nEl tamaño de campo.\nLa posición del punto de medida dentro del haz de radiación."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-1",
-    "href": "Temas/Calibracion.html#section-1",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Medio de medida\n\nEl agua es el medio de referencia utilizado generalmente: fácil de obtener, homogéneo.\nPara minimizar los efectos debidos a la variación de la radiación secundaria que llega al detector, se utiliza un volumen grande (al menos 25x25x25 cm³).\nSe pueden utilizar otros materiales sólidos (plásticos sobre todo), que tengan densidad y número atómico efectivo similar; pero exigen correcciones a la medida para tomar en cuenta esas diferencias, y presentan otros problemas (falta de homogeneidad, polarización eléctrica).\n\n\n\n\n\n\n\nUso de plásticos\n\n\nBajo condiciones de control estadístico los plásticos son muy útiles para comprobar la constancia de la calibración.\nPermiten de forma fácil y rápida verificar la calibración e indicar la necesidad de realizar medidas con menor incertidumbre."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-2",
-    "href": "Temas/Calibracion.html#section-2",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Profundidad de medida\n\n\nFotones:\n\nEntre 5 y 10 cm.\nSuficientemente grande para:\n\nAsegurar equilibrio electrónico.\nEvitar la posible contaminación del haz por electrones.\n\n\n\n\n\n\n\n\nElectrones:\n\nEn la zona entre el máximo de dosis y el comienzo de la caída."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-3",
-    "href": "Temas/Calibracion.html#section-3",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Distancia foco-punto de medida\n\nSetup isocéntrico: detector colocado en el isocentro.\nSetup distancia fuente superficie constante: normalmente isocentro colocado en la superficie del maniquí de medida.\n\nTamaño de campo\n\nCampo estándar de calibración: campo cuadrado de 10 x 10 cm².\n\nPosición del punto de medida\n\nEn el eje central del haz."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-4",
-    "href": "Temas/Calibracion.html#section-4",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Detector para la calibración: Cámara de ionización\n\nInstrumento lo bastante sencillo como para ser empleado en un entorno clínico.\nCon la precisión suficiente (&lt; 2%).\nTipo de cámara:\n\nCilíndrica para haces de fotones y haces de electrones de energía superior a 6 MeV.\nPlana para haces de electrones de baja energía.\n\n\nCalibración de la cámara\n\nProceso que garantiza la trazabilidad de la medida de dosis hasta un patrón primario de dosis.\nPara alcanzar la precisión requerida, cada cámara debe ser calibrada individualmente (las variaciones de respuesta entre cámaras del mismo modelo pueden llegar al 1%).\nLa calibración se realiza en un Laboratorio Dosimétrico Secundario de Referencia, comparando la lectura de la cámara con la lectura de una cámara patrón.\nLa cámara patrón se calibra con los patrones de referencia de los Laboratorios Dosimétricos Primarios de Referencia."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-5",
-    "href": "Temas/Calibracion.html#section-5",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Las cámaras se suelen calibrar en haces de unidades de Cobalto, por la estabilidad de la energía y de la tasa de dosis.\nHay dos formas de realizar la calibración:\n\nEn aire (con caperuza de equilibrio): se obtiene el factor de calibración de kerma en aire, \\(N_k\\). Era la más utilizada hasta finales de los años 90.\nEn agua: se obtiene el coeficiente de calibración de dosis absorbida en agua, \\(N_{D,w}\\). Exige utilizar una funda hermética si la cámara no es sumergible. La preferida hoy en día."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-6",
-    "href": "Temas/Calibracion.html#section-6",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Cálculo de dosis en un haz clínico\nFijada la geometría de la irradiación, y conocido el factor de calibración de la cámara, es necesario dar ciertos pasos para relacionar la lectura de la cámara en la geometría de calibración del haz y la dosis en ese punto producida por el haz de radiación. Dichos pasos quedan establecidos en alguno de los Protocolos definidos a nivel nacional o internacional. El objetivo de esos protocolos es:\n\nProporcionar valores de referencia para los distintos factores que aparecen.\nEstablecer un marco común para que los distintos centros puedan comparar sus medidas.\n\nClasificación de los protocolos\n\nProtocolos basados en la calibración de la cámara de ionización en términos de kerma en aire (TG-21, TRS-277, TRS-381, SEFM-84, etc).\nProtocolos basados en la calibración de la cámara de ionización en términos de dosis absorbida en agua: TG-51, TRS-398, TRS-483."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-7",
-    "href": "Temas/Calibracion.html#section-7",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Protocolos basados en kerma en aire\nPaso desde el coeficiente de calibración en kerma a la dosis en agua\n\n\nEl paso desde el coeficiente de calibración en kerma \\(N_k\\) a la dosis en agua en la calibración clínica se realiza en dos etapas:\n\nObtención del factor de calibración de dosis en aire, \\(N_{D,\\text{aire}}\\).\nObtención del factor de corrección que hay que aplicar para pasar de dosis en aire a dosis en agua.\n\n\n\n\n\n\n\n\nHay que tener en cuenta que, al calibrar la cámara en aire, la inmensa mayoría de los electrones que atraviesan la cámara no provienen de la interacción de los fotones del haz en el aire que la rodea, sino de la interacción en la caperuza de equilibrio y la pared de la cámara. Por lo tanto, la composición de éstas es un factor fundamental de la calibración."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-8",
-    "href": "Temas/Calibracion.html#section-8",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Factor de calibración de dosis en aire\n\\[\nN_{D,\\text{aire}} = N_k (1-g) k_m k_{as}\n\\]\n\n\\(g\\) es la fracción de energía de los electrones que se reemite en forma de bremsstrahlung.\n\\(k_m\\) es un factor que toma en cuenta la no equivalencia al aire de la caperuza de equilibrio y la pared de la cámara.\n\\(k_{as}\\) es un factor que toma en cuenta la perturbación que produce la cámara sobre la fluencia de fotones del \\(^{60}\\)Co por atenuación y dispersión de éstos en las paredes de la cámara; es decir, corresponde al cociente entre la fluencia de fotones cuando la cámara no está en el medio y la fluencia cuando sí está. \\[\nk_{as} =  \\frac{1}{k_{at}^{\\text{Co}} \\, k_{sc}^{\\text{Co}} \\, k_{\\text{nounif}}^{\\text{Co}}}\n\\]\n\\(k_{at}^{\\text{Co}}\\) es la corrección debida a la atenuación de los fotones incidentes en las paredes de la cámara.\n\\(k_{sc}^{\\text{Co}}\\) es el aumento de señal de la cámara debido a la dispersión de fotones en las paredes de la cámara.\n\\(k_{\\text{nounif}}^{\\text{Co}}\\) es un factor que toma en cuenta la no uniformidad del haz primario de radiación dentro del volumen de la cámara. Para una cámara suficientemente alejada de la fuente se puede hacer la aproximación \\(k_{\\text{nounif}}^{\\text{Co}} \\approx 1\\)."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-9",
-    "href": "Temas/Calibracion.html#section-9",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Dosis en la medida del haz clínico\nSi \\(M\\) es la lectura de la cámara en la irradiación del haz clínico, la dosis medida será:\n\\[\nD_{\\text{agua}} = M^* \\cdot (s_{\\text{agua, aire}})_E \\cdot N_{D,\\text{aire}} \\cdot p_f \\cdot p_{\\text{wall}} \\cdot p_d\n\\]\n\\(M^*\\) es la lectura corregida por todos los factores de influencia (ver clase sobre cámaras de ionización):\n\\[\nM^* = (M - \\text{fugas}) \\cdot k_{tp} \\cdot k_{\\text{pol}} \\cdot k_s\n\\]\n\\((s_{\\text{agua, aire}})_E\\) es el cociente de los poderes de frenado másico restringido entre el agua y el aire para la energía del haz que se está calibrando."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-10",
-    "href": "Temas/Calibracion.html#section-10",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Protocolos basados en dosis en agua\n\n\nCuando la cámara está sumergida en agua, la mayoría de los electrones secundarios que la atraviesan se han producido en el agua, no en la pared.\nTeoría de Bragg-Gray\n\\[\nD_{\\text{agua}} = M^*\\,N_{D, \\text{aire}}\\,s_{\\text{agua, aire}}\\, p_Q\n\\]\n\n\n\n\n\n\n\n\\[\np_Q = p_{\\text{cav}} \\, p_{\\text{wall}} \\, p_{\\text{dis}} \\, p_{\\text{cel}}\n\\]\n\n\\(p_{\\text{cav}}\\): diferencias en la fluencia de electrones producidos por la presencia de la cámara.\n\\(p_{\\text{wall}}\\): electrones secundarios generados en la pared de la cámara que atraviesan ésta.\n\\(p_{\\text{dis}}\\): la fluencia no es homogénea dentro de la cámara, y la medida de la cámara no corresponde a la dosis en su centro sino a un punto situado más hacia la pared de entrada.\n\\(p_{\\text{cel}}\\): efecto del electrodo central en la fluencia de electrones."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-11",
-    "href": "Temas/Calibracion.html#section-11",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Calibración de la cámara en términos de dosis en agua\n\n\n\n\n\n\nVentaja de calibrar en dosis en agua\n\n\nLa cámara se calibra en términos de dosis en agua, que es la misma magnitud que luego se va a medir en el haz clínico.\n\n\n\nSi el haz que se calibra tiene la misma energía que la del haz que se usó para calibrar la cámara, tendremos:\n\\[\nD_{\\text{agua}} = M^* \\cdot N_{D,\\text{agua}}\n\\]\n\\(M^*\\) es la lectura corregida por todos los factores de influencia:\n\\[\nM^* = (M - \\text{fugas}) \\cdot k_{pT} \\cdot k_{\\text{pol}} \\cdot k_s\n\\]\nSi el haz es de diferente energía hay que tener en cuenta la variación de los factores de perturbación \\[\nD_{\\text{agua}} = M^* \\cdot N_{D,\\text{agua}} \\cdot K_{QQ_0} = (M - \\text{fugas}) \\cdot k_{pT} \\cdot k_{\\text{pol}} \\cdot k_s \\cdot N_{D,\\text{agua}} \\cdot K_{QQ_0}\n\\] \\[\nK_{QQ_0} = \\frac{(s_{\\text{agua, aire}})_Q\\, p_Q}{(s_{\\text{agua, aire}})_{\\text{Co}}\\, p_{\\text{Co}}}\n\\]"
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-12",
-    "href": "Temas/Calibracion.html#section-12",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Factores \\(K_{QQ_0}\\)\n\nLos factores \\(K_{QQ_0}\\) se han calculado o medido para todos los modelos de cámara y para todas las energías que se utilizan en la práctica.\nLas variaciones de estos factores son mínimas para cámaras de un mismo modelo, inferiores al 0.01%.\nLos factores están tabulados en los protocolos internacionales (TRS398, TG-51) en función de la calidad del haz.\n\nEspecificación de la calidad del haz\n\n\nFotones\n\nTRS 398\n\n\\(TPR_{20,10}\\) para campo 10x10 cm y SAD=100 cm.\n\\(PDD_{20,10}\\) para campo 10x10 cm y SSD=100 cm.\n\n\\(TPR_{20,10} = 1.2661 \\cdot PDD_{10,20} - 0.0595\\).\n\n\nTG 51\n\n\\(PDD(10\\,\\text{cm})\\) para campo 10x10 cm y SSD=100 cm.\n\n\n\nElectrones\n\n\\(R_{50}\\).\nPunto de medida:\n\n\\(z_{\\text{med}} = 0.6 \\cdot R_{50} - 0.1\\)."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-13",
-    "href": "Temas/Calibracion.html#section-13",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Condiciones de medida\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCámara de ionización cilíndrica o paralela.\nHaz barrido extenso con una única energía.\nPosición de la cámara: en el plateau, antes del comienzo del pico de Bragg.\n\\(R_p\\) profundidad más allá del pico de Bragg a la que la dosis desciende al 10% del máximo.\n\nDeterminación de la dosis absorbida1\n\\[\nD_{\\text{w},Q}(z_{\\text{ref}}) = M_Q \\cdot N_{D,\\text{w},Q} \\cdot K_{Q,Q_0}\n\\]\n\nEspecificación de la calidad del haz\nMediante el rango residual \\(R_{\\text{res}}\\) (en g/cm²) a una profundidad de medida \\(z\\)\n\\[\nR_{\\text{res}} = R_p - z\n\\]\nNo existen en la actualidad estándares primarios para protones, \\(Q_0\\) corresponde a \\({}^{60}\\)Co"
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-14",
-    "href": "Temas/Calibracion.html#section-14",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Protocolos específicos (TRS 483)\n\n\nTRS 398 y TG 51 se aplican a haces de fotones con filtro aplanador y en máquinas capaces de utilizar un campo de 10x10 cm².\n\n\n\n\n\n Cyberknife (versiones sin MLC)\nColimación mediante conos de radiocirugía, haz sin filtro\n\n\n\n\n\nImagen de la parte externa del colimador de la Cyberknife.\n\n Tomotherapy\nHaz sin filtro en forma de abanico, MLC binario sobre la apertura del campo."
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-15",
-    "href": "Temas/Calibracion.html#section-15",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Machine Specific Reference Field (Campo de Referencia Específico de la Máquina)\n\n\nGeometría de campo estándar para aquellos sistemas que no pueden colimar al campo de referencia.\n\n\n\n\n\n\n\n\n\n\nCyberknife\n\nCampo de referencia específico: Colimador de 6 cm de diámetro\n\n\n\n\n\n\n\nTomotherapy\n\nCampo de referencia específico: 5 x 10 cm²"
-  },
-  {
-    "objectID": "Temas/Calibracion.html#section-16",
-    "href": "Temas/Calibracion.html#section-16",
-    "title": "Calibración de equipos de radioterapia externa",
-    "section": "",
-    "text": "Especificación de la calidad del haz\n\n\n\nLa ausencia del filtro implica menor proporción de radiación dispersa y por tanto, distinta relación entre calidad del haz y \\(TPR_{20,10}\\).\nSe proponen nuevas tablas que relacionan \\(k_{Q,Q0}\\) con \\(TPR_{20,10}\\) en haces FFF.\nEstos valores incluyen \\(k_{vol}\\).\n\nDosis de calibración para el MSRF\n\\[\nD_{w,Q_{msr}}^{\\text{MSRF}} = M^* \\cdot N_{D,w,Co}^{\\text{MSRF}} \\cdot k_{Q,Co}^{\\text{MSRF}}\n\\]\n\n\n\n\n\n\n\nPara obtener \\(k_{Q,Co}^{\\text{MSRF}}\\) hay que estimar \\(TPR_{20,10}(10)\\). Se emplea una aproximación empírica\n\\[\nTPR_{20,10}(10) = \\frac{TPR_{20,10}(S) + c \\cdot (10 - S)}{1 + c \\cdot (10 - S)}\n\\]\ndonde \\(c = 16.15 \\times 10^{-3}\\) y \\(S\\) el lado de un campo cuadrado equivalente al MSRF"
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section",
-    "href": "Temas/Aceleradores.html#section",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Requisitos\n\nPara tratar pacientes con haces de fotones necesitamos al menos energías promedio del orden de 1 a 2 MeV. Considerando que aproximadamente el espectro de frenado tiene una energía media de entre la mitad y un tercio del potencial de aceleración, necesitaremos generadores con potenciales de 4-6 MV al menos.\nTambién son deseables tasas de dosis del orden de varios Grays por minuto. En algunas aplicaciones (radiocirugía) las tasas pueden doblarse o incluso cuadriplicarse.\nLos generadores electrostáticos (Van de Graff) o aceleradores directos no satisfacen estos requisitos. Se prefieren los generadores en los que la fuerza de aceleración se repite un número de veces:\n\nCíclicos: betatrones, ciclotrones, sincrotrones\nLineales: aceleradores lineales\n\nLos aceleradores lineales1 son los generadores más extendidos, por sus características de alta tasa de dosis, diseño compacto y fiabilidad.\nLa mayoría van montados sobre cabezales (gantries) isocéntricos.\n\nSalvo que se diga lo contrario, el material de esta clase está tomado de Radiation Therapy Physics. Third Edition. William R. Handee. Geoffrey S. Ibbott. Eric G. Handee. Wiley 2005."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-1",
-    "href": "Temas/Aceleradores.html#section-1",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Principios de operación\n\n\n\n\n\n\nAcelerador de electrones mediante microondas\n\n\n\nLos campos de microondas son guiados por un tubo metálico con cavidades resonantes denominado guía de aceleración.\nAdemás del campo de microondas inyectado se produce un campo reflejado\nLos electrones se introducen por uno de los extremos de la guía.\nEn las paredes de la guía el campo electromagnético induce una corriente que a su vez genera un campo eléctrico que puede propagarse o ser campo un campo estacionario.\nEl campo eléctrico ejerce una fuerza sobre los electrones y los acelera hasta velocidades próximas a la de la luz.\n\n\n\n\nLa potencia consumida por el acelerador\n\\[\nP = \\frac{V^2}{Z\\,L}\n\\]\n\n\\(V\\) potencial de aceleración\n\\(Z\\) Impedancia de shunt\n\\(L\\) Longitud de la guía de aceleración\n\nUn potencial de aceleración \\(V\\) en el orden de 10 MV, con una impedancia de shunt \\(Z\\) = 100 M\\(\\Omega\\)/m y una guía de 1 metro de longitud consumiría una potencia de 1 MW. Otros componentes del acelerador consumen potencias similares. Se requieren potencias del orden de 10 MW."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-2",
-    "href": "Temas/Aceleradores.html#section-2",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "La velocidad de fase (propagación del campo eléctrico de aceleración inducido) está determinada por el diseño de las cavidades de la guía.\nUna longitud de onda ocupa dos cavidades.  \\[\nL = \\frac{v}{2\\,\\nu}\n\\]\nSiendo \\(L\\) la longitud de una cavidad, \\(v\\) la velocidad de las partículas y \\(\\nu\\) la frecuencia del campo de microondas. Para \\(v\\) próxima a \\(c\\), \\(L\\) deja de crecer"
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-3",
-    "href": "Temas/Aceleradores.html#section-3",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Componentes generadores del acelerador lineal\nModulador\n\nEs el circuito encargado de proporcionar la potencia necesaria para la aceleración (megawatios) en forma de pulsos cuadrados (el acelerador funciona por impulsos, no de forma continua).\nEl primer elemento del modulador es un rectificador para pasar de la corriente alterna de alimentación a corriente continua.\nEl elemento de potencia se compone de un banco de capacitores que se descargan secuencialmente mediante un circuito de inductores que los conecta, para hacer el pulso cuadrado y con una duración suficiente.\nLa descarga de los capacitores se produce cuando se abre un tubo interruptor (thyratron) que consiste en un tubo triodo lleno de gas. Dos terminales polarizan una rejilla. Si la rejilla está polarizada positivamente fluyen electrones que ionizan el gas del tubo permitiendo el paso de las corrientes elevadas asociadas a los pulsos de potencia. Mientras la polaridad es negativa no fluye corriente y los capacitores se vuelven a cargar.\nEl ciclo se repite de unas 50 a 500 veces por segundo y es controlado por un circuito de sincronización.\nEl modulador alimenta el circuito generador de microondas de alta potencia, que puede ser un magnetron o un klystron"
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-4",
-    "href": "Temas/Aceleradores.html#section-4",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Magnetron\n\n\n\n\n\nPropio de aceleradores con menores exigencias de potencia (2 MW).\nDiodo cilíndrico con un cátodo central calentado mediante filamentos internos\nÁnodo externo con cavidades resonantes\nUn intenso campo magnético axial hace que la trayectoria de los electrones que se mueven hacia el ánodo cuando el modulador proporcionan un pulso DC sea una trayectoria espiral con cicloides.\nLos electrones emiten radiación en forma de microondas que resuena en las cavidades del ánodo.\nLa resonancia se complementa con componentes alternas de campo eléctrico sobre el ánodo que concentran los electrones, producen canales que los guían e intensifican sus emisiones.\nUn antena de espira acoplada a las cavidades extrae las microondas que son guiadas hasta la guía de aceleración.\nLa frecuencia se mantiene sintonizada con la guía mediante un circuito de realimentación."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-5",
-    "href": "Temas/Aceleradores.html#section-5",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Klystron\n\n\n\n\n\nNo son osciladores, son amplificadores de potencia. Requieren un oscilador de microondas de baja potencia.\nEste oscilador inyecta microondas en la primera cavidad denominada buncher.\nSe inyectan electrones en el buncher acelerados por el pulso DC proporcionado por el modulador.\nLa velocidad de los electrones (energía de varios keV) se modula por el campo eléctrico de microondas agrupando los electrones (bunches).\nAl llegar a la segunda cavidad (catcher) los electrones agrupados han perdido parte de la energía emitiéndola como un pulso de microondas amplificado.\nMediante la sucesión de varias cavidades se pueden llegar a producir picos de potencia de hasta 25 MW."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-6",
-    "href": "Temas/Aceleradores.html#section-6",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Selectores de potencia\n\n\n\n\n\n\n\n\n\n\nÓrdenes de magnitud de frecuencia y dimensiones del acelerador\n\n\n\nLos aceleradores funcionan con campos de microondas con \\(\\nu\\) = 3000 MHz, \\(\\lambda\\) = 10 cm.\nLas cavidades son algo menores porque la velocidad de fase en la guía se reduce.\nLas guías rectangulares son 0.6 \\(\\lambda\\) de ancho y entre (0.2-0.5) \\(\\lambda\\) de alto.\n\n\n\n\n\nLos campos de microondas de alta potencia (salida del magnetron o el klystron) son llevados hasta la guía aceleradora (sección circular) mediante guías rectangulares. Todos estos circuitos van llenos de un gas dieléctrico, normalmente SF\\({}_6\\).\n\n\n\nLos campos magnéticos son perpendiculares a la guía y los eléctricos (aceleración de los electrones) paralelos a la dirección longitudinal de la guía.\n\n\n\n\nEn aceleradores multienergéticos la cantidad de potencia que se inyecta se selecciona mediante un power splitter, dispositivo que refleja parte de la potencia a la guía y parte a una carga para su absorción.\nTambién es necesario absorber la potencia reflejada en la guía para evitar pérdidas en el magnetron o el klystron"
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-7",
-    "href": "Temas/Aceleradores.html#section-7",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Bombas de vacío\n\n\n\n\n\nLa guía requiere presiones del orden de \\(10^{-10}\\) mm Hg para evitar arcos por ionización de gases, presiones difíciles de conseguir mediante métodos puramente mecánicos.\nSe utilizan sputter-ion pumps.\nSe componen de electrodos: cátodo de titanio, ánodo formado por cilindros conductores.\nLos electrodos se colocan en el seno de un campo magnético.\nLos electrones circulan entre cátodo y ánodo siguiendo trayectorias espirales e ionizan las moléculas de gas con las que interaccionan.\nLos iones gaseosos son intercambiados por átomos neutros de titanio cuando los iones golpean el cátodo.\nLos átomos de titanio se depositan sobre el ánodo."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-8",
-    "href": "Temas/Aceleradores.html#section-8",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Sección de aceleración\n\n\n\n\n\n\nConjunto de cavidades acopladas donde se produce la aceleración del haz de electrones.\nEn aceleradores con guías pequeñas, potenciales de aceleración de no más de 6 MV, la guía puede estar orientada en la dirección del haz de terapia.\nAceleradores con energías superiores requieren guías en direcciones diferentes y necesitan una sección de deflexión.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\n\nTomado de Radiation Oncology Physics Handbook IAEA"
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-9",
-    "href": "Temas/Aceleradores.html#section-9",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Sección de deflexión, bending magnet\n\n\n\n\n\nDispositivo que cambia la dirección del haz de electrones mediante la aplicación de un campo magnético.\nPara cambiar de una haz con orientación horizontal a uno vertical, el ángulo de deflexión puede ser de 90º o de 270º.\nEl radio de giro \\(r\\) está relacionado con la velocidad de los electrones \\(v\\), y la intensidad del campo magnético \\(B\\) \\[\nr = \\frac{m_e\\,v}{e\\, B}\n\\]\nNo todos los electrones llegan con la misma velocidad por lo que en bending magnets de 90º se produce una dispersión del haz. En los diseños de 270º hay un punto denominado foco triple en el que el haz vuelve a converger.\nEl foco triple es el punto óptimo para colocar el blanco para la producción de fotones."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-10",
-    "href": "Temas/Aceleradores.html#section-10",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Componentes del cabezal del acelerador\nBlanco\n\nCuando se quiere tratar mediante un haz de fotones la energía que portan los electrones acelerados se tiene que convertir en rayos X.\nEl haz de electrones se hace interaccionar con un material de número atómico medio elevado para producir radiación de frenado.\nEn estas energías los fotones se emiten principalmente en la dirección de propagación de los electrones, por lo que el blanco se comporta como un filtro de transmisión.\nEl espesor óptimo del blanco es el detiene todos los electrones sin atenuar en exceso la radiación emitida. Blancos diferentes para diferentes energías.\n\nLámina dispersora, scattering foil\n\nCuando se quiere tratar mediante un haz de electrones el haz primario se dispersa en una lámina para que adquiera las condiciones de uniformidad y tamaño necesarias para el tratamiento.\nEn este caso se quiere evitar la presencia de radiación de frenado y la degradación de la energía del haz primario."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-11",
-    "href": "Temas/Aceleradores.html#section-11",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Colimador primario\n\nEs un bloque de blindaje tronco-cónico que define el tamaño de campo máximo diponible\nEn los aceleradores modernos proyecta un campo circular en el plano del isocentro con un radio entre 20 y 28 cm.\n\nFiltro aplanador, flattening filter\n\nFiltro encargado de homogeneizar la intensidad del haz emitido desde el blanco.\nTiene forma de cono para compensar la distribución de radiación de frenado\n\nCarrusel\n\nEs un sistema móvil que coloca la combinación adecuada de blanco, lámina dispersora y filtro aplanador en función de la energía seleccionada."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-12",
-    "href": "Temas/Aceleradores.html#section-12",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Cámaras monitoras\n\n\n\n\n\nLa tasa de dosis se controla nominalmente mediante el número de pulsos inyectados en la guía. Los aceleradores disponen de una selección de valores prefijados de tasa.\nSin embargo, el valor real de la tasa de dosis depende de muchos factores: intensidad de los pulsos de electrones, sintonización de la energía o ajuste de la velocidad de fase al tamaño de las cavidades resonantes que a su vez depende de la temperatura, enfoque del bending magnet, acoples mecánicos…\n\nPor debajo del filtro aplanador los aceleradores disponen de cámaras monitoras, cámaras de ionización que monitorizan la intensidad y estado del haz.\nMiden la cantidad de radiación emitida e interrumpen la irradiación al llegar a la cantidad programada.\nLas cámaras realimentan también sistemas de control para mantener la condiciones del haz (homogeneidad y simetría) e interrumpir la radiación en caso de inestabilidad.\nLas cámaras monitoras están divididas en sectores para poder medir simetría y homogeneidad."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-13",
-    "href": "Temas/Aceleradores.html#section-13",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Parámetros controlados por las cámaras monitoras\n\n\n\n\n\n\nUnidad monitor\n\n\nUnidad arbitraria de cuenta proporcionada por la cámara monitora relacionada con la cantidad de radiación que la atraviesa.\n\n\n\n\n\n\n\n\n\nCalibración del acelerador\n\n\nProceso por el que se establece la relación entre la dosis especificada en unas condiciones concretas dadas y las unidades monitor.\n\n\n\n\n\n\n\n\nHaz homogéneo y simétrico\n\n\n\n\n\n\nHaz con faltas de homogeneidad y simetría\n\n\n\n\n\n\nHomogeneidad con y sin filtro aplanador\n\n\n\n\n\n\n\n\n\nSimetría y Homogeneidad\n\n\n\nSimetría: Parámetro que mide cuanto de iguales son las dosis en un haz en punto a la misma distancia del eje.\nHomogeneidad: Parámetro que mide la diferencia entre la dosis máxima y la mínima en la región útil del haz.\n\n\n\n\n\n\n\n\n\n\nControl sobre la simetría y la homogeneidad\n\n\nAmbos parámetros se ajustan cambiando la incidencia del haz de electrones sobre el blanco y la dirección del haz de fotones sobre el filtro aplanador."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-14",
-    "href": "Temas/Aceleradores.html#section-14",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Espejo\n\nLámina semiplateada que forma un ángulo de 45º con el eje del haz en la que se refleja la luz emitida por una fuente colocada a la misma distancia del espejo que el foco.\n\n\n\n\n\n\n\nLuz de simulación\n\n\nLuz que permite visualizar la proyección de los campos de radiación sobre una superficie.\n\n\n\nColimación secundaria. Mordazas, Yaws\n\nDos pares de bloques de material de alta atenuación (Z elevado) en dirección X e Y.\nEstán motorizados y permiten definir tamaños de campo de forma rectangular de cualquier dimensión hasta 40x40 cm\\({}^2\\)\n\n\n\n\n\n\n\n\nFactor de campo\n\n\nLas mordazas está colocadas por detrás de las cámaras monitoras. La intensidad de radiación medida es previa a su colimación por las mordazas. La calibración va a depender del tamaño de campo."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-15",
-    "href": "Temas/Aceleradores.html#section-15",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Colimación terciaria. Colimador multilámina, MLC\n\n\n\nConjunto de dos bancos opuestos de bloques contiguos (láminas) de material de alta atenuación.\nLas láminas van machihembradas para reducir la transmisión interlámina.\nSu extremo está diseñado para optimizar la penumbra.\nUn motor mueve cada bancada (carro) y otro individual cada lámina.\n\n\n\n\n\n\n\n\n\nPermiten definir formas arbitrarias dentro de la resolución del ancho de las láminas (0.25, 0.5, 1 y 2 cm).\nSon dispositivos dinámicos: se pueden mover durante la irradiación. Un sistema de control coordina y vigila su posición en relación al cabezal y a las unidades monitor.\n\n\n\n\n\n\n\nModulación de intensidad\n\n\nPermiten producir perfiles arbitrarios de intensidad mediante la combinación de multiples haces con las formas adecuadas."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-16",
-    "href": "Temas/Aceleradores.html#section-16",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Elementos estáticos del acelerador\nEstativo, Stand\n\n\n\n\n\n\n\n\n\nImportancia del estativo\n\n\nLa estabilidad del estativo asegura la precisión del giro del cabezal que es especialmente relevante cuando se combinan haces para conseguir distribuciones de dosis optimizadas.\n\n\n\n\n\nEs la estructura fija del acelerador lineal que soporta el cabezal y permite su movimiento.\nContiene los elementos de generación de potencia.\nSu función es proporcionar estabilidad y soporte estructural al acelerador, asegurando que todos los componentes se mantengan en la posición correcta durante el tratamiento.\nComponentes:\n\nBase: Es la parte que se ancla firmemente al suelo para conferir estabilidad al acelerador.\nColumna: Es la parte vertical del estativo que soporta el gantry y permite su rotación.\nSistema de rotación: Permite que el gantry gire 360º alrededor del paciente y conecta el sistema generador con la guía de aceleración."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-17",
-    "href": "Temas/Aceleradores.html#section-17",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Elementos móviles del acelerador\n\n\n\n\nCabezal, Gantry\nDe la guía aceleradora en adelante todos los elementos del acelerador se mueven solidariamente alrededor de un eje perpendicular a la dirección de propagación del haz formando un conjunto al que se le denomina cabezal.\nColimador\nEl conjunto formado por el espejo, las mordazas y el MLC pueden girar solidariamente alrededor de un eje que contiene la dirección de propagación del haz.\nMesa de tratamiento\nAparte de desplazamientos lineales, la mesa de tratamiento puede realizar giros alrededor de un eje perpendicular al suelo.\n\n\n\n\n\n\n\nIsocentro\n\n\nPunto en el que se cruzan los ejes de giro del cabezal, del colimador y de la mesa de tratamiento."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-18",
-    "href": "Temas/Aceleradores.html#section-18",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Sistemas de refrigeración\n\nVarios componentes del acelerador (blanco, sección de deflección, guía de aceleración, la fuente de potencia de microondas) disipan cantidades apreciables de calor que tienen que ser evacuadas.\nSe utilizan varios circuitos con intercambiadores de calor entre ellos:\n\nCircuito primario con aceite.\nCircuito secundario con agua\nCircuito terciario con agua: propio del edificio en el que se encuentra la instalación de radioterapia, no la proporciona el suministrador del acelerador. Se tienen que verificar una serie de especificaciones (caudal, presión y temperatura del agua). Este circuito evacúa el calor al medio ambiente. En caso de necesidad suelen estar diseñados con la posibilidad de funcionar en agua perdida."
-  },
-  {
-    "objectID": "Temas/Aceleradores.html#section-19",
-    "href": "Temas/Aceleradores.html#section-19",
-    "title": "Aceleradores lineales",
-    "section": "",
-    "text": "Integración de sistemas\n\n\n\nVan Dyk, J. The modern technology of radiation oncology Madison, WI, USA: Medical Physics Publishing; 1999. p1073."
-  },
-  {
     "objectID": "Temas/CamarasIonizacion.html#introducción",
     "href": "Temas/CamarasIonizacion.html#introducción",
     "title": "Detectores",
@@ -1118,6 +859,475 @@
     "title": "Detectores",
     "section": "",
     "text": "En esta figura se muestra lo que ocurre al intentar corregir la deriva basándose únicamente en la medida del instante anterior. Al no identificarse la causa asignable, la componente aleatoria predomina y por su naturaleza esta componente no se puede corregir. Los histogramas no muestran reducción de la varianza."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section",
+    "href": "Temas/Aceleradores.html#section",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Requisitos\n\nPara tratar pacientes con haces de fotones necesitamos al menos energías promedio del orden de 1 a 2 MeV. Considerando que aproximadamente el espectro de frenado tiene una energía media de entre la mitad y un tercio del potencial de aceleración, necesitaremos generadores con potenciales de 4-6 MV al menos.\nTambién son deseables tasas de dosis del orden de varios Grays por minuto. En algunas aplicaciones (radiocirugía) las tasas pueden doblarse o incluso cuadriplicarse.\nLos generadores electrostáticos (Van de Graff) o aceleradores directos no satisfacen estos requisitos. Se prefieren los generadores en los que la fuerza de aceleración se repite un número de veces:\n\nCíclicos: betatrones, ciclotrones, sincrotrones\nLineales: aceleradores lineales\n\nLos aceleradores lineales1 son los generadores más extendidos, por sus características de alta tasa de dosis, diseño compacto y fiabilidad.\nLa mayoría van montados sobre cabezales (gantries) isocéntricos.\n\nSalvo que se diga lo contrario, el material de esta clase está tomado de Radiation Therapy Physics. Third Edition. William R. Handee. Geoffrey S. Ibbott. Eric G. Handee. Wiley 2005."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-1",
+    "href": "Temas/Aceleradores.html#section-1",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Principios de operación\n\n\n\n\n\n\nAcelerador de electrones mediante microondas\n\n\n\nLos campos de microondas son guiados por un tubo metálico con cavidades resonantes denominado guía de aceleración.\nAdemás del campo de microondas inyectado se produce un campo reflejado\nLos electrones se introducen por uno de los extremos de la guía.\nEn las paredes de la guía el campo electromagnético induce una corriente que a su vez genera un campo eléctrico que puede propagarse o ser campo un campo estacionario.\nEl campo eléctrico ejerce una fuerza sobre los electrones y los acelera hasta velocidades próximas a la de la luz.\n\n\n\n\nLa potencia consumida por el acelerador\n\\[\nP = \\frac{V^2}{Z\\,L}\n\\]\n\n\\(V\\) potencial de aceleración\n\\(Z\\) Impedancia de shunt\n\\(L\\) Longitud de la guía de aceleración\n\nUn potencial de aceleración \\(V\\) en el orden de 10 MV, con una impedancia de shunt \\(Z\\) = 100 M\\(\\Omega\\)/m y una guía de 1 metro de longitud consumiría una potencia de 1 MW. Otros componentes del acelerador consumen potencias similares. Se requieren potencias del orden de 10 MW."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-2",
+    "href": "Temas/Aceleradores.html#section-2",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "La velocidad de fase (propagación del campo eléctrico de aceleración inducido) está determinada por el diseño de las cavidades de la guía.\nUna longitud de onda ocupa dos cavidades.  \\[\nL = \\frac{v}{2\\,\\nu}\n\\]\nSiendo \\(L\\) la longitud de una cavidad, \\(v\\) la velocidad de las partículas y \\(\\nu\\) la frecuencia del campo de microondas. Para \\(v\\) próxima a \\(c\\), \\(L\\) deja de crecer"
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-3",
+    "href": "Temas/Aceleradores.html#section-3",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Componentes generadores del acelerador lineal\nModulador\n\nEs el circuito encargado de proporcionar la potencia necesaria para la aceleración (megawatios) en forma de pulsos cuadrados (el acelerador funciona por impulsos, no de forma continua).\nEl primer elemento del modulador es un rectificador para pasar de la corriente alterna de alimentación a corriente continua.\nEl elemento de potencia se compone de un banco de capacitores que se descargan secuencialmente mediante un circuito de inductores que los conecta, para hacer el pulso cuadrado y con una duración suficiente.\nLa descarga de los capacitores se produce cuando se abre un tubo interruptor (thyratron) que consiste en un tubo triodo lleno de gas. Dos terminales polarizan una rejilla. Si la rejilla está polarizada positivamente fluyen electrones que ionizan el gas del tubo permitiendo el paso de las corrientes elevadas asociadas a los pulsos de potencia. Mientras la polaridad es negativa no fluye corriente y los capacitores se vuelven a cargar.\nEl ciclo se repite de unas 50 a 500 veces por segundo y es controlado por un circuito de sincronización.\nEl modulador alimenta el circuito generador de microondas de alta potencia, que puede ser un magnetron o un klystron"
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-4",
+    "href": "Temas/Aceleradores.html#section-4",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Magnetron\n\n\n\n\n\nPropio de aceleradores con menores exigencias de potencia (2 MW).\nDiodo cilíndrico con un cátodo central calentado mediante filamentos internos\nÁnodo externo con cavidades resonantes\nUn intenso campo magnético axial hace que la trayectoria de los electrones que se mueven hacia el ánodo cuando el modulador proporcionan un pulso DC sea una trayectoria espiral con cicloides.\nLos electrones emiten radiación en forma de microondas que resuena en las cavidades del ánodo.\nLa resonancia se complementa con componentes alternas de campo eléctrico sobre el ánodo que concentran los electrones, producen canales que los guían e intensifican sus emisiones.\nUn antena de espira acoplada a las cavidades extrae las microondas que son guiadas hasta la guía de aceleración.\nLa frecuencia se mantiene sintonizada con la guía mediante un circuito de realimentación."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-5",
+    "href": "Temas/Aceleradores.html#section-5",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Klystron\n\n\n\n\n\nNo son osciladores, son amplificadores de potencia. Requieren un oscilador de microondas de baja potencia.\nEste oscilador inyecta microondas en la primera cavidad denominada buncher.\nSe inyectan electrones en el buncher acelerados por el pulso DC proporcionado por el modulador.\nLa velocidad de los electrones (energía de varios keV) se modula por el campo eléctrico de microondas agrupando los electrones (bunches).\nAl llegar a la segunda cavidad (catcher) los electrones agrupados han perdido parte de la energía emitiéndola como un pulso de microondas amplificado.\nMediante la sucesión de varias cavidades se pueden llegar a producir picos de potencia de hasta 25 MW."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-6",
+    "href": "Temas/Aceleradores.html#section-6",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Selectores de potencia\n\n\n\n\n\n\n\n\n\n\nÓrdenes de magnitud de frecuencia y dimensiones del acelerador\n\n\n\nLos aceleradores funcionan con campos de microondas con \\(\\nu\\) = 3000 MHz, \\(\\lambda\\) = 10 cm.\nLas cavidades son algo menores porque la velocidad de fase en la guía se reduce.\nLas guías rectangulares son 0.6 \\(\\lambda\\) de ancho y entre (0.2-0.5) \\(\\lambda\\) de alto.\n\n\n\n\n\nLos campos de microondas de alta potencia (salida del magnetron o el klystron) son llevados hasta la guía aceleradora (sección circular) mediante guías rectangulares. Todos estos circuitos van llenos de un gas dieléctrico, normalmente SF\\({}_6\\).\n\n\n\nLos campos magnéticos son perpendiculares a la guía y los eléctricos (aceleración de los electrones) paralelos a la dirección longitudinal de la guía.\n\n\n\n\nEn aceleradores multienergéticos la cantidad de potencia que se inyecta se selecciona mediante un power splitter, dispositivo que refleja parte de la potencia a la guía y parte a una carga para su absorción.\nTambién es necesario absorber la potencia reflejada en la guía para evitar pérdidas en el magnetron o el klystron"
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-7",
+    "href": "Temas/Aceleradores.html#section-7",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Bombas de vacío\n\n\n\n\n\nLa guía requiere presiones del orden de \\(10^{-10}\\) mm Hg para evitar arcos por ionización de gases, presiones difíciles de conseguir mediante métodos puramente mecánicos.\nSe utilizan sputter-ion pumps.\nSe componen de electrodos: cátodo de titanio, ánodo formado por cilindros conductores.\nLos electrodos se colocan en el seno de un campo magnético.\nLos electrones circulan entre cátodo y ánodo siguiendo trayectorias espirales e ionizan las moléculas de gas con las que interaccionan.\nLos iones gaseosos son intercambiados por átomos neutros de titanio cuando los iones golpean el cátodo.\nLos átomos de titanio se depositan sobre el ánodo."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-8",
+    "href": "Temas/Aceleradores.html#section-8",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Sección de aceleración\n\n\n\n\n\n\nConjunto de cavidades acopladas donde se produce la aceleración del haz de electrones.\nEn aceleradores con guías pequeñas, potenciales de aceleración de no más de 6 MV, la guía puede estar orientada en la dirección del haz de terapia.\nAceleradores con energías superiores requieren guías en direcciones diferentes y necesitan una sección de deflexión.\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\n\nTomado de Radiation Oncology Physics Handbook IAEA"
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-9",
+    "href": "Temas/Aceleradores.html#section-9",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Sección de deflexión, bending magnet\n\n\n\n\n\nDispositivo que cambia la dirección del haz de electrones mediante la aplicación de un campo magnético.\nPara cambiar de una haz con orientación horizontal a uno vertical, el ángulo de deflexión puede ser de 90º o de 270º.\nEl radio de giro \\(r\\) está relacionado con la velocidad de los electrones \\(v\\), y la intensidad del campo magnético \\(B\\) \\[\nr = \\frac{m_e\\,v}{e\\, B}\n\\]\nNo todos los electrones llegan con la misma velocidad por lo que en bending magnets de 90º se produce una dispersión del haz. En los diseños de 270º hay un punto denominado foco triple en el que el haz vuelve a converger.\nEl foco triple es el punto óptimo para colocar el blanco para la producción de fotones."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-10",
+    "href": "Temas/Aceleradores.html#section-10",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Componentes del cabezal del acelerador\nBlanco\n\nCuando se quiere tratar mediante un haz de fotones la energía que portan los electrones acelerados se tiene que convertir en rayos X.\nEl haz de electrones se hace interaccionar con un material de número atómico medio elevado para producir radiación de frenado.\nEn estas energías los fotones se emiten principalmente en la dirección de propagación de los electrones, por lo que el blanco se comporta como un filtro de transmisión.\nEl espesor óptimo del blanco es el detiene todos los electrones sin atenuar en exceso la radiación emitida. Blancos diferentes para diferentes energías.\n\nLámina dispersora, scattering foil\n\nCuando se quiere tratar mediante un haz de electrones el haz primario se dispersa en una lámina para que adquiera las condiciones de uniformidad y tamaño necesarias para el tratamiento.\nEn este caso se quiere evitar la presencia de radiación de frenado y la degradación de la energía del haz primario."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-11",
+    "href": "Temas/Aceleradores.html#section-11",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Colimador primario\n\nEs un bloque de blindaje tronco-cónico que define el tamaño de campo máximo diponible\nEn los aceleradores modernos proyecta un campo circular en el plano del isocentro con un radio entre 20 y 28 cm.\n\nFiltro aplanador, flattening filter\n\nFiltro encargado de homogeneizar la intensidad del haz emitido desde el blanco.\nTiene forma de cono para compensar la distribución de radiación de frenado\n\nCarrusel\n\nEs un sistema móvil que coloca la combinación adecuada de blanco, lámina dispersora y filtro aplanador en función de la energía seleccionada."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-12",
+    "href": "Temas/Aceleradores.html#section-12",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Cámaras monitoras\n\n\n\n\n\nLa tasa de dosis se controla nominalmente mediante el número de pulsos inyectados en la guía. Los aceleradores disponen de una selección de valores prefijados de tasa.\nSin embargo, el valor real de la tasa de dosis depende de muchos factores: intensidad de los pulsos de electrones, sintonización de la energía o ajuste de la velocidad de fase al tamaño de las cavidades resonantes que a su vez depende de la temperatura, enfoque del bending magnet, acoples mecánicos…\n\nPor debajo del filtro aplanador los aceleradores disponen de cámaras monitoras, cámaras de ionización que monitorizan la intensidad y estado del haz.\nMiden la cantidad de radiación emitida e interrumpen la irradiación al llegar a la cantidad programada.\nLas cámaras realimentan también sistemas de control para mantener la condiciones del haz (homogeneidad y simetría) e interrumpir la radiación en caso de inestabilidad.\nLas cámaras monitoras están divididas en sectores para poder medir simetría y homogeneidad."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-13",
+    "href": "Temas/Aceleradores.html#section-13",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Parámetros controlados por las cámaras monitoras\n\n\n\n\n\n\nUnidad monitor\n\n\nUnidad arbitraria de cuenta proporcionada por la cámara monitora relacionada con la cantidad de radiación que la atraviesa.\n\n\n\n\n\n\n\n\n\nCalibración del acelerador\n\n\nProceso por el que se establece la relación entre la dosis especificada en unas condiciones concretas dadas y las unidades monitor.\n\n\n\n\n\n\n\n\nHaz homogéneo y simétrico\n\n\n\n\n\n\nHaz con faltas de homogeneidad y simetría\n\n\n\n\n\n\nHomogeneidad con y sin filtro aplanador\n\n\n\n\n\n\n\n\n\nSimetría y Homogeneidad\n\n\n\nSimetría: Parámetro que mide cuanto de iguales son las dosis en un haz en punto a la misma distancia del eje.\nHomogeneidad: Parámetro que mide la diferencia entre la dosis máxima y la mínima en la región útil del haz.\n\n\n\n\n\n\n\n\n\n\nControl sobre la simetría y la homogeneidad\n\n\nAmbos parámetros se ajustan cambiando la incidencia del haz de electrones sobre el blanco y la dirección del haz de fotones sobre el filtro aplanador."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-14",
+    "href": "Temas/Aceleradores.html#section-14",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Espejo\n\nLámina semiplateada que forma un ángulo de 45º con el eje del haz en la que se refleja la luz emitida por una fuente colocada a la misma distancia del espejo que el foco.\n\n\n\n\n\n\n\nLuz de simulación\n\n\nLuz que permite visualizar la proyección de los campos de radiación sobre una superficie.\n\n\n\nColimación secundaria. Mordazas, Yaws\n\nDos pares de bloques de material de alta atenuación (Z elevado) en dirección X e Y.\nEstán motorizados y permiten definir tamaños de campo de forma rectangular de cualquier dimensión hasta 40x40 cm\\({}^2\\)\n\n\n\n\n\n\n\n\nFactor de campo\n\n\nLas mordazas está colocadas por detrás de las cámaras monitoras. La intensidad de radiación medida es previa a su colimación por las mordazas. La calibración va a depender del tamaño de campo."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-15",
+    "href": "Temas/Aceleradores.html#section-15",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Colimación terciaria. Colimador multilámina, MLC\n\n\n\nConjunto de dos bancos opuestos de bloques contiguos (láminas) de material de alta atenuación.\nLas láminas van machihembradas para reducir la transmisión interlámina.\nSu extremo está diseñado para optimizar la penumbra.\nUn motor mueve cada bancada (carro) y otro individual cada lámina.\n\n\n\n\n\n\n\n\n\nPermiten definir formas arbitrarias dentro de la resolución del ancho de las láminas (0.25, 0.5, 1 y 2 cm).\nSon dispositivos dinámicos: se pueden mover durante la irradiación. Un sistema de control coordina y vigila su posición en relación al cabezal y a las unidades monitor.\n\n\n\n\n\n\n\nModulación de intensidad\n\n\nPermiten producir perfiles arbitrarios de intensidad mediante la combinación de multiples haces con las formas adecuadas."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-16",
+    "href": "Temas/Aceleradores.html#section-16",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Elementos estáticos del acelerador\nEstativo, Stand\n\n\n\n\n\n\n\n\n\nImportancia del estativo\n\n\nLa estabilidad del estativo asegura la precisión del giro del cabezal que es especialmente relevante cuando se combinan haces para conseguir distribuciones de dosis optimizadas.\n\n\n\n\n\nEs la estructura fija del acelerador lineal que soporta el cabezal y permite su movimiento.\nContiene los elementos de generación de potencia.\nSu función es proporcionar estabilidad y soporte estructural al acelerador, asegurando que todos los componentes se mantengan en la posición correcta durante el tratamiento.\nComponentes:\n\nBase: Es la parte que se ancla firmemente al suelo para conferir estabilidad al acelerador.\nColumna: Es la parte vertical del estativo que soporta el gantry y permite su rotación.\nSistema de rotación: Permite que el gantry gire 360º alrededor del paciente y conecta el sistema generador con la guía de aceleración."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-17",
+    "href": "Temas/Aceleradores.html#section-17",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Elementos móviles del acelerador\n\n\n\n\nCabezal, Gantry\nDe la guía aceleradora en adelante todos los elementos del acelerador se mueven solidariamente alrededor de un eje perpendicular a la dirección de propagación del haz formando un conjunto al que se le denomina cabezal.\nColimador\nEl conjunto formado por el espejo, las mordazas y el MLC pueden girar solidariamente alrededor de un eje que contiene la dirección de propagación del haz.\nMesa de tratamiento\nAparte de desplazamientos lineales, la mesa de tratamiento puede realizar giros alrededor de un eje perpendicular al suelo.\n\n\n\n\n\n\n\nIsocentro\n\n\nPunto en el que se cruzan los ejes de giro del cabezal, del colimador y de la mesa de tratamiento."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-18",
+    "href": "Temas/Aceleradores.html#section-18",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Sistemas de refrigeración\n\nVarios componentes del acelerador (blanco, sección de deflección, guía de aceleración, la fuente de potencia de microondas) disipan cantidades apreciables de calor que tienen que ser evacuadas.\nSe utilizan varios circuitos con intercambiadores de calor entre ellos:\n\nCircuito primario con aceite.\nCircuito secundario con agua\nCircuito terciario con agua: propio del edificio en el que se encuentra la instalación de radioterapia, no la proporciona el suministrador del acelerador. Se tienen que verificar una serie de especificaciones (caudal, presión y temperatura del agua). Este circuito evacúa el calor al medio ambiente. En caso de necesidad suelen estar diseñados con la posibilidad de funcionar en agua perdida."
+  },
+  {
+    "objectID": "Temas/Aceleradores.html#section-19",
+    "href": "Temas/Aceleradores.html#section-19",
+    "title": "Aceleradores lineales",
+    "section": "",
+    "text": "Integración de sistemas\n\n\n\nVan Dyk, J. The modern technology of radiation oncology Madison, WI, USA: Medical Physics Publishing; 1999. p1073."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section",
+    "href": "Temas/Calibracion.html#section",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Factores que afectan a la dosis medida en un punto\n\nEl medio en que se mide la dosis.\nLa profundidad a la que se mide la dosis.\nLa distancia desde el foco de radiación al punto de medida.\nEl tamaño de campo.\nLa posición del punto de medida dentro del haz de radiación."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-1",
+    "href": "Temas/Calibracion.html#section-1",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Medio de medida\n\nEl agua es el medio de referencia utilizado generalmente: fácil de obtener, homogéneo.\nPara minimizar los efectos debidos a la variación de la radiación secundaria que llega al detector, se utiliza un volumen grande (al menos 25x25x25 cm³).\nSe pueden utilizar otros materiales sólidos (plásticos sobre todo), que tengan densidad y número atómico efectivo similar; pero exigen correcciones a la medida para tomar en cuenta esas diferencias, y presentan otros problemas (falta de homogeneidad, polarización eléctrica).\n\n\n\n\n\n\n\nUso de plásticos\n\n\nBajo condiciones de control estadístico los plásticos son muy útiles para comprobar la constancia de la calibración.\nPermiten de forma fácil y rápida verificar la calibración e indicar la necesidad de realizar medidas con menor incertidumbre."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-2",
+    "href": "Temas/Calibracion.html#section-2",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Profundidad de medida\n\n\nFotones:\n\nEntre 5 y 10 cm.\nSuficientemente grande para:\n\nAsegurar equilibrio electrónico.\nEvitar la posible contaminación del haz por electrones.\n\n\n\n\n\n\n\n\nElectrones:\n\nEn la zona entre el máximo de dosis y el comienzo de la caída."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-3",
+    "href": "Temas/Calibracion.html#section-3",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Distancia foco-punto de medida\n\nSetup isocéntrico: detector colocado en el isocentro.\nSetup distancia fuente superficie constante: normalmente isocentro colocado en la superficie del maniquí de medida.\n\nTamaño de campo\n\nCampo estándar de calibración: campo cuadrado de 10 x 10 cm².\n\nPosición del punto de medida\n\nEn el eje central del haz."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-4",
+    "href": "Temas/Calibracion.html#section-4",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Detector para la calibración: Cámara de ionización\n\nInstrumento lo bastante sencillo como para ser empleado en un entorno clínico.\nCon la precisión suficiente (&lt; 2%).\nTipo de cámara:\n\nCilíndrica para haces de fotones y haces de electrones de energía superior a 6 MeV.\nPlana para haces de electrones de baja energía.\n\n\nCalibración de la cámara\n\nProceso que garantiza la trazabilidad de la medida de dosis hasta un patrón primario de dosis.\nPara alcanzar la precisión requerida, cada cámara debe ser calibrada individualmente (las variaciones de respuesta entre cámaras del mismo modelo pueden llegar al 1%).\nLa calibración se realiza en un Laboratorio Dosimétrico Secundario de Referencia, comparando la lectura de la cámara con la lectura de una cámara patrón.\nLa cámara patrón se calibra con los patrones de referencia de los Laboratorios Dosimétricos Primarios de Referencia."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-5",
+    "href": "Temas/Calibracion.html#section-5",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Las cámaras se suelen calibrar en haces de unidades de Cobalto, por la estabilidad de la energía y de la tasa de dosis.\nHay dos formas de realizar la calibración:\n\nEn aire (con caperuza de equilibrio): se obtiene el factor de calibración de kerma en aire, \\(N_k\\). Era la más utilizada hasta finales de los años 90.\nEn agua: se obtiene el coeficiente de calibración de dosis absorbida en agua, \\(N_{D,w}\\). Exige utilizar una funda hermética si la cámara no es sumergible. La preferida hoy en día."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-6",
+    "href": "Temas/Calibracion.html#section-6",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Cálculo de dosis en un haz clínico\nFijada la geometría de la irradiación, y conocido el factor de calibración de la cámara, es necesario dar ciertos pasos para relacionar la lectura de la cámara en la geometría de calibración del haz y la dosis en ese punto producida por el haz de radiación. Dichos pasos quedan establecidos en alguno de los Protocolos definidos a nivel nacional o internacional. El objetivo de esos protocolos es:\n\nProporcionar valores de referencia para los distintos factores que aparecen.\nEstablecer un marco común para que los distintos centros puedan comparar sus medidas.\n\nClasificación de los protocolos\n\nProtocolos basados en la calibración de la cámara de ionización en términos de kerma en aire (TG-21, TRS-277, TRS-381, SEFM-84, etc).\nProtocolos basados en la calibración de la cámara de ionización en términos de dosis absorbida en agua: TG-51, TRS-398, TRS-483."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-7",
+    "href": "Temas/Calibracion.html#section-7",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Protocolos basados en kerma en aire\nPaso desde el coeficiente de calibración en kerma a la dosis en agua\n\n\nEl paso desde el coeficiente de calibración en kerma \\(N_k\\) a la dosis en agua en la calibración clínica se realiza en dos etapas:\n\nObtención del factor de calibración de dosis en aire, \\(N_{D,\\text{aire}}\\).\nObtención del factor de corrección que hay que aplicar para pasar de dosis en aire a dosis en agua.\n\n\n\n\n\n\n\n\nHay que tener en cuenta que, al calibrar la cámara en aire, la inmensa mayoría de los electrones que atraviesan la cámara no provienen de la interacción de los fotones del haz en el aire que la rodea, sino de la interacción en la caperuza de equilibrio y la pared de la cámara. Por lo tanto, la composición de éstas es un factor fundamental de la calibración."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-8",
+    "href": "Temas/Calibracion.html#section-8",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Factor de calibración de dosis en aire\n\\[\nN_{D,\\text{aire}} = N_k (1-g) k_m k_{as}\n\\]\n\n\\(g\\) es la fracción de energía de los electrones que se reemite en forma de bremsstrahlung.\n\\(k_m\\) es un factor que toma en cuenta la no equivalencia al aire de la caperuza de equilibrio y la pared de la cámara.\n\\(k_{as}\\) es un factor que toma en cuenta la perturbación que produce la cámara sobre la fluencia de fotones del \\(^{60}\\)Co por atenuación y dispersión de éstos en las paredes de la cámara; es decir, corresponde al cociente entre la fluencia de fotones cuando la cámara no está en el medio y la fluencia cuando sí está. \\[\nk_{as} =  \\frac{1}{k_{at}^{\\text{Co}} \\, k_{sc}^{\\text{Co}} \\, k_{\\text{nounif}}^{\\text{Co}}}\n\\]\n\\(k_{at}^{\\text{Co}}\\) es la corrección debida a la atenuación de los fotones incidentes en las paredes de la cámara.\n\\(k_{sc}^{\\text{Co}}\\) es el aumento de señal de la cámara debido a la dispersión de fotones en las paredes de la cámara.\n\\(k_{\\text{nounif}}^{\\text{Co}}\\) es un factor que toma en cuenta la no uniformidad del haz primario de radiación dentro del volumen de la cámara. Para una cámara suficientemente alejada de la fuente se puede hacer la aproximación \\(k_{\\text{nounif}}^{\\text{Co}} \\approx 1\\)."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-9",
+    "href": "Temas/Calibracion.html#section-9",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Dosis en la medida del haz clínico\nSi \\(M\\) es la lectura de la cámara en la irradiación del haz clínico, la dosis medida será:\n\\[\nD_{\\text{agua}} = M^* \\cdot (s_{\\text{agua, aire}})_E \\cdot N_{D,\\text{aire}} \\cdot p_f \\cdot p_{\\text{wall}} \\cdot p_d\n\\]\n\\(M^*\\) es la lectura corregida por todos los factores de influencia (ver clase sobre cámaras de ionización):\n\\[\nM^* = (M - \\text{fugas}) \\cdot k_{tp} \\cdot k_{\\text{pol}} \\cdot k_s\n\\]\n\\((s_{\\text{agua, aire}})_E\\) es el cociente de los poderes de frenado másico restringido entre el agua y el aire para la energía del haz que se está calibrando."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-10",
+    "href": "Temas/Calibracion.html#section-10",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Protocolos basados en dosis en agua\n\n\nCuando la cámara está sumergida en agua, la mayoría de los electrones secundarios que la atraviesan se han producido en el agua, no en la pared.\nTeoría de Bragg-Gray\n\\[\nD_{\\text{agua}} = M^*\\,N_{D, \\text{aire}}\\,s_{\\text{agua, aire}}\\, p_Q\n\\]\n\n\n\n\n\n\n\n\\[\np_Q = p_{\\text{cav}} \\, p_{\\text{wall}} \\, p_{\\text{dis}} \\, p_{\\text{cel}}\n\\]\n\n\\(p_{\\text{cav}}\\): diferencias en la fluencia de electrones producidos por la presencia de la cámara.\n\\(p_{\\text{wall}}\\): electrones secundarios generados en la pared de la cámara que atraviesan ésta.\n\\(p_{\\text{dis}}\\): la fluencia no es homogénea dentro de la cámara, y la medida de la cámara no corresponde a la dosis en su centro sino a un punto situado más hacia la pared de entrada.\n\\(p_{\\text{cel}}\\): efecto del electrodo central en la fluencia de electrones."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-11",
+    "href": "Temas/Calibracion.html#section-11",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Calibración de la cámara en términos de dosis en agua\n\n\n\n\n\n\nVentaja de calibrar en dosis en agua\n\n\nLa cámara se calibra en términos de dosis en agua, que es la misma magnitud que luego se va a medir en el haz clínico.\n\n\n\nSi el haz que se calibra tiene la misma energía que la del haz que se usó para calibrar la cámara, tendremos:\n\\[\nD_{\\text{agua}} = M^* \\cdot N_{D,\\text{agua}}\n\\]\n\\(M^*\\) es la lectura corregida por todos los factores de influencia:\n\\[\nM^* = (M - \\text{fugas}) \\cdot k_{pT} \\cdot k_{\\text{pol}} \\cdot k_s\n\\]\nSi el haz es de diferente energía hay que tener en cuenta la variación de los factores de perturbación \\[\nD_{\\text{agua}} = M^* \\cdot N_{D,\\text{agua}} \\cdot K_{QQ_0} = (M - \\text{fugas}) \\cdot k_{pT} \\cdot k_{\\text{pol}} \\cdot k_s \\cdot N_{D,\\text{agua}} \\cdot K_{QQ_0}\n\\] \\[\nK_{QQ_0} = \\frac{(s_{\\text{agua, aire}})_Q\\, p_Q}{(s_{\\text{agua, aire}})_{\\text{Co}}\\, p_{\\text{Co}}}\n\\]"
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-12",
+    "href": "Temas/Calibracion.html#section-12",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Factores \\(K_{QQ_0}\\)\n\nLos factores \\(K_{QQ_0}\\) se han calculado o medido para todos los modelos de cámara y para todas las energías que se utilizan en la práctica.\nLas variaciones de estos factores son mínimas para cámaras de un mismo modelo, inferiores al 0.01%.\nLos factores están tabulados en los protocolos internacionales (TRS398, TG-51) en función de la calidad del haz.\n\nEspecificación de la calidad del haz\n\n\nFotones\n\nTRS 398\n\n\\(TPR_{20,10}\\) para campo 10x10 cm y SAD=100 cm.\n\\(PDD_{20,10}\\) para campo 10x10 cm y SSD=100 cm.\n\n\\(TPR_{20,10} = 1.2661 \\cdot PDD_{10,20} - 0.0595\\).\n\n\nTG 51\n\n\\(PDD(10\\,\\text{cm})\\) para campo 10x10 cm y SSD=100 cm.\n\n\n\nElectrones\n\n\\(R_{50}\\).\nPunto de medida:\n\n\\(z_{\\text{med}} = 0.6 \\cdot R_{50} - 0.1\\)."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-13",
+    "href": "Temas/Calibracion.html#section-13",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Condiciones de medida\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCámara de ionización cilíndrica o paralela.\nHaz barrido extenso con una única energía.\nPosición de la cámara: en el plateau, antes del comienzo del pico de Bragg.\n\\(R_p\\) profundidad más allá del pico de Bragg a la que la dosis desciende al 10% del máximo.\n\nDeterminación de la dosis absorbida1\n\\[\nD_{\\text{w},Q}(z_{\\text{ref}}) = M_Q \\cdot N_{D,\\text{w},Q} \\cdot K_{Q,Q_0}\n\\]\n\nEspecificación de la calidad del haz\nMediante el rango residual \\(R_{\\text{res}}\\) (en g/cm²) a una profundidad de medida \\(z\\)\n\\[\nR_{\\text{res}} = R_p - z\n\\]\nNo existen en la actualidad estándares primarios para protones, \\(Q_0\\) corresponde a \\({}^{60}\\)Co"
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-14",
+    "href": "Temas/Calibracion.html#section-14",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Protocolos específicos (TRS 483)\n\n\nTRS 398 y TG 51 se aplican a haces de fotones con filtro aplanador y en máquinas capaces de utilizar un campo de 10x10 cm².\n\n\n\n\n\n Cyberknife (versiones sin MLC)\nColimación mediante conos de radiocirugía, haz sin filtro\n\n\n\n\n\nImagen de la parte externa del colimador de la Cyberknife.\n\n Tomotherapy\nHaz sin filtro en forma de abanico, MLC binario sobre la apertura del campo."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-15",
+    "href": "Temas/Calibracion.html#section-15",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Machine Specific Reference Field (Campo de Referencia Específico de la Máquina)\n\n\nGeometría de campo estándar para aquellos sistemas que no pueden colimar al campo de referencia.\n\n\n\n\n\n\n\n\n\n\nCyberknife\n\nCampo de referencia específico: Colimador de 6 cm de diámetro\n\n\n\n\n\n\n\nTomotherapy\n\nCampo de referencia específico: 5 x 10 cm²"
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-16",
+    "href": "Temas/Calibracion.html#section-16",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Especificación de la calidad del haz\n\n\n\nLa ausencia del filtro implica menor proporción de radiación dispersa y por tanto, distinta relación entre calidad del haz y \\(TPR_{20,10}\\).\nSe proponen nuevas tablas que relacionan \\(k_{Q,Q0}\\) con \\(TPR_{20,10}\\) en haces FFF.\nEstos valores incluyen \\(k_{vol}\\).\n\nDosis de calibración para el MSRF\n\\[\nD_{w,Q_{msr}}^{\\text{MSRF}} = M^* \\cdot N_{D,w,Co}^{\\text{MSRF}} \\cdot k_{Q,Co}^{\\text{MSRF}}\n\\]\n\n\n\n\n\n\n\nPara obtener \\(k_{Q,Co}^{\\text{MSRF}}\\) hay que estimar \\(TPR_{20,10}(10)\\). Se emplea una aproximación empírica\n\\[\nTPR_{20,10}(10) = \\frac{TPR_{20,10}(S) + c \\cdot (10 - S)}{1 + c \\cdot (10 - S)}\n\\]\ndonde \\(c = 16.15 \\times 10^{-3}\\) y \\(S\\) el lado de un campo cuadrado equivalente al MSRF"
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section",
+    "href": "Temas/Commissioning.html#section",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Comisionado, commissioning\n\n\nConjunto de procedimientos mediante los que se determina cómo varía la dosis del acelerador en función de las variaciones en la geometría de irradiación.\n\n\n\n\n\n\n\n\n\nParticularidad del comisionado\n\n\nLa caracterización es particular para cada acelerador1, modalidad de radiación y energía.\n\n\n\n\nEstá formado por los datos necesarios para:\n\nLa configuración del programa de planificación dosimétrica en el que se realizan los cálculos detallados de las distribuciones de dosis en los pacientes.\nLa verificación dosimétrica y el control de calidad de los cálculos de dosis realizados en el planificador.\nMantener y establecer el estado de referencia del acelerador que sirve como control de las variaciones (averías , reparaciones, sustituciones) que se pueden producir a lo largo de su vida útil.\n\n\nLos medios de fabricación actuales hacen que los datos obtenidos al caracterizar un modelo de acelerador sean prácticamente independientes del equipo instalado (número de serie). Por ello suelen existir datos de consenso (Golden Data) establecidos por usuarios que caracterizan suficientemente el acelerador y sirven de referencia. Aun así es responsabilidad de cada usuario particular verificar que su acelerador reproduce estos datos y entender el origen de las posibles variaciones que se encuentre."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-1",
+    "href": "Temas/Commissioning.html#section-1",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Secuencia temporal\n\n\nEl comisionado se realiza después de las pruebas de aceptación y antes de la entrada en funcionamiento del acelerador con pacientes.\n\n\n\n\n\n\n\n\n\nNaturaleza del comisionado\n\n\nLas medidas que se realizan durante el comisionado son de todas relativas, es decir, están referidas a un punto de normalización que a su vez se puede relacionar con el punto en el que se especifica la calibración absoluta."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-2",
+    "href": "Temas/Commissioning.html#section-2",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Instrumentación\n\n\n\n\nCuba de agua\n\nManiquí de forma cúbica o cilíndrica que puede ser llenado con agua.\nSus dimensiones van desde 25x25x25 cm\\({}^3\\) hasta 75x75x75 cm\\({}^3\\) aprox.\nDotado con un sistema de holders para la colocación precisa de los detectores.\nPermite alinear y desplazar los detectores con precisión submilimétrica.\nUn software de control y lectura coloca el detector en las posiciones y tiempos programados durante la irradiación a la vez que recoge y procesa las lecturas del detector generando curvas de dosis relativa.\nAl menos dos canales de lectura para poder realizar medidas con detector de referencia relativa.\n\nDetectores\nCámaras de ionización cilíndricas y planas, detectores de diamante, detectores de estado sólido"
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-3",
+    "href": "Temas/Commissioning.html#section-3",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Arrays de detectores\n\nSistemas de medida compuestos por una combinación de varios detectores de pequeño volumen en posiciones fijas y con la electrónica de recolección integrada.\n\n\n\n\n\nPueden medir dentro de un maniquí formado por planchas de agua plástica o en el seno de un maniquí cilíndrico motorizado que los mantiene orientados respecto al gantry para que sus detectores están en un plano perpendicular al eje del haz de radiación. Para ello utilizan un sensor colocado sobre el gantry que detecta la posición de este. Otros diseños emplean anclajes al gantry para mantener la orientación del array.\n\nOtros dosímetros integradores\n\nDosímetros que permiten integrar y medir distribuciones espaciales de dosis.\n\nPelícula radiocrómica\nFlat panel del acelerador"
+  },
+  {
+    "objectID": "Temas/Commissioning.html#parámetros-medidos",
+    "href": "Temas/Commissioning.html#parámetros-medidos",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "Parámetros medidos",
+    "text": "Parámetros medidos\nDependencia con la profundidad\n\n\n\n\nRendimiento en profundidad (PDD, percentage depth dose)\n\\[\nPDD(z, A, f) = \\frac{D(z, A, f)}{D(z_{\\text{max}}, A, f)}100\n\\]\nMedidas realizadas manteniendo constante la distancia fuente superficie \\(DFS\\) y modificando la profundidad \\(z\\) a la que se sitúa el detector. El detector barre desde la superficie hasta una profundidad con relevancia clínica, del orden de 25-30 cm.\n\n\n\n\n\n\n\nParámetros de los que depende el PDD\n\n\nEl PDD depende de la energía \\(E\\), tamaño de campo \\(A\\), \\(DFS\\) y \\(z\\)."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-4",
+    "href": "Temas/Commissioning.html#section-4",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Características del PDD en haces de fotones\n\nHay una zona inicial donde la dosis crece (zona de acumulación de dosis o build-up), es la región en la que aún no se ha establecido el equilibrio electrónico.\nEsta región no se suele utilizar para el tratamiento pero aporta la ventaja de disminuir la dosis en piel.\nLa profundidad del máximo depende de la energía de la radiación (por ejemplo para \\({}^{60}\\)Co \\(z_{\\text{max}}\\) = 0.5 cm, para 6 MV \\(z_{\\text{max}}\\) = 1.5 cm, para 18 MV \\(z_{\\text{max}}\\)= 3 cm).\nMás allá del máximo la dosis decrece de forma aproximadamente exponencial, con un exponente igual al producto de la profundidad por un coeficiente lineal de atenuación del agua efectivo1: \\[\nPDD(z) \\approx 100 \\cdot e^{-\\mu\\,(z-z_{\\text{max}})}\n\\]\n\n\n\n\nRendimiento en profundidad para un haz con \\(E\\) = 6 MV, campo cuadrado de 10 cm de lado. El ajuste se ha realizado para z \\(\\in\\) (2, 10) cm.\n\n\nHaces polienergéticos y una dependencia con el cuadrado de la distancia no introducida"
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-5",
+    "href": "Temas/Commissioning.html#section-5",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Dependencia con el tamaño de campo\n\n\n\n\n\n\n\n\n\nA mayor tamaño de campo menor atenuación con la profundidad por el aumento de la contribución de la radiación dispersa.\nA mayor tamaño de campo menor profundidad del máximo de dosis, antes se alcanza el equilibrio electrónico, porque hay una mayor contribución de radiación de menor energía dispersada desde los elementos del cabezal y mayor es también la contaminación electrónica.\n\n\nDependencia con la energía \\(E\\)\n\n\n\n\n\n\n\n\n\nA mayor energía menor atenuación con la profundidad por la reducción del coeficiente de atenuación (menor probabilidad de interacción).\nA mayor energía mayor profundidad del máximo de dosis porque el rango de las electrones secundarios es menor.\nLa ganancia de rendimiento en profundidad con la energía tiende a saturarse. Actualmente es raro encontrar aceleradores con energías por encima de los 15 MV."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-6",
+    "href": "Temas/Commissioning.html#section-6",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Dependencia con la presencia del filtro aplanador\n\n\n\n\n\n\n\n\n\nPara el mismo potencial de aceleración los haces con filtro tienen mayor rendimiento en profundidad porque el filtro endurece el haz (mayor energía media espectral).\nLa menor energía espectral del haz sin filtro supone una mayor probabilidad de interacción en la superficie y en profundidades pequeñas, y también mayor producción de electrones secundarios con rangos pequeños, por lo que la dosis en la región de build-up es mayor. En términos prácticos la profundidad del máximo de dosis varía poco para un mismo potencial de aceleración.\n\n\nEstimación de la contribución de dosis dispersa al PDD\nLa dosis dispersa para un campo de tamaño A se puede estimar como la diferencia entre el PDD para ese campo y el PDD para el campo de tamaño 0 (obtenido por extrapolación)\n\\[\nPDD_{\\text{radiación dispersa}}(A, z) = PDD(A, z) - \\lim_{A \\to 0} PDD(A, z)\n\\]"
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-7",
+    "href": "Temas/Commissioning.html#section-7",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Dependencia del PDD con la distancia\nEn ausencia de atenuación, la dosis disminuye de forma inversa al cuadrado de la distancia a la fuente. Podemos expresar, para el PDD medido a una distancia \\(f\\) desde la fuente hasta la superficie del agua:\n\\[\nPDD(z,f) = 100 \\cdot \\left(\\frac{f+z_{\\text{max}}}{f+z}\\right)^2 e^{-\\mu(z-z_{\\text{max}})} K_d\n\\]\ndonde \\(K_d\\) es un factor que toma en cuenta la radiación dispersa. Suponiendo que \\(K_d\\) no depende de \\(f\\):\n\\[\nPDD(z,f_1) = 100 \\cdot \\left(\\frac{f_1 +z_{\\text{max}}}{f_1 +z}\\right)^2 e^{-\\mu(z-z_{\\text{max}})} K_d\n\\]\n\\[\nPDD(z,f_1) = PDD(z,f) \\cdot F\n\\]\nsiendo\n\\[\nF = \\left(\\frac{f_1 +z_{\\text{max}}}{f +z_{\\text{max}}}\\right)^2 \\cdot \\left(\\frac{f+z}{f_1 +z}\\right)^2\n\\] A \\(F\\) se le llama el Factor de Mayneord."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-8",
+    "href": "Temas/Commissioning.html#section-8",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Aproximaciones para campos no cuadrados\nDe forma empírica se observa que el \\(PDD\\) de un campo rectangular de dimensiones \\((a, b)\\) es igual al del campo cuadrado de lado \\(l\\) que tiene la misma relación área/perímetro:\n\\[\n    l = 2\\,\\frac{a\\cdot b}{a+b}\n\\]\nAnálogamente, el \\(PDD\\) de un campo circular de radio \\(r\\) es igual al de un campo cuadrado con la misma área:\n\\[\nl = r \\sqrt{\\pi}\n\\]"
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-9",
+    "href": "Temas/Commissioning.html#section-9",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Limitaciones del PDD para los tratamientos actuales.\n\nAl realizar un tratamiento, si queremos que el \\(PDD\\) sea directamente relevante tendremos que hacer que la distancia de la fuente a la superficie del paciente sea igual a la distancia a la que hemos realizado nuestras medidas de \\(PDD\\).\nEn los tratamientos actuales, en los que el acelerador gira alrededor del paciente, este planteamiento obligaría a mover la mesa de tratamiento en cada ángulo de incidencia.\n\n\n\n\n\n\n\nRelevancia actual del PDD\n\n\nLas curvas de PDD son fáciles de medir bajo condiciones concretas y bien definidas. Son por tanto relevantes para realizar el comisionado. Sin embargo no son en general directamente aplicables para realizar cálculos dosimétricos en los tratamientos actuales.\n\n\n\n\n\n\n\n\n\nRelevancia histórica del PDD\n\n\nMientras los cálculos dosimétricos se tenían que hacer a mano, los parámetros de tratamiento se tenían que introducir manualmente y la colimación en los tratamientos más complejos consistía en la colocación de bloques estáticos, recolocar al paciente en cada campo no era una limitación importante para el tratamiento. En este esquema, realizar cada campo con una distancia fuente superficie fija no dificultaba el tratamiento sino que facilitaba la realización manual de la dosimetría.\nEn la actualidad este planteamiento no es útil y el PDD se utiliza como entrada a otras formas más operativas de modelizar la dependencia con la profundidad de la dosis."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-10",
+    "href": "Temas/Commissioning.html#section-10",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Dependencia con la profundidad manteniendo la distancia fuente detector constante\n\n\n\n\nRelación tejido aire (TAR, tissue air ratio)\n\\[\nTAR(z, A) = \\frac{D(z, A, f)}{D_{\\text{aire}}(z=0, A, f)}\n\\]\nDosis en un punto situado a un profundidad z en un medio (agua o tejido) dividida por la dosis en ese mismo punto en ausencia de tejido, para el mismo tamaño de campo y distancia.\n\n\n\n\n\n\n\nParámetros de los que depende el TAR\n\n\nEl TAR depende de la energía \\(E\\), tamaño de campo \\(A\\) y \\(z\\).\n\n\n\n\n\n\n\n\n\nInformación incorporada en el TAR\n\n\nAtenuación del haz primario y contribución por dispersa. Es independiente de la distancia desde el detector al foco \\(f\\)."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-11",
+    "href": "Temas/Commissioning.html#section-11",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Relevancia del TAR\n\n\n\nIncorpora información relevante sobre la dependencia en profundidad de la dosis y de la contribución de la dosis dispersa introducida por la presencia del medio en tratamientos isocéntricos.1\nEs una forma natural de introducir medidas relativas de dependencia con la profundidad directamente relacionables con las condiciones de referencia de calibración, si el protocolo de calibración se basa en estándares de medida de dosis en aire.\nEs una magnitud relevante en algunos algoritmos de cálculo de dosis.\nEs una magnitud bien definida en haces de \\({}^{60}\\)Co.\n\n\n\n\n\n\n\n\n\n\nProblema de la definición del TAR\n\n\nLa dosis en aire en ocasiones puede considerarse mal definida y sometida a incertidumbres. Para las energías de los haces que se utilizan en la actualidad las caperuzas de equilibrio convencionales no aseguran el equilibrio electrónico ni descartan la influencia de la contaminación electrónica proveniente del cabezal del acelerador.\n\n\n\n\n\n\n\n\n\nAlternativa a la definición del TAR\n\n\nSe necesita definir una magnitud con los mismos fundamentos pero basada en las condiciones de medida de los protocolos para la determinación de la dosis en agua y evitar las dificultades introducidas por la medida en aire.\n\n\n\nSe suele entender como tratamiento isocéntrico aquel en el que el isocentro está localizado dentro del volumen de tratamiento o en su proximidad. En general, un tratamiento es isocéntrico siempre que el paciente no se desplace respecto al isocentro a lo largo del tratamiento. En tratamientos mediante arcos estas geometrías pueden dar lugar a colisiones con el paciente y algunos ángulos pueden ser no utilizables."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-12",
+    "href": "Temas/Commissioning.html#section-12",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Relación tejido maniquí (TPR, tissue phantom ratio)\n\\[\nTPR(z, A) = \\frac{D(z, A, f)}{D}(z_{\\text{ref}}, A, f)\n\\]\nDosis en un punto situado a un profundidad z en un medio (agua o tejido) dividida por la dosis en ese mismo punto a una profundidad de referencia.\nSi \\(z_{\\text{ref}} = z_{\\text{max}}\\) se denomina \\(TMR\\)\n\n\n\n\n\n\n\nParámetros de los que depende el TAR\n\n\nEl TPR depende de la energía \\(E\\), tamaño de campo \\(A\\) y \\(z\\).\n\n\n\n\n\n\n\n\n\nInformación incorporada en el TAR\n\n\nAtenuación del haz primario y contribución por dispersa. Es independiente de la distancia desde el detector al foco \\(f\\).\n\n\n\n\nLa dependencia del TPR y del TMR con el tamaño de campo es similar a la del PDD: para una profundidad dada (más allá del máximo de dosis) el TPR aumenta al aumentar el tamaño de campo"
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-13",
+    "href": "Temas/Commissioning.html#section-13",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Determinación experimental del \\(TPR\\)\n\nPara poder medir el TPR es necesario mantener el detector fijo y cambiar la profundidad de agua a la que se encuentra, añadiendo o quitando agua. Esto es más difícil que mantener la cantidad de agua fija y mover el detector\nEs difícil medir la profundidad instantánea cuando el nivel del agua cambia.\nA menudo se mide el PDD y se emplea la relación teórica entre ambos para calcular el TMR\n\n\n\n\n\n\n\nSistemas de medida del \\(TPR\\)\n\n\nAlgunas cubas de agua incorporan sistemas de medida del TPR, en los que se mide el nivel de agua mediante una boya. La cantidad de agua se modifica bombeando agua desde un depósito. Estos sistemas tiene la limitación del rizado que se produce en la superficie del agua y en general los resultados de estas medidas directas son ruidosos y requieren de algún postprocesado."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-14",
+    "href": "Temas/Commissioning.html#section-14",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "\\(TPR\\) y caracterización de la energía del haz\nPara caracterizar el espectro de energía (calidad) del haz se utiliza el cociente entre los \\(TPR\\)s a 20 cm y a 10 cm:\n\\[\nTPR_{20/10} = \\frac{D(z=20 \\, \\text{cm}, \\, c_{\\text{ref}})}{D(z=10 \\, \\text{cm}, \\, c_{\\text{ref}})}\n\\]\n\nDos haces de idéntica calidad \\(TPR_{20/10}\\) tendrán el mismo \\(TPR\\) para \\(z &gt; z_{\\text{max}}\\), pero para \\(z &lt; z_{\\text{max}}\\) el TPR dependerá en general de la contaminación electrónica y variará en cada acelerador.\n\n\n\n\n\n\n\nImportancia del \\(TPR_{20/10}\\)\n\n\nEl \\(TPR_{20/10}\\) es el parámetro de entrada en los protocolos de medida para determinar los factores de corrección de las cámaras de ionización."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-15",
+    "href": "Temas/Commissioning.html#section-15",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Dependencia con la posición en planos perpendiculares al eje del haz\nPerfil de dosis, \\(OAR\\) Off-Axis Ratio\n\\[\nOAR(x,y,z) = \\frac{D(x,y,z)}{D(0,0,z)}\n\\]\n\n\n\n\n\n\nFactores de los que depende el \\(OAR\\)\n\n\n\nLa energía del haz\nEl tamaño de campo\nLa profundidad\nLa distancia fuente-superficie\n\n\n\n\n\n\n\n\n\n\nSimetría del \\(OAR\\)\n\n\n\nNormalmente se considera suficientes con caracterizar los perfiles de dosis en dos direcciones ortogonales.\nSe suelen definir las direcciones in-plane paralela a la dirección gun-target y cross-plane perpendicular a la dirección gun-target.\nDurante el comisionado también se suele medir un perfil de dosis en la dirección diagonal de las dos anteriores para el tamaño de campo máximo disponible, para caracterizar el tamaño del filtro primario."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-16",
+    "href": "Temas/Commissioning.html#section-16",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "\\(OAR\\) en haces con filtro\nDependencia con el tamaño de campo\n\n\n\n\n\n\n\nDefinición del tamaño de campo\n\n\nDistancia entre los puntos cuya dosis es igual al 50% de la dosis en el eje central.\n\n\n\n\n\n\n\n\n\nAjuste del tamaño de campo\n\n\nLa posición nominal de las mordazas del acelerador (la que aparece en la consola de control) se ajusta para que coincida con el tamaño de campo medido en el plano del isocentro."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-17",
+    "href": "Temas/Commissioning.html#section-17",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Dependencia con profundidad\n\nPerfiles relativos al valor de la dosis en el eje para cada profundidad. Se observa el aumento de tamaño con la distancia, una degradación del borde del perfil y un aumento de radiación dispersa.\nObsérvese también que el diseño del filtro aplanador optimiza la forma del perfil a una profundidad."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-18",
+    "href": "Temas/Commissioning.html#section-18",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Definiciones relevantes para caracterizar los perfiles de dosis\n\n\n\n\n\n\nPenumbra\n\n\nDistancia entre los puntos cuyas dosis son el 80% y el 20% de la dosis en el eje central.\n\n\n\n\n\n\n\n\n\nPlanitud, flatness\n\n\nVariación máxima de la dosis en la región central del haz (la región central se define normalmente como el 80% del tamaño de campo).\n\n\n\n\n\n\n\n\n\nSimetría\n\n\nMáxima diferencia de dosis entre la parte derecha y la parte izquierda del OAR.\n\n\n\n\n\n\n\n\n\nTolerancias\n\n\nLos protocolos internacionales de calidad en radioterapia recomiendan valores mínimos que deben verificar estos parámetros."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-19",
+    "href": "Temas/Commissioning.html#section-19",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Control sobre la planitud y la simetría\n\nLa forma del \\(OAR\\) es muy sensible a la focalización del haz acelerado de electrones sobre el blanco (de fotones o electrones).\nDesviaciones muy pequeñas (~ 0.1 mm) del punto de incidencia del haz sobre el blanco provocan distorsiones muy importantes del \\(OAR\\).\nEl control de la constancia de la forma del \\(OAR\\) es una de las tareas básicas en el control del funcionamiento del acelerador.\nLa variación de la planitud y la simetría proporciona un valor cuantitativo de la distorsión del \\(OAR\\)."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-20",
+    "href": "Temas/Commissioning.html#section-20",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Variación del tamaño de campo con la distancia\n\n\n\n\n\nEl tamaño de campo a una profundidad \\(z\\) es proporcional a la distancia al foco: \\[\nS(\\text{DFS}, z) = S(\\text{DFS}_{\\text{ref}}, z_{\\text{ref}}) \\cdot \\frac{\\text{DFS} + z}{\\text{DFS}_{\\text{ref}} + z_{\\text{ref}}}\n\\]\n\n\nVariación de la penumbra con la distancia\n\n\n\n\n\nEl tamaño de la penumbra a una profundidad \\(z\\) es aproximadamente proporcional a la distancia al foco: \\[\nP(z) \\approx P(z_{\\text{ref}}) \\cdot \\frac{\\text{DFS} + z}{\\text{DFS} + z_{\\text{ref}}}\n\\]\nEn realidad, \\(P(z)\\) es algo mayor que la predicción de la fórmula anterior porque la radiación dispersa en el agua tiende a aumentar el valor de la penumbra, y la proporción de dosis dispersa frente a dosis directa aumenta con la profundidad."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-21",
+    "href": "Temas/Commissioning.html#section-21",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "\\(OAR\\) en haces sin filtro\nDependencia con el tamaño de campo\n\n\n\n\n\n\n\nRelevancia de los haces sin filtro\n\n\nAl no interponer el filtro se consigue un sustancial aumento de la tasa de dosis, especialmente en el eje del campo, a costa de perder la planitud del haz. Por ello estos haces son especialmente relevantes en aplicaciones en las que no se requieran tamaños de campo grandes o donde la falta de uniformidad se pueda compensar mediante técnicas de intensidad modulada."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-22",
+    "href": "Temas/Commissioning.html#section-22",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Dependencia con la profundidad\n\nPerfiles relativos al valor de la dosis en el eje para cada profundidad. Igual que en los haces con filtro, se observa también el aumento de tamaño con la distancia, una degradación del borde del perfil y un aumento de radiación dispersa.\nLa ausencia del filtro hace que el perfil sea redondeado en su parte central."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-23",
+    "href": "Temas/Commissioning.html#section-23",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Parámetros alternativos\n\nComo las definiciones para haces con filtro de tamaño de campo, penumbra y simetría hacen referencia a valores relativos al eje de campo, en campos sin filtro estas definiciones producirían valores irrelevantes.Las definiciones se tienen que modificar para introducir una manera más representativa de caracterizar el haz.\nSe ha propuesto tomar el valor de normalización del campo con filtro de mismo tamaño nominal renormalizado para igualar el punto de inflexión interno.\nPor su parte la planitud no es un parámetro adecuado para haces sin filtro y se define una medida de no planicidad como la pendiente entre los puntos que se encuentran a un \\(1/3\\) y \\(2/3\\) del tamaño de campo.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTomado de Fogliata et al. Deﬁnition of parameters for quality assurance of ﬂattening filter free (FFF) photon beams in radiation therapy."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-24",
+    "href": "Temas/Commissioning.html#section-24",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "\\(OAR\\) en dirección diagonal\nEl comisionado incluye la medida de un perfil diagonal (\\(x=y\\)) para caracterizar el tamaño del filtro primario\n\nEl filtro primario es de forma circular y su radio es superior a \\(20\\) cm (la mitad del máximo campo nominal disponible en las mandíbulas que es de \\(40\\) cm) pero inferior al tamaño nominal de la mitad de la diagonal, \\(20\\,\\sqrt{2}\\)."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-25",
+    "href": "Temas/Commissioning.html#section-25",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Dependencia de la dosis con el tamaño de campo\nFactor de campo en maniquí\n\n\n\n\nDefinición del factor de campo \\(F\\) para un campo de tamaño \\(c\\) en relación a uno de tamaño \\(c_{\\text{ref}}\\)\n\\[\nF(c) = \\frac{D(z_{\\text{ref}}, c)}{D(z_{\\text{ref}}, c_{\\text{ref}})}\n\\]\n\n\n\n\n\n\nCondiciones de referencia\n\n\nNormalmente \\(c_{\\text{ref}}\\) es el campo de calibración (10x10 cm²).\n\n\n\n\n\n\\(F(c)\\) se mide en condiciones de dispersión total, es decir, en un maniquí de agua suficientemente grande como para que la variación de dosis que se produciría si aumentáramos el maniquí sea despreciable."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-26",
+    "href": "Temas/Commissioning.html#section-26",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Contribuciones a \\(F\\)\n\n\nSolo el primer punto depende del maniquí. El resto dependen del cabezal.\n\n\n\n\nRazones por las que \\(F\\) varía con \\(c\\)\n\nLa cantidad de radiación dispersada en el maniquí que llega al detector depende del volumen de maniquí irradiado con el haz primario.\nLa cantidad de radiación dispersada en la cabeza del acelerador que llega al detector depende de la apertura de las mandíbulas.\nLa cantidad de radiación dispersada en las mandíbulas del acelerador que llega al detector depende de la apertura de éstas.\nLa cantidad de radiación dispersada en las mandíbulas del acelerador que llega a las cámaras monitoras del acelerador depende de la apertura de éstas.\nPara campos pequeños, las mandíbulas pueden tapar una parte del foco de radiación primaria."
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-27",
+    "href": "Temas/Commissioning.html#section-27",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Ejemplos de medidas del factor de campo en maniquí\n\n\n\n\nLa figura muestra la dependencia del factor de campo con la presencia del filtro aplanador y con la energía\n\n\n\n\n\n\nLa figura muestra la falta de simetría al intercambiar las mordazas del factor de campo, relacionado con la distancia de cada par de mordazas a las cámaras monitoras.\n\n\n:::"
+  },
+  {
+    "objectID": "Temas/Commissioning.html#section-28",
+    "href": "Temas/Commissioning.html#section-28",
+    "title": "Commissioning, caracterización de haces terapéuticos",
+    "section": "",
+    "text": "Factor de campo en aire\n\n\n\n\nLa solución directa para eliminar la contribución de la radiación dispersa producida en el maniquí es medir sin maniquí.\nEl factor de campo medido sin maniquí se denomina factor de campo en aire.\nEl factor de campo en aire es una característica del acelerador, depende de los detalles de su diseño.\nLa medida del factor de campo en aire presenta el problema práctico de la falta de equilibrio electrónico. Para evitar este problema la cámara se coloca dentro de:\n\nUna caperuza de equilibrio con los problemas ya conocidos, es una solución obsoleta.\nUn minimaniquí, que es básicamente un maniquí con las dimensiones mínimas para proporcionar equilibrio electrónico lateral y profundidad suficiente para alcanzar el equilibrio y eliminar la contaminación electrónica.\n\n\n:::"
   },
   {
     "objectID": "Temas/DetectoresGeneralidades.html#problema-de-la-cavidad",
