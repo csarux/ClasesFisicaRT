@@ -644,6 +644,125 @@
     "text": "DICOM RT y el futuro de la Radioterapia\n\nRadioterapia adaptativa:\n\nAjustes en tiempo real basados en cambios anatómicos.\n\nIntegración con IA:\n\nAnálisis de datos para mejorar precisión y personalización.\n\nConectividad en la nube:\n\nFacilitar acceso remoto y colaboración entre equipos."
   },
   {
+    "objectID": "Temas/Calibracion.html#section",
+    "href": "Temas/Calibracion.html#section",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Factores que afectan a la dosis medida en un punto\n\nEl medio en que se mide la dosis.\nLa profundidad a la que se mide la dosis.\nLa distancia desde el foco de radiación al punto de medida.\nEl tamaño de campo.\nLa posición del punto de medida dentro del haz de radiación."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-1",
+    "href": "Temas/Calibracion.html#section-1",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Medio de medida\n\nEl agua es el medio de referencia utilizado generalmente: fácil de obtener, homogéneo.\nPara minimizar los efectos debidos a la variación de la radiación secundaria que llega al detector, se utiliza un volumen grande (al menos 25x25x25 cm³).\nSe pueden utilizar otros materiales sólidos (plásticos sobre todo), que tengan densidad y número atómico efectivo similar; pero exigen correcciones a la medida para tomar en cuenta esas diferencias, y presentan otros problemas (falta de homogeneidad, polarización eléctrica).\n\n\n\n\n\n\n\nUso de plásticos\n\n\nBajo condiciones de control estadístico los plásticos son muy útiles para comprobar la constancia de la calibración.\nPermiten de forma fácil y rápida verificar la calibración e indicar la necesidad de realizar medidas con menor incertidumbre."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-2",
+    "href": "Temas/Calibracion.html#section-2",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Profundidad de medida\n\n\nFotones:\n\nEntre 5 y 10 cm.\nSuficientemente grande para:\n\nAsegurar equilibrio electrónico.\nEvitar la posible contaminación del haz por electrones.\n\n\n\n\n\n\n\n\nElectrones:\n\nEn la zona entre el máximo de dosis y el comienzo de la caída."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-3",
+    "href": "Temas/Calibracion.html#section-3",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Distancia foco-punto de medida\n\nSetup isocéntrico: detector colocado en el isocentro.\nSetup distancia fuente superficie constante: normalmente isocentro colocado en la superficie del maniquí de medida.\n\nTamaño de campo\n\nCampo estándar de calibración: campo cuadrado de 10 x 10 cm².\n\nPosición del punto de medida\n\nEn el eje central del haz."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-4",
+    "href": "Temas/Calibracion.html#section-4",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Detector para la calibración: Cámara de ionización\n\nInstrumento lo bastante sencillo como para ser empleado en un entorno clínico.\nCon la precisión suficiente (&lt; 2%).\nTipo de cámara:\n\nCilíndrica para haces de fotones y haces de electrones de energía superior a 6 MeV.\nPlana para haces de electrones de baja energía.\n\n\nCalibración de la cámara\n\nProceso que garantiza la trazabilidad de la medida de dosis hasta un patrón primario de dosis.\nPara alcanzar la precisión requerida, cada cámara debe ser calibrada individualmente (las variaciones de respuesta entre cámaras del mismo modelo pueden llegar al 1%).\nLa calibración se realiza en un Laboratorio Dosimétrico Secundario de Referencia, comparando la lectura de la cámara con la lectura de una cámara patrón.\nLa cámara patrón se calibra con los patrones de referencia de los Laboratorios Dosimétricos Primarios de Referencia."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-5",
+    "href": "Temas/Calibracion.html#section-5",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Las cámaras se suelen calibrar en haces de unidades de Cobalto, por la estabilidad de la energía y de la tasa de dosis.\nHay dos formas de realizar la calibración:\n\nEn aire (con caperuza de equilibrio): se obtiene el factor de calibración de kerma en aire, \\(N_k\\). Era la más utilizada hasta finales de los años 90.\nEn agua: se obtiene el coeficiente de calibración de dosis absorbida en agua, \\(N_{D,w}\\). Exige utilizar una funda hermética si la cámara no es sumergible. La preferida hoy en día."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-6",
+    "href": "Temas/Calibracion.html#section-6",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Cálculo de dosis en un haz clínico\nFijada la geometría de la irradiación, y conocido el factor de calibración de la cámara, es necesario dar ciertos pasos para relacionar la lectura de la cámara en la geometría de calibración del haz y la dosis en ese punto producida por el haz de radiación. Dichos pasos quedan establecidos en alguno de los Protocolos definidos a nivel nacional o internacional. El objetivo de esos protocolos es:\n\nProporcionar valores de referencia para los distintos factores que aparecen.\nEstablecer un marco común para que los distintos centros puedan comparar sus medidas.\n\nClasificación de los protocolos\n\nProtocolos basados en la calibración de la cámara de ionización en términos de kerma en aire (TG-21, TRS-277, TRS-381, SEFM-84, etc).\nProtocolos basados en la calibración de la cámara de ionización en términos de dosis absorbida en agua: TG-51, TRS-398, TRS-483."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-7",
+    "href": "Temas/Calibracion.html#section-7",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Protocolos basados en kerma en aire\nPaso desde el coeficiente de calibración en kerma a la dosis en agua\n\n\nEl paso desde el coeficiente de calibración en kerma \\(N_k\\) a la dosis en agua en la calibración clínica se realiza en dos etapas:\n\nObtención del factor de calibración de dosis en aire, \\(N_{D,\\text{aire}}\\).\nObtención del factor de corrección que hay que aplicar para pasar de dosis en aire a dosis en agua.\n\n\n\n\n\n\n\n\nHay que tener en cuenta que, al calibrar la cámara en aire, la inmensa mayoría de los electrones que atraviesan la cámara no provienen de la interacción de los fotones del haz en el aire que la rodea, sino de la interacción en la caperuza de equilibrio y la pared de la cámara. Por lo tanto, la composición de éstas es un factor fundamental de la calibración."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-8",
+    "href": "Temas/Calibracion.html#section-8",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Factor de calibración de dosis en aire\n\\[\nN_{D,\\text{aire}} = N_k (1-g) k_m k_{as}\n\\]\n\n\\(g\\) es la fracción de energía de los electrones que se reemite en forma de bremsstrahlung.\n\\(k_m\\) es un factor que toma en cuenta la no equivalencia al aire de la caperuza de equilibrio y la pared de la cámara.\n\\(k_{as}\\) es un factor que toma en cuenta la perturbación que produce la cámara sobre la fluencia de fotones del \\(^{60}\\)Co por atenuación y dispersión de éstos en las paredes de la cámara; es decir, corresponde al cociente entre la fluencia de fotones cuando la cámara no está en el medio y la fluencia cuando sí está. \\[\nk_{as} =  \\frac{1}{k_{at}^{\\text{Co}} \\, k_{sc}^{\\text{Co}} \\, k_{\\text{nounif}}^{\\text{Co}}}\n\\]\n\\(k_{at}^{\\text{Co}}\\) es la corrección debida a la atenuación de los fotones incidentes en las paredes de la cámara.\n\\(k_{sc}^{\\text{Co}}\\) es el aumento de señal de la cámara debido a la dispersión de fotones en las paredes de la cámara.\n\\(k_{\\text{nounif}}^{\\text{Co}}\\) es un factor que toma en cuenta la no uniformidad del haz primario de radiación dentro del volumen de la cámara. Para una cámara suficientemente alejada de la fuente se puede hacer la aproximación \\(k_{\\text{nounif}}^{\\text{Co}} \\approx 1\\)."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-9",
+    "href": "Temas/Calibracion.html#section-9",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Dosis en la medida del haz clínico\nSi \\(M\\) es la lectura de la cámara en la irradiación del haz clínico, la dosis medida será:\n\\[\nD_{\\text{agua}} = M^* \\cdot (s_{\\text{agua, aire}})_E \\cdot N_{D,\\text{aire}} \\cdot p_f \\cdot p_{\\text{wall}} \\cdot p_d\n\\]\n\\(M^*\\) es la lectura corregida por todos los factores de influencia (ver clase sobre cámaras de ionización):\n\\[\nM^* = (M - \\text{fugas}) \\cdot k_{tp} \\cdot k_{\\text{pol}} \\cdot k_s\n\\]\n\\((s_{\\text{agua, aire}})_E\\) es el cociente de los poderes de frenado másico restringido entre el agua y el aire para la energía del haz que se está calibrando."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-10",
+    "href": "Temas/Calibracion.html#section-10",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Protocolos basados en dosis en agua\n\n\nCuando la cámara está sumergida en agua, la mayoría de los electrones secundarios que la atraviesan se han producido en el agua, no en la pared.\nTeoría de Bragg-Gray\n\\[\nD_{\\text{agua}} = M^*\\,N_{D, \\text{aire}}\\,s_{\\text{agua, aire}}\\, p_Q\n\\]\n\n\n\n\n\n\n\n\\[\np_Q = p_{\\text{cav}} \\, p_{\\text{wall}} \\, p_{\\text{dis}} \\, p_{\\text{cel}}\n\\]\n\n\\(p_{\\text{cav}}\\): diferencias en la fluencia de electrones producidos por la presencia de la cámara.\n\\(p_{\\text{wall}}\\): electrones secundarios generados en la pared de la cámara que atraviesan ésta.\n\\(p_{\\text{dis}}\\): la fluencia no es homogénea dentro de la cámara, y la medida de la cámara no corresponde a la dosis en su centro sino a un punto situado más hacia la pared de entrada.\n\\(p_{\\text{cel}}\\): efecto del electrodo central en la fluencia de electrones."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-11",
+    "href": "Temas/Calibracion.html#section-11",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Calibración de la cámara en términos de dosis en agua\n\n\n\n\n\n\nVentaja de calibrar en dosis en agua\n\n\nLa cámara se calibra en términos de dosis en agua, que es la misma magnitud que luego se va a medir en el haz clínico.\n\n\n\nSi el haz que se calibra tiene la misma energía que la del haz que se usó para calibrar la cámara, tendremos:\n\\[\nD_{\\text{agua}} = M^* \\cdot N_{D,\\text{agua}}\n\\]\n\\(M^*\\) es la lectura corregida por todos los factores de influencia:\n\\[\nM^* = (M - \\text{fugas}) \\cdot k_{pT} \\cdot k_{\\text{pol}} \\cdot k_s\n\\]\nSi el haz es de diferente energía hay que tener en cuenta la variación de los factores de perturbación \\[\nD_{\\text{agua}} = M^* \\cdot N_{D,\\text{agua}} \\cdot K_{QQ_0} = (M - \\text{fugas}) \\cdot k_{pT} \\cdot k_{\\text{pol}} \\cdot k_s \\cdot N_{D,\\text{agua}} \\cdot K_{QQ_0}\n\\] \\[\nK_{QQ_0} = \\frac{(s_{\\text{agua, aire}})_Q\\, p_Q}{(s_{\\text{agua, aire}})_{\\text{Co}}\\, p_{\\text{Co}}}\n\\]"
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-12",
+    "href": "Temas/Calibracion.html#section-12",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Factores \\(K_{QQ_0}\\)\n\nLos factores \\(K_{QQ_0}\\) se han calculado o medido para todos los modelos de cámara y para todas las energías que se utilizan en la práctica.\nLas variaciones de estos factores son mínimas para cámaras de un mismo modelo, inferiores al 0.01%.\nLos factores están tabulados en los protocolos internacionales (TRS398, TG-51) en función de la calidad del haz.\n\nEspecificación de la calidad del haz\n\n\nFotones\n\nTRS 398\n\n\\(TPR_{20,10}\\) para campo 10x10 cm y SAD=100 cm.\n\\(PDD_{20,10}\\) para campo 10x10 cm y SSD=100 cm.\n\n\\(TPR_{20,10} = 1.2661 \\cdot PDD_{10,20} - 0.0595\\).\n\n\nTG 51\n\n\\(PDD(10\\,\\text{cm})\\) para campo 10x10 cm y SSD=100 cm.\n\n\n\nElectrones\n\n\\(R_{50}\\).\nPunto de medida:\n\n\\(z_{\\text{med}} = 0.6 \\cdot R_{50} - 0.1\\)."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-13",
+    "href": "Temas/Calibracion.html#section-13",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Condiciones de medida\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCámara de ionización cilíndrica o paralela.\nHaz barrido extenso con una única energía.\nPosición de la cámara: en el plateau, antes del comienzo del pico de Bragg.\n\\(R_p\\) profundidad más allá del pico de Bragg a la que la dosis desciende al 10% del máximo.\n\nDeterminación de la dosis absorbida1\n\\[\nD_{\\text{w},Q}(z_{\\text{ref}}) = M_Q \\cdot N_{D,\\text{w},Q} \\cdot K_{Q,Q_0}\n\\]\n\nEspecificación de la calidad del haz\nMediante el rango residual \\(R_{\\text{res}}\\) (en g/cm²) a una profundidad de medida \\(z\\)\n\\[\nR_{\\text{res}} = R_p - z\n\\]\nNo existen en la actualidad estándares primarios para protones, \\(Q_0\\) corresponde a \\({}^{60}\\)Co"
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-14",
+    "href": "Temas/Calibracion.html#section-14",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Protocolos específicos (TRS 483)\n\n\nTRS 398 y TG 51 se aplican a haces de fotones con filtro aplanador y en máquinas capaces de utilizar un campo de 10x10 cm².\n\n\n\n\n\n Cyberknife (versiones sin MLC)\nColimación mediante conos de radiocirugía, haz sin filtro\n\n\n\n\n\nImagen de la parte externa del colimador de la Cyberknife.\n\n Tomotherapy\nHaz sin filtro en forma de abanico, MLC binario sobre la apertura del campo."
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-15",
+    "href": "Temas/Calibracion.html#section-15",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Machine Specific Reference Field (Campo de Referencia Específico de la Máquina)\n\n\nGeometría de campo estándar para aquellos sistemas que no pueden colimar al campo de referencia.\n\n\n\n\n\n\n\n\n\n\nCyberknife\n\nCampo de referencia específico: Colimador de 6 cm de diámetro\n\n\n\n\n\n\n\nTomotherapy\n\nCampo de referencia específico: 5 x 10 cm²"
+  },
+  {
+    "objectID": "Temas/Calibracion.html#section-16",
+    "href": "Temas/Calibracion.html#section-16",
+    "title": "Calibración de equipos de radioterapia externa",
+    "section": "",
+    "text": "Especificación de la calidad del haz\n\n\n\nLa ausencia del filtro implica menor proporción de radiación dispersa y por tanto, distinta relación entre calidad del haz y \\(TPR_{20,10}\\).\nSe proponen nuevas tablas que relacionan \\(k_{Q,Q0}\\) con \\(TPR_{20,10}\\) en haces FFF.\nEstos valores incluyen \\(k_{vol}\\).\n\nDosis de calibración para el MSRF\n\\[\nD_{w,Q_{msr}}^{\\text{MSRF}} = M^* \\cdot N_{D,w,Co}^{\\text{MSRF}} \\cdot k_{Q,Co}^{\\text{MSRF}}\n\\]\n\n\n\n\n\n\n\nPara obtener \\(k_{Q,Co}^{\\text{MSRF}}\\) hay que estimar \\(TPR_{20,10}(10)\\). Se emplea una aproximación empírica\n\\[\nTPR_{20,10}(10) = \\frac{TPR_{20,10}(S) + c \\cdot (10 - S)}{1 + c \\cdot (10 - S)}\n\\]\ndonde \\(c = 16.15 \\times 10^{-3}\\) y \\(S\\) el lado de un campo cuadrado equivalente al MSRF"
+  },
+  {
     "objectID": "Temas/Aceleradores.html#section",
     "href": "Temas/Aceleradores.html#section",
     "title": "Aceleradores lineales",
