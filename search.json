@@ -1320,14 +1320,14 @@
     "href": "Temas/Commissioning.html#section-27",
     "title": "Commissioning, caracterización de haces terapéuticos",
     "section": "",
-    "text": "Ejemplos de medidas del factor de campo en maniquí\n\n\n\n\nLa figura muestra la dependencia del factor de campo con la presencia del filtro aplanador y con la energía\n\n\n\n\n\n\nLa figura muestra la falta de simetría al intercambiar las mordazas del factor de campo, relacionado con la distancia de cada par de mordazas a las cámaras monitoras.\n\n\n:::"
+    "text": "Ejemplos de medidas del factor de campo en maniquí\n\n\n\n\n\nLa figura muestra la dependencia del factor de campo con la presencia del filtro aplanador y con la energía\n\n\n\n\n\n\nLa figura muestra la falta de simetría al intercambiar las mordazas del factor de campo, relacionado con la distancia de cada par de mordazas a las cámaras monitoras."
   },
   {
     "objectID": "Temas/Commissioning.html#section-28",
     "href": "Temas/Commissioning.html#section-28",
     "title": "Commissioning, caracterización de haces terapéuticos",
     "section": "",
-    "text": "Factor de campo en aire\n\n\n\n\nLa solución directa para eliminar la contribución de la radiación dispersa producida en el maniquí es medir sin maniquí.\nEl factor de campo medido sin maniquí se denomina factor de campo en aire.\nEl factor de campo en aire es una característica del acelerador, depende de los detalles de su diseño.\nLa medida del factor de campo en aire presenta el problema práctico de la falta de equilibrio electrónico. Para evitar este problema la cámara se coloca dentro de:\n\nUna caperuza de equilibrio con los problemas ya conocidos, es una solución obsoleta.\nUn minimaniquí, que es básicamente un maniquí con las dimensiones mínimas para proporcionar equilibrio electrónico lateral y profundidad suficiente para alcanzar el equilibrio y eliminar la contaminación electrónica.\n\n\n:::"
+    "text": "Factor de campo en aire\n\n\n\n\n\nLa solución directa para eliminar la contribución de la radiación dispersa producida en el maniquí es medir sin maniquí.\nEl factor de campo medido sin maniquí se denomina factor de campo en aire.\nEl factor de campo en aire es una característica del acelerador, depende de los detalles de su diseño.\nLa medida del factor de campo en aire presenta el problema práctico de la falta de equilibrio electrónico. Para evitar este problema la cámara se coloca dentro de:\n\nUna caperuza de equilibrio con los problemas ya conocidos, es una solución obsoleta.\nUn minimaniquí, que es básicamente un maniquí con las dimensiones mínimas para proporcionar equilibrio electrónico lateral y profundidad suficiente para alcanzar el equilibrio y eliminar la contaminación electrónica."
   },
   {
     "objectID": "Temas/DetectoresGeneralidades.html#problema-de-la-cavidad",
