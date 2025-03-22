@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.39">
+
+  <meta name="author" content="César Rodríguez">
+  <title>ClasesFisicaRT – Braquiterapia</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-e6ec3429f00f3dae4ab744fc8c423248.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Braquiterapia</h1>
+  <p class="subtitle">Fundamentos, fuentes, técnicas de implante, dosimetría</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+César Rodríguez 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:cesaro02@ucm.es">cesaro02@ucm.es</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Universidad Complutense de Madrid
+          </p>
+    </div>
+</div>
+
+</section>
+<section id="section" class="slide level2 smaller">
+<h2></h2>
+<h3 id="definición-y-fundamentos">Definición y fundamentos</h3>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Braquiterapia</strong></p>
+</div>
+<div class="callout-content">
+<p>Irradiación de un paciente mediante <span class="alert"><strong><em>fuentes de radiación encapsuladas</em></strong></span>, colocadas en el <span class="alert"><strong><em>interior</em></strong></span> del paciente o en <span class="alert"><strong><em>contacto</em></strong></span> directo con él.</p>
+</div>
+</div>
+</div>
+<h4 id="ventajas-potenciales">Ventajas potenciales</h4>
+<ul>
+<li>Como la radiación se emite <em>desde el tumor hacia el exterior</em> se evita el depósito de dosis en las regiones de acceso propio de la radioterapia externa.</li>
+<li>Mediante el diseño del implante y una elección adecuada de las fuentes (energía) se puede concentrar la dosis en el tumor y reducirla en el exterior.</li>
+</ul>
+<h4 id="desventajas-prácticas">Desventajas prácticas</h4>
+<ul>
+<li>La <em>planificación dosimétrica</em> es más <span class="alert"><strong><em>compleja</em></strong></span> que en la radioterapia externa y está <em>condicionada por la realización del implante</em>.</li>
+<li>En la mayoría de los casos implica la realización de un <em>procedimiento quirúrgico</em>.</li>
+<li>Utiliza <em>fuentes radiactivas</em> con sus consiguientes consideraciones de <em>protección radiológica</em>.</li>
+</ul>
+</section>
+<section id="section-1" class="slide level2 smaller">
+<h2></h2>
+<h4 id="clasificación-por-la-tasa-de-dosis-de-la-fuente">Clasificación por la tasa de dosis de la fuente<sup>1</sup></h4>
+<ul>
+<li><strong>Alta tasa de dosis:</strong> &gt; 12 Gy/h. El tiempo de permanencia de las fuentes en el paciente es del orden de unos pocos minutos.</li>
+<li><strong>Baja tasa de dosis:</strong> 0.4 – 2 Gy/h. El tiempo de permanencia de la fuente es de varios días.</li>
+</ul>
+<h4 id="clasificación-por-el-número-de-aplicaciones">Clasificación por el número de aplicaciones</h4>
+<ul>
+<li><strong>Única</strong></li>
+<li><strong>Fraccionada</strong></li>
+<li><strong>Pulsada:</strong> varias aplicaciones muy cortas al día</li>
+<li><strong>Permanente:</strong> las semillas se dejan en el interior del paciente. El tratamiento se debe a la activad integral de las fuentes.</li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>En la actualidad se prefieren las técnicas de alta tasa de dosis, que no requieren mantener al paciente hospitalizado en una sala aislada.</p></li></ol></aside></section>
+<section id="fuentes-aplicadores-y-equipos" class="slide level2 smaller">
+<h2>Fuentes, aplicadores y equipos</h2>
+<h4 id="características-de-las-fuentes">Características de las fuentes</h4>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tipo de emisión</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>La mayoría de los isótopos utilizados son emisores de radiación γ y β en los que solo se utiliza la radiación γ; la radiación β es de muy baja energía y se elimina rodeando la fuente de una envoltura metálica que la absorbe completamente.</li>
+<li>Se emplean también algunos emisores β puros.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Energía de la fuentes</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>La energía de la radiación emitida determina cómo disminuye la dosis al alejarnos de la fuente. Cuanto más alta sea, mayor será la dosis a distancias grandes.</li>
+<li>Para obtener distribuciones de dosis más homogéneas son preferibles los emisores de alta energía.</li>
+<li>Los emisores de baja energía administran menos dosis en los tejidos sanos que rodean al tumor pero para conseguir irradiar todo el volumen puede ser necesario utilizar varias fuentes.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Semiperiodo de desintegración</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Las fuentes de vida larga tienen la ventaja de que pueden reutilizarse muchas veces.</li>
+<li>Si se quiere dar altas tasas de dosis con fuentes que no sean muy grandes, es necesario usar isótopos de vida corta.</li>
+<li>Para implantes permanentes, es preferible usar isótopos con una vida media corta, para que depositen la mayor parte de la dosis en las primeras semanas o meses después de su colocación, y su radiactividad sea insignificante al cabo de un año.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="section-2" class="slide level2 smaller">
+<h2></h2>
+<h3 id="isótopos-de-uso-más-frecuente">Isótopos de uso más frecuente</h3>
+<div class="columns">
+<div class="column" style="width:70%;">
+<h4 id="iridio-192">Iridio-192</h4>
+<ul>
+<li>Emisor β y γ; solo se usa la radiación γ.</li>
+<li>Semivida corta: 74.3 días.</li>
+<li>Energía promedio intermedia: 0.380 MeV.</li>
+<li>Muy utilizado tanto en alta tasa como en baja tasa de dosis.</li>
+<li>Metálico y muy maleable. Se puede emplear en forma de hilos metálicos, horquillas, semillas pequeñas unidas formando una cinta…</li>
+</ul>
+<h4 id="yodo-125">Yodo-125</h4>
+<ul>
+<li>Emisor γ (captura electrónica).</li>
+<li>Semivida corta: 59.6 días.</li>
+<li>Energía promedio muy baja: 0.035 MeV (aunque la energía máxima alcanza 0.355 MeV).</li>
+<li>Utilizado para implantes permanentes, en forma de semillas.</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/FuenteIr-192.png"></p>
+<figcaption>Esquema de una fuente de alta tasa de Ir-192</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/HorquillasIr-192.png"></p>
+<figcaption>Fuentes de Ir-192 en forma de horquilla para implantes intersticiales de carga manual.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/SemillaI-125.png"></p>
+<figcaption>Semilla de I-125 para implante permanente</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="section-3" class="slide level2 smaller">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h4 id="cobalto-60">Cobalto-60</h4>
+<ul>
+<li>Emisor β y γ; solo se usa la radiación γ.</li>
+<li>Semivida larga: 5.26 años.</li>
+<li>Energía promedio alta (γ): 1.2 MeV.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/FuenteCo-60.png" width="300"></p>
+<figcaption>Esquema de una fuente de alta tasa de Co-60</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:60%;">
+<h4 id="rutenio-106-y-estroncio-90">Rutenio-106 y Estroncio-90</h4>
+<ul>
+<li>Emisores β puros.</li>
+<li>Semivida larga: 1.04 años (Rutenio-106) y 28 años (Estroncio-90).</li>
+<li>Energía máxima de las partículas β: 3.4 MeV (Rutenio-106) y 2.27 MeV (Estroncio-90).</li>
+<li>Muy utilizados para tratar lesiones superficiales en los ojos: la dosis a una profundidad de 2 mm es solo el 20% de la dosis en superficie (Estroncio-90).</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/FuentesRutenio-106.png" height="220"></p>
+<figcaption>Aplicadores oftálmicos de Rutenio-106</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="section-4" class="slide level2 smaller">
+<h2></h2>
+<h4 id="fuentes-de-rayos-x-fuentes-artificiales-electrónicas">Fuentes de rayos X (<em>fuentes artificiales electrónicas</em>)</h4>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/SistemaBraquiterapiaMama.png" height="500"></p>
+<figcaption>Equipo para braquiterapia de mama. Se puede entender también como un sistema de radioterapia intraoperatoria.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/FuenteElectronica.png" height="500"></p>
+<figcaption>Tubo de rayos X miniaturizado para fuente electrónica de unn solo uso refrigerado por agua (véanse los dos catéteres perpendiculares). Tiempo máximo de utilización 750 minutos. Voltaje de trabajo hasta 50 kV,</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="section-5" class="slide level2 smaller">
+<h2></h2>
+<h3 id="aplicadores">Aplicadores</h3>
+<ul>
+<li>Dispositivos que permiten guiar la fuente y asegurar la estabilidad y reproducibilidad de su colocación</li>
+<li>En ocasiones deforman el tejido para mejorar la geometría de la irradiación.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:33%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/Plssioterapia.png"></p>
+<figcaption>Aplicador para <em>plesioterapia</em> o braquiterapia de contacto</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/CilindroVaginal.png"></p>
+<figcaption>Aplicador intracavitario ginecológico, cilindro vaginal. El tubo externo sirve para el paso de la fuente.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/AplicadorCervix.png"></p>
+<figcaption>Aplicador intracavitario ginecológico para el tratamiento del cáncer de cérvix.</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="section-6" class="slide level2 smaller">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/VectoresMama.png" height="300"></p>
+<figcaption>Aplicador para braquiterapia intersticial de mama mediante vectores.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/VectorHiloMama.png" height="300"></p>
+<figcaption>Aguja metálica hueca utilizada como vector para guiar la fuente de Ir-192 en forma de hilo.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/MamaImplanteIntersticial.png"></p>
+<figcaption>Irradiación parcial de la mama mediante braquiterapia de carga diferida para tratamiento acelerado.</figcaption>
+</figure>
+</div>
+</section>
+<section id="section-7" class="slide level2 smaller">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/ProstateImplantScheme.png" height="250"></p>
+<figcaption>Esquema de los elementos utilizados para la realización del implante.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/ProstateSeeds.png" height="300"></p>
+<figcaption>Fuentes radiactivas en forma de semilla y agujas para su colocación.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/IntersticialProstata.png"></p>
+<figcaption>Procedimiento quirúrgico para implante permanente de semillas radiactivas para el tratamiento del cáncer de próstata.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/LDRNeedles.png" class="quarto-figure quarto-figure-center" height="200"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="section-8" class="slide level2 smaller">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/AplicadorIntraluminal.png"></p>
+<figcaption>Aplicador intraluminal y marcadores radiopacos</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/CateteresBranquiales.png" height="360"></p>
+<figcaption>Proyección radiográfica para localización de las posiciones de parada de la fuente en el catéter mediante los marcadores radiopacos</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/AplicacionIntraluminal.png" class="quarto-figure quarto-figure-center" height="200"></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<ul>
+<li><p>En las aplicaciones <em>intraluminales</em> se aprovecha la luz de un vaso para introducir el catéter que guía las fuentes.</p></li>
+<li><p>El catéter se conecta a una máquina que contiene las fuentes y las desplaza hasta las posiciones programadas según un tiempo planificado.</p></li>
+</ul>
+</div></div>
+</section>
+<section id="section-9" class="slide level2 smaller">
+<h2></h2>
+<h3 id="equipos">Equipos</h3>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Complejidad de la braquiterapia</strong></p>
+</div>
+<div class="callout-content">
+<p>Los tratamientos de braquiterapia siempre van asociados a <span class="alert"><strong><em>procedimientos quirúrgicos</em></strong></span> de mayor o menor complejidad.</p>
+<p>Desde el punto de vista de la gestión hospitalaria, una unidad de braquiterapia es <em>mucho más compleja</em> que una unidad de radioterapia externa.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Realización del implante</strong></p>
+</div>
+<div class="callout-content">
+<p>En el procedimiento quirúrgico se coloca el aplicador o directamente las fuentes en el caso de los implantes permanentes.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Equipos de carga remota o telecomandada</strong></p>
+</div>
+<div class="callout-content">
+<p>Los equipos de braquiterapia son contenedores portátiles de fuentes a los que se conectan los aplicadores implantados en el paciente. Se encargan de llevar las fuentes hasta las posiciones programadas y mantenerlas allí los tiempos planificados.</p>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/MicroselectronScheme.png" height="200"></p>
+<figcaption>Esquema de un equipo de carga remota con un circuito de chequeo y un circuito de fuente real.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Ventajas de la carga telecomandada</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Elimina la exposición a la radiación del médico y del personal que participa en la colocación del aplicador.</li>
+<li>Elimina la exposición del personal que atiende al paciente durante el tratamiento.</li>
+<li>Permite que el paciente reciba visitas durante el tratamiento.</li>
+<li>Es imprescindible en los tratamientos con alta tasa de dosis.</li>
+<li>Con los equipos modernos permite una mayor precisión y control en la administración de la dosis.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="caracterización-de-fuentes-de-braquiterapia" class="slide level2 smaller">
+<h2>Caracterización de fuentes de braquiterapia</h2>
+<p>La tasa de exposición a una distancia <span class="math inline">\(d\)</span> de una fuente aislada en aire viene dada por la expresión:</p>
+<p><span class="math display">\[
+\frac{dX}{dt} = \frac{A \cdot \Gamma}{d^2}
+\]</span></p>
+<p>Donde <span class="math inline">\(\Gamma\)</span> es la constante de tasa de exposición, que depende solo del isótopo del que está compuesta la fuente.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h4 id="autoatenuación">Autoatenuación</h4>
+<p>Los efectos de atenuación de la radiación en la propia fuente son muy importantes.</p>
+<ul>
+<li>Atenuación por el material radiactivo.</li>
+<li>Atenuación por el material de encapsulamiento.</li>
+</ul>
+<p>La dosis total depositada fuera de la fuente puede ser hasta un 30% inferior a la que habría si no existiera autoatenuación.</p>
+</div><div class="column" style="width:50%;">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Actividad aparente</strong></p>
+</div>
+<div class="callout-content">
+<p>Actividad del isótopo que, en ausencia de autoatenuación, daría lugar a la misma dosis en el exterior de la fuente que la fuente completa con autoatenuación.</p>
+<p><span class="math inline">\(A_{ap} &lt; A\)</span></p>
+<p>La relación exacta entre <span class="math inline">\(A_{ap}\)</span> y <span class="math inline">\(A\)</span> depende del encapsulamiento y de la forma geométrica de la fuente.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong><span class="math inline">\(\Gamma\)</span> Restringida (<span class="math inline">\(\Gamma_\Delta\)</span>)</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Toma en cuenta únicamente la exposición debida a fotones emitidos (gamma, X, bremsstrahlung interno) con una energía superior a la energía mínima necesaria para que los fotones salgan de la fuente (considerando la autoatenuación de ésta).</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="section-10" class="slide level2 smaller">
+<h2></h2>
+<h4 id="tasa-de-kerma-en-aire-para-una-actividad-aparente">Tasa de kerma en aire para una actividad aparente</h4>
+<p><span class="math display">\[
+\frac{dK}{dt} (d) = \frac{A_{ap} \times \Gamma_{KRA}}{d^2}
+\]</span> Donde <span class="math inline">\(\Gamma_{KRA}\)</span> es la <strong><em>constante de tasa de kerma</em></strong>: <span class="math display">\[
+\Gamma_{KRA} = \frac{\Gamma_\Delta \cdot 0.876 \cdot 10^{-2} \, \text{Gy/R}}{ 3.7 \cdot 10^{10} \, \text{Bq/Ci}}
+\]</span></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tasa de Kerma de Referencia en Aire TKRA</strong></p>
+</div>
+<div class="callout-content">
+<p>Siguiendo el criterio general de sustituir la exposición por el kerma en la caracterización de la radiación, la ICRU recomendó caracterizar las fuentes radiactivas a partir de la <span class="alert"><strong><em>Tasa de Kerma de Referencia en Aire</em></strong></span> (TKRA), definida como la tasa de kerma en aire a 1 m de la fuente, corregida por la atenuación y dispersión en el aire.</p>
+</div>
+</div>
+</div>
+<p>La distancia de 1 metro se considera lo suficientemente grande respecto al tamaño de las fuentes típicas de braquiterapia como para que se puedan considerar puntuales, de forma que se asume que a esa distancia:</p>
+<ul>
+<li>La distribución de dosis tiene simetría esférica y no hace falta considerar la orientación de la fuente.</li>
+<li>La variación de dosis con la distancia sigue con buena aproximación la ley de la inversa del cuadrado.</li>
+</ul>
+</section>
+<section id="section-11" class="slide level2 smaller">
+<h2></h2>
+<p>La definición del TKRA se especifica para una fuente concreta (o un conjunto de fuentes de la misma composición, forma y estructura) y tiene en cuenta explícitamente la autoatenuación de ésta.</p>
+<ul>
+<li>El TKRA se mide en Gy/s (o más típicamente en mGy/h).</li>
+<li>Para una fuente puntual, en aire: <span class="math display">\[
+\frac{dK}{dt} (d) = \frac{TKRA}{d^2}
+\]</span></li>
+</ul>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Obligaciones legales relativas al TKRA</strong></p>
+</div>
+<div class="callout-content">
+<p>La ley obliga a comprobar el TKRA de las fuentes empleadas en implantes de braquiterapia</p>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/ElectrometroPozoInsertosTKRA.png" height="200"></p>
+<figcaption>Equipo de medida del TKRA: electrómetro, cámara de pozo, insertos</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:70%;">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Medida del TKRA</strong></p>
+</div>
+<div class="callout-content">
+<p>La calibración de la cámara se realiza midiendo la respuesta (carga o corriente) para una <em>fuente patrón</em>, de TKRA conocido. La medida del <span class="math inline">\(TKRA\)</span> de una fuente del mismo tipo que la fuente patrón será</p>
+<p><span class="math display">\[
+TKRA = TKRA_{\text{FP}}\cdot e^\frac{t_c-t_m}{\tau} \frac{I}{I_{\text{FP}}}
+\]</span></p>
+<p>donde <span class="math inline">\(I\)</span> e <span class="math inline">\(I_{\text{FP}}\)</span> son las intensidades de corriente producidas por la fuente y la fuente patrón (FP), y <span class="math inline">\(TKRA_{\text{FP}}\)</span> el valor certificado para el instante <span class="math inline">\(t_c\)</span>. <span class="math inline">\(t_m\)</span> es el instante de medida y <span class="math inline">\(\tau\)</span> la vida media del isótopo contenido en la fuente.</p>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="cálculo-de-la-dosis-en-braquiterapia" class="slide level2 smaller">
+<h2>Cálculo de la dosis en braquiterapia</h2>
+<h3 id="formalismo-de-cálculo-de-la-aapm-tg43">Formalismo de cálculo de la AAPM TG43</h3>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/TG43Scheme.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:65%;">
+<p>Para evitar inconsistencias e incertidumbres, el TG43 propone un formalismo que caracteriza a cada fuente de braquiterapia mediante varias funciones unidimensionales y bidimensionales:</p>
+<ul>
+<li>La dosis en un punto cercano a la fuente (simetría cilíndrica) con coordenadas polares <span class="math inline">\(r, \theta\)</span> (independiente del angulo <span class="math inline">\(\phi\)</span>) es:</li>
+</ul>
+</div></div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[
+\dot{D}(r, \theta) = S_K \Lambda g(r) \frac{F(r, \theta) G(r, \theta)}{G(r_0, \theta_0)}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(S_K\)</span> es la intensidad de kerma de la fuente (TKRA).</li>
+<li><span class="math inline">\(\Lambda\)</span> es la constante que pasa de kerma a dosis en agua.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><span class="math inline">\(g(r)\)</span> expresa la dependencia radial de la dosis debido a atenuación y dispersión en el agua.</li>
+<li><span class="math inline">\(G(r, \theta)\)</span> es la función que depende de la forma geométrica de la fuente.</li>
+<li><span class="math inline">\(F(r, \theta)\)</span> es la función de anisotropía.</li>
+</ul>
+</div></div>
+</section>
+<section id="section-12" class="slide level2 smaller">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<h4 id="función-de-dependencia-radial-gr">Función de dependencia radial <span class="math inline">\(g(r)\)</span></h4>
+<p><span class="math inline">\(g(r)\)</span> describe la atenuación y la dispersión para el plano de bisección de la fuente, <span class="math inline">\(\theta = 90\)</span></p>
+<h4 id="función-de-geometría-de-la-fuente-gr-theta">Función de geometría de la fuente <span class="math inline">\(G(r, \theta)\)</span></h4>
+<p><span class="math inline">\(G(r, \theta)\)</span> define la intensidad de la fuente en ausencia de medio material con una distribución homogénea e infinita.</p>
+<ul>
+<li>Para una fuente puntual <span class="math inline">\(G(r, \theta) = \frac{1}{r^2}\)</span>.</li>
+<li>Para una fuente lineal de longitud <span class="math inline">\(L\)</span>, <span class="math display">\[
+G(r, \theta) =
+\begin{cases}
+\frac{\beta}{L r \sin \theta} &amp; \text{si } \theta \neq 0 \\
+\frac{1}{r^2 - \frac{L^2}{4}} &amp; \text{si } \theta = 0
+\end{cases}
+\]</span></li>
+</ul>
+<p><span class="math inline">\(\beta\)</span> es el ángulo subtendido por la fuente desde el punto de cálculo.</p>
+</div><div class="column" style="width:55%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/FuncionDependenciaRadial.png" width="500"></p>
+<figcaption>Funciones de dependencia radial de la dosis para distintos modelos de fuente e isótopos</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="section-13" class="slide level2 smaller">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<h4 id="función-de-anisotropía-fr-theta">Función de anisotropía <span class="math inline">\(F(r, \theta)\)</span></h4>
+<p><span class="math inline">\(F(r, \theta)\)</span> describe la anisotropía, introducida por la falta de simetría y por la autoatenuación, en función dal ángulo <span class="math inline">\(\theta\)</span>, <span class="math inline">\(F(r, 90) = 1\)</span></p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Caracterización de las fuentes</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Es el fabricante de la fuente el que proporciona los valores de las funciones <span class="math inline">\(g\)</span>, <span class="math inline">\(G\)</span> y <span class="math inline">\(F\)</span>, normalmente como tablas de valores obtenidos a partir de medidas en laboratorios especializados o a partir de cálculos de Monte Carlo.</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:55%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/FuncionAnisotropia.png" width="280"></p>
+<figcaption>Funciones de anisotropía para distintos modelos de fuente e isótopos</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Orientación de las fuentes</strong></p>
+</div>
+<div class="callout-content">
+<p>La aplicación de la función <span class="math inline">\(F\)</span> solo tiene sentido si se puede determinar con precisión la orientación de la fuente, lo que en la práctica puede resultar en general complicado.</p>
+</div>
+</div>
+</div>
+<p><span class="math display">\[
+\dot{D}(r, \theta) = S_K \Lambda g(r) \frac{G(r, \theta_0)}{G(r_0, \theta_0)} g(r) \phi_{an}(r)
+\]</span></p>
+<p>El cálculo de la dosis se aproxima por un modelo 1D (simetría esférica) mediante otra función de anisotropía. <span class="math inline">\(\phi_{an}\)</span> que representa la dosis promedio a una distancia <span class="math inline">\(r\)</span> en todas direcciones.</p>
+</section>
+<section id="planificación-de-tratamientos" class="slide level2 smaller">
+<h2>Planificación de tratamientos</h2>
+<h3 id="proceso-de-la-braquiterapia">Proceso de la braquiterapia</h3>
+<ul>
+<li>Colocación de los aplicadores (vectores, catéteres, intracavitarios)</li>
+<li>Reconstrucción de los aplicadores mediante imágenes</li>
+<li>Contorneo de volúmenes y prescripción</li>
+<li>Optimización de la distribución de las fuentes para cumplir con la prescripción de dosis</li>
+<li>Cálculo de la dosis en el volumen de interés y en los órganos de riesgo</li>
+<li>Ajuste de la posición y tiempo de las fuentes para optimizar la distribución de la dosis</li>
+<li>Ejecución del tratamiento y seguimiento del paciente</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Alcance del cálculo dosimétrico</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li><strong>Braquiterapia de baja tasa</strong>: determinación del tiempo de permanencia de las fuentes en el paciente para alcanzar la dosis de prescripción.</li>
+<li><strong>Braquiterapia de alta tasa</strong>: determinación de las posiciones y del tiempo de permanencia de las fuentes en cada punto para alcanzar la dosis de prescripción y la distribución de dosis optimizada.</li>
+<li><strong>Implantes permanentes</strong>: proceso interactivo en el que el Radiofísico indica al Oncólogo de Radioterapia cuántas semillas y dónde se deben implantar. La planificación se va corrigiendo en tiempo real en función del desarrollo del implante en quirófano, que se realiza mediante control ecográfico.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="section-14" class="slide level2 smaller">
+<h2></h2>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Calidad dosimétrica</strong></p>
+</div>
+<div class="callout-content">
+<p>La colocación de los aplicadores condiciona la calidad dosimétrica del tratamiento.</p>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:65%;">
+<ul>
+<li>Por la propia física de la emisión de radiación desde las fuentes, la distribución de dosis no puede ser uniforme. La dosis crece rápidamente al acercarnos a la fuente.</li>
+<li>Cuando hay que cubrir un volumen superior al alcanzable mediante una única fuente, se combinan varias fuentes agrupadas en planos con distancias constantes entre las fuentes. En planos perpendiculares a las fuentes, estas se agrupan formando triángulos.</li>
+<li>El centro del triángulo, el punto en el que la dosis es menor en el espacio entre fuentes, se utiliza como lugar de prescripción de la dosis.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/DistribucionParis.png" class="quarto-figure quarto-figure-center" width="300"></p>
+</figure>
+</div>
+</div><div class="column" style="width:35%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/AplicadorParis.png" width="280"></p>
+<figcaption>Aplicador de mama</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/DistribucionSemillas.png" width="300"></p>
+<figcaption>Implante permanente de semillas</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="section-15" class="slide level2 smaller">
+<h2></h2>
+<h4 id="reconstrucción-espacial-mediante-imágenes-2d">Reconstrucción espacial mediante imágenes 2D</h4>
+<p>Reconstrucción a partir de dos o más radiografías tomadas desde distintos ángulos</p>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/ReconstruccionOrtogonal.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:55%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/RadiografiasOrtogonalesCervix.png" height="200"></p>
+<figcaption>Radiografías ortogonales de un implante de cérvix, vistas antero-posterior y lateral.</figcaption>
+</figure>
+</div>
+<ul>
+<li>Unos marcadores radiopacos, normalmente unas marcas de tamaño figjo sobre un arco que se coloca rodeando al paciente, permiten determinar la ampliación de las imágenes.</li>
+</ul>
+</div></div>
+<ul>
+<li>Se asume que el paciente está en la misma posición en ambas proyecciones, hay una coordenada común determinada por el eje de giro</li>
+<li>Un usario identifica puntos comunes en ambas proyecciones, lo que permite realizar la reconstrucción</li>
+</ul>
+</section>
+<section id="section-16" class="slide level2 smaller">
+<h2></h2>
+<h4 id="reconstrucción-espacial-mediante-imágemes-3d">Reconstrucción espacial mediante imágemes 3D</h4>
+<p>Los aplicadores o las fuentes se contornean en los diferentes cortes tomográficos</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/BraquiReconstruccionCT.png" height="200"></p>
+<figcaption>Reconstrucción mediante imágenes de TC.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/LocalizacionSemillasUS.png" height="200"></p>
+<figcaption>Localización de las semillas del implante mediante ultrasonidos.</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/BraquiReconstruccionRM.png"></p>
+<figcaption>Reconstrucción mediante imágenes de RM. Visualización de los tres planos ortogonales principales.</figcaption>
+</figure>
+</div>
+</section>
+<section id="section-17" class="slide level2 smaller">
+<h2></h2>
+<h4 id="delimitación-de-volúmenes">Delimitación de volúmenes</h4>
+<ul>
+<li>En este tipo de cálculos se requiere la información detallada de distribución de dosis en los órganos sanos (histogramas dosis-volumen).</li>
+<li>Es necesaria una reconstrucción tridimensional de la posición de las fuentes y de los órganos (TC, RM, Ultrasonidos).</li>
+</ul>
+<h4 id="cáculo-del-implante-completo">Cáculo del implante completo</h4>
+<ul>
+<li>Obtenidas las posiciones de las fuentes, se puede calcular la distribución de tasa de dosis sumando en cada punto la correspondiente a cada fuente, calculada según el formalismo TG43.</li>
+<li><span class="alert"><strong><em>Este cálculo no toma en cuenta la atenuación de una fuente por otra ni las heterogeneidades del tejido.</em></strong></span></li>
+<li>Se pueden hacer cálculos más precisos usando el método de Monte Carlo pero <em>no es lo habitual</em>.</li>
+</ul>
+
+<img data-src="images/DistribucionDosisCervix.png" class="r-stretch quarto-figure-center"><p class="caption">Distribución de dosis obtenida en un tratamiento de braquiterapia de cáncer de cervix</p></section>
+<section id="section-18" class="slide level2 smaller">
+<h2></h2>
+<h4 id="histogramas-dosis-volumen">Histogramas dosis volumen</h4>
+<div class="columns">
+<div class="column" style="width:25%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/DVHBraquiterapia.png" height="200"></p>
+<figcaption>Histograma dosis volumen típico de un tratamiento de braquiterapia, en este caso un implante permanente para cáncer de próstata</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:75%;">
+<ul>
+<li>La falta de uniformidad en los órganos blanco se refleja en las colas de los histogramas.</li>
+<li>Si la anatomía es favorable los órganos de riesgo reciben dosis menores de las asociadas a tratamientos mediante radioterapia externa.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/VentanaTerapeuticaBraqui.png" height="175"></p>
+<figcaption>La ausencia de probabilidad de complicaciones hace que la ventana terapéutica no se cierre</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Incertidumbres en braquiterapia</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>La incertidumbre geométrica es mayor (<span class="math inline">\(\frac{dD}{dx}\)</span> es muy grande).</li>
+<li>No se suelen hacer correcciones por heterogeneidad de los tejidos.</li>
+<li>No se toma en cuenta la atenuación de una fuente por otra.</li>
+<li>Es imposible tomar en cuenta el movimiento de los órganos.</li>
+<li><span class="alert"><strong><em>Se consideran aceptables incertidumbres del 10% en la dosis calculada.</em></strong></span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+</section>
+
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/LogoUCM.jpg" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Braquiterapia. Física de la radioterapia</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/multiplex/socket.io.js"></script>
+  <script src="../site_libs/revealjs/plugin/multiplex/multiplex.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'multiplex': {"secret":null,"id":"2ef7e52705b616c8","url":"https://reveal-multiplex.glitch.me/"},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/csarux\.github\.io\/ClasesFisicaRT\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
