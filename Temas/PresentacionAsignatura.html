@@ -34,8 +34,6 @@
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
@@ -142,7 +140,7 @@ César Rodríguez Rodríguez
 <a href="mailto:cesaro02@ucm.es">cesaro02@ucm.es</a>
 </div>
         <p class="quarto-title-affiliation">
-            Profesor Asociado del Departamento de Radiología, Rehabilitación y Fisioterapia.<br> Radiofísico del Hospital Universitario de Fuenlabrada.
+            Profesor Asociado del Departamento de Radiología y Rehabilitación.<br> Radiofísico del Hospital Universitario de Fuenlabrada.
           </p>
     </div>
 </div>
@@ -153,7 +151,7 @@ César Rodríguez Rodríguez
 <h4 id="profesores-colaboradores">Profesores colaboradores</h4>
 <p><strong>Luis Carlos Martínez Gómez</strong></p>
 <p><em>luiscm01@ucm.es</em></p>
-<p><em>Profesor Asociado del Departamento de Radiología, Rehabilitación y Fisioterapia.</em></p>
+<p><em>Profesor Asociado del Departamento de Radiología y Rehabilitación.</em></p>
 <p><em>Radiofísico del Hospital Universitario de Doce de Octubre.</em></p>
 <p><strong>Alfonso López Fernández</strong></p>
 <p><em>alflopez@ucm.es</em></p>
@@ -261,26 +259,32 @@ César Rodríguez Rodríguez
 </section>
 <section id="distribución-de-calificaciones" class="slide level2">
 <h2>Distribución de calificaciones</h2>
-<h4 id="datos-de-los-cursos-2122-2223-y-2324">Datos de los cursos 21/22, 22/23 y 23/24:</h4>
+<h4 id="datos-de-los-cursos-2122-2223-2324-y-2425">Datos de los cursos 21/22, 22/23, 23/24 y 24/25:</h4>
 
-<img data-src="images/distribucion_calificaciones_21_24.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<img data-src="images/distribucion_calificaciones_21_25.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="software-para-los-seminarios" class="slide level2">
 <h2>Software para los seminarios</h2>
 <div class="columns">
-<div class="column" style="width:33%;">
-<p><img data-src="images/jupyter.png"></p>
-</div><div class="column" style="width:33%;">
-<p><img data-src="images/Colab.png"></p>
-</div><div class="column" style="width:33%;">
-<p><img data-src="images/binder.png"></p>
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="images/Colab.png" class="quarto-figure quarto-figure-right" height="80"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/jupyter.png" class="quarto-figure quarto-figure-left" height="80"></p>
+</figure>
+</div>
 </div></div>
 <div class="columns">
 <div class="column" style="width:15%;">
-<p><img data-src="images/scikit-rt.png"></p>
-</div><div class="column" style="width:25%;">
-<p><img data-src="images/dicompyler-core.png"></p>
+<p><strong>PlatiPy</strong> <img data-src="images/scikit-rt.png"></p>
 </div><div class="column" style="width:40%;">
 <p><img data-src="images/OpenTPS.png"></p>
+</div><div class="column" style="width:25%;">
+<p><img data-src="images/plastimatch-banner.png"></p>
 </div><div class="column" style="width:20%;">
 <p><img data-src="images/SlicerRT.png" height="80"></p>
 </div></div>
@@ -379,18 +383,19 @@ César Rodríguez Rodríguez
 <h2></h2>
 <h4 id="elementos-básicos-para-la-instalación">Elementos básicos para la instalación</h4>
 <ul>
-<li>Una instalación de python version 3.9
+<li>Una instalación de python version 3.11
 <ul>
-<li>Se recomienda emplear conda y crear un entorno virtual con python 3.9</li>
+<li>Se recomienda emplear conda y crear un entorno virtual con python 3.11.</li>
+<li>Alternativamente se puede utilizar el gestor de python uv.</li>
 <li>En el caso de que nuestro ordenador sea un Mac con procesador Apple Silicon (M1, M2, M3…) el entorno virtual se tiene que crear con arquitectura amd.</li>
 </ul></li>
 <li>Una instalación de pip</li>
 </ul>
 <h4 id="documentación-para-la-instalación">Documentación para la instalación</h4>
 <ul>
-<li>Página de openTPS &gt; <a href="https://opentps.org/quickstart/easy_quickstart.html">Easy Quickstart</a></li>
+<li>Página de openTPS &gt; <a href="https://opentps.org/quickstart/easy_quickstart.html">Easy Quickstart</a><sup>1</sup></li>
 </ul>
-</section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>Tras la introducción de la versión 2 de openTPS esta página se encuentra desactulizada y sigue haciendo referencia a la versión pythonn 3.9. Salvo esto indica los pasos necesarios para la instalación.</p></li></ol></aside></section>
 <section id="section-8" class="slide level2 smaller">
 <h2></h2>
 <h4 id="instalación-de-conda">Instalación de conda</h4>
@@ -401,11 +406,11 @@ César Rodríguez Rodríguez
 <li>Para los distintos sistemas operativos utilizar las instrucciones de <a href="https://docs.anaconda.com/miniconda/install/#quick-command-line-install">instalación de miniconda</a></li>
 </ul></li>
 </ul>
-<h4 id="creación-y-activación-del-entorno-virtual-python-3.9">Creación y activación del entorno virtual python 3.9</h4>
-<p>Con conda activado, desde la linea de comandos correr</p>
-<pre><code>conda create --name OpenTPS python=3.9</code></pre>
+<h4 id="creación-y-activación-del-entorno-virtual-python-3.11">Creación y activación del entorno virtual python 3.11</h4>
+<p>Con conda instalado, desde la linea de comandos correr</p>
+<pre><code>conda create --name OpenTPS python=3.11</code></pre>
 <p>Usuarios de ordenadores con chips Apple Silicon</p>
-<pre><code>conda create --platform osx-64 --name OpenTPS python=3.9</code></pre>
+<pre><code>conda create --platform osx-64 --name OpenTPS python=3.11</code></pre>
 <p>Activar el entorno</p>
 <pre><code>conda activate OpenTPS</code></pre>
 </section>
@@ -420,6 +425,7 @@ César Rodríguez Rodríguez
 
 
 </section></section>
+
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="images/LogoUCM.jpg" class="slide-logo"></p>
@@ -435,9 +441,6 @@ César Rodríguez Rodríguez
   <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="../site_libs/revealjs/plugin/multiplex/socket.io.js"></script>
-  <script src="../site_libs/revealjs/plugin/multiplex/multiplex.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -459,9 +462,7 @@ César Rodríguez Rodríguez
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
-'multiplex': {"secret":null,"id":"b24bfb8ef0bd9a04","url":"https://reveal-multiplex.glitch.me/"},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -632,10 +633,10 @@ César Rodríguez Rodríguez
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
-          
+          RevealNotes,
           RevealSearch,
           RevealZoom
         ]

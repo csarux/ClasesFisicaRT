@@ -228,7 +228,7 @@
     "href": "Temas/PresentacionAsignatura.html#section",
     "title": "Física de la Radioterapia",
     "section": "",
-    "text": "Profesores colaboradores\nLuis Carlos Martínez Gómez\nluiscm01@ucm.es\nProfesor Asociado del Departamento de Radiología, Rehabilitación y Fisioterapia.\nRadiofísico del Hospital Universitario de Doce de Octubre.\nAlfonso López Fernández\nalflopez@ucm.es\nJefe del Servicio de Radiofísica Hospitalaria y Protección Radiológica del Hospital Universitario de Fuenlabrada."
+    "text": "Profesores colaboradores\nLuis Carlos Martínez Gómez\nluiscm01@ucm.es\nProfesor Asociado del Departamento de Radiología y Rehabilitación.\nRadiofísico del Hospital Universitario de Doce de Octubre.\nAlfonso López Fernández\nalflopez@ucm.es\nJefe del Servicio de Radiofísica Hospitalaria y Protección Radiológica del Hospital Universitario de Fuenlabrada."
   },
   {
     "objectID": "Temas/PresentacionAsignatura.html#estructura-y-objetivos-de-la-asignatura",
@@ -291,14 +291,14 @@
     "href": "Temas/PresentacionAsignatura.html#distribución-de-calificaciones",
     "title": "Física de la Radioterapia",
     "section": "Distribución de calificaciones",
-    "text": "Distribución de calificaciones\nDatos de los cursos 21/22, 22/23 y 23/24:"
+    "text": "Distribución de calificaciones\nDatos de los cursos 21/22, 22/23, 23/24 y 24/25:"
   },
   {
     "objectID": "Temas/PresentacionAsignatura.html#software-para-los-seminarios",
     "href": "Temas/PresentacionAsignatura.html#software-para-los-seminarios",
     "title": "Física de la Radioterapia",
     "section": "Software para los seminarios",
-    "text": "Software para los seminarios"
+    "text": "Software para los seminarios\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlatiPy"
   },
   {
     "objectID": "Temas/PresentacionAsignatura.html#software-de-uso-clínico-para-planificación-de-tratamientos",
@@ -326,14 +326,14 @@
     "href": "Temas/PresentacionAsignatura.html#section-7",
     "title": "Física de la Radioterapia",
     "section": "",
-    "text": "Elementos básicos para la instalación\n\nUna instalación de python version 3.9\n\nSe recomienda emplear conda y crear un entorno virtual con python 3.9\nEn el caso de que nuestro ordenador sea un Mac con procesador Apple Silicon (M1, M2, M3…) el entorno virtual se tiene que crear con arquitectura amd.\n\nUna instalación de pip\n\nDocumentación para la instalación\n\nPágina de openTPS &gt; Easy Quickstart"
+    "text": "Elementos básicos para la instalación\n\nUna instalación de python version 3.11\n\nSe recomienda emplear conda y crear un entorno virtual con python 3.11.\nAlternativamente se puede utilizar el gestor de python uv.\nEn el caso de que nuestro ordenador sea un Mac con procesador Apple Silicon (M1, M2, M3…) el entorno virtual se tiene que crear con arquitectura amd.\n\nUna instalación de pip\n\nDocumentación para la instalación\n\nPágina de openTPS &gt; Easy Quickstart1\n\nTras la introducción de la versión 2 de openTPS esta página se encuentra desactulizada y sigue haciendo referencia a la versión pythonn 3.9. Salvo esto indica los pasos necesarios para la instalación."
   },
   {
     "objectID": "Temas/PresentacionAsignatura.html#section-8",
     "href": "Temas/PresentacionAsignatura.html#section-8",
     "title": "Física de la Radioterapia",
     "section": "",
-    "text": "Instalación de conda\n\nUsuarios que prefieran entornos gráficos de instalación: instalar Anaconda\nAlternativamente, mi recomendación es utilizar miniconda\n\nPara los distintos sistemas operativos utilizar las instrucciones de instalación de miniconda\n\n\nCreación y activación del entorno virtual python 3.9\nCon conda activado, desde la linea de comandos correr\nconda create --name OpenTPS python=3.9\nUsuarios de ordenadores con chips Apple Silicon\nconda create --platform osx-64 --name OpenTPS python=3.9\nActivar el entorno\nconda activate OpenTPS"
+    "text": "Instalación de conda\n\nUsuarios que prefieran entornos gráficos de instalación: instalar Anaconda\nAlternativamente, mi recomendación es utilizar miniconda\n\nPara los distintos sistemas operativos utilizar las instrucciones de instalación de miniconda\n\n\nCreación y activación del entorno virtual python 3.11\nCon conda instalado, desde la linea de comandos correr\nconda create --name OpenTPS python=3.11\nUsuarios de ordenadores con chips Apple Silicon\nconda create --platform osx-64 --name OpenTPS python=3.11\nActivar el entorno\nconda activate OpenTPS"
   },
   {
     "objectID": "Temas/PresentacionAsignatura.html#section-9",
