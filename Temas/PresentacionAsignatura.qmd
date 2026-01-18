@@ -3,8 +3,6 @@ title: "Física de la Radioterapia"
 subtitle: "Máster de Física Biomédica.<br>Guía del curso y recursos disponibles"
 format: 
   clean-revealjs:
-    multiplex: true
-    chalkboard: true
     logo: images/LogoUCM.jpg
     footer: "Presentación de la asignatura Física de la Radioterapia"
     css: styles.css
@@ -14,7 +12,7 @@ html-math-method:
 author:
   - name: César Rodríguez Rodríguez
     email: cesaro02@ucm.es
-    affiliations: Profesor Asociado del Departamento de Radiología, Rehabilitación y Fisioterapia.<br>
+    affiliations: Profesor Asociado del Departamento de Radiología y Rehabilitación.<br>
         Radiofísico del Hospital Universitario de Fuenlabrada.
 ---
 
@@ -25,7 +23,7 @@ author:
 
 *luiscm01@ucm.es*
 
-*Profesor Asociado del Departamento de Radiología, Rehabilitación y Fisioterapia.*
+*Profesor Asociado del Departamento de Radiología y Rehabilitación.*
 
 *Radiofísico del Hospital Universitario de Doce de Octubre.*
 
@@ -143,34 +141,32 @@ author:
 
 ## Distribución de calificaciones
 
-#### Datos de los cursos 21/22, 22/23 y 23/24:
-![](images/distribucion_calificaciones_21_24.png){ fig-align="center" }
+#### Datos de los cursos 21/22, 22/23, 23/24 y 24/25:
+![](images/distribucion_calificaciones_21_25.png){ fig-align="center" }
 
 ---
 
 ## Software para los seminarios
 
 ::: {.columns}
-:::: {.column width="33%"}
-![](images/jupyter.png)
+:::: {.column width="50%"}
+![](images/Colab.png){height="80px" fig-align="right"}
 ::::
-:::: {.column width="33%"}
-![](images/Colab.png)
-::::
-:::: {.column width="33%"}
-![](images/binder.png)
+:::: {.column width="50%"}
+![](images/jupyter.png){height="80px" fig-align="left"}
 ::::
 :::
 
 ::: {.columns}
 :::: {.column width="15%"}
+  **PlatiPy**
 ![](images/scikit-rt.png)
-::::
-:::: {.column width="25%"}
-![](images/dicompyler-core.png)
 ::::
 :::: {.column width="40%"}
 ![](images/OpenTPS.png)
+::::
+:::: {.column width="25%"}
+![](images/plastimatch-banner.png)
 ::::
 :::: {.column width="20%"}
 ![](images/SlicerRT.png){height="80px"}
@@ -248,13 +244,14 @@ author:
 ## {.smaller}
 
 #### Elementos básicos para la instalación
-- Una instalación de python version 3.9
-  - Se recomienda emplear conda y crear un entorno virtual con python 3.9
+- Una instalación de python version 3.11
+  - Se recomienda emplear conda y crear un entorno virtual con python 3.11. 
+  - Alternativamente se puede utilizar el gestor de python uv.
   - En el caso de que nuestro ordenador sea un Mac con procesador Apple Silicon (M1, M2, M3...) el entorno virtual se tiene que crear con arquitectura amd.
 - Una instalación de pip
 
 #### Documentación para la instalación 
-- Página de openTPS > [Easy Quickstart](https://opentps.org/quickstart/easy_quickstart.html)
+- Página de openTPS > [Easy Quickstart](https://opentps.org/quickstart/easy_quickstart.html)^[Tras la introducción de la versión 2 de openTPS esta página se encuentra desactulizada y sigue haciendo referencia a la versión pythonn 3.9. Salvo esto indica los pasos necesarios para la instalación.]
 
 ---
 
@@ -265,17 +262,17 @@ author:
 - Alternativamente, mi recomendación es utilizar [miniconda](https://docs.anaconda.com/miniconda/)
   - Para los distintos sistemas operativos utilizar las instrucciones de [instalación de miniconda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install)
 
-#### Creación y activación del entorno virtual python 3.9
+#### Creación y activación del entorno virtual python 3.11
 
-Con conda activado, desde la linea de comandos correr
+Con conda instalado, desde la linea de comandos correr
 
 ```
-conda create --name OpenTPS python=3.9
+conda create --name OpenTPS python=3.11
 ```
 Usuarios de ordenadores con chips Apple Silicon 
 
   ```
-  conda create --platform osx-64 --name OpenTPS python=3.9
+  conda create --platform osx-64 --name OpenTPS python=3.11
   ```
 Activar el entorno
 
@@ -302,3 +299,5 @@ Desde la línea de comandos
 ```
 opentps
 ```
+
+
