@@ -156,7 +156,7 @@ César Rodríguez
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Regisitro de imágenes</strong></p>
+<p><strong>Registro de imágenes</strong></p>
 </div>
 <div class="callout-content">
 <p>Proceso de determinar la transformación geométrica que relaciona puntos idénticos (anatómicos) en dos series de imágenes: un conjunto de datos en movimiento (Estudio A) y un conjunto de datos fuente estacionario (Estudio B).</p>
@@ -297,7 +297,7 @@ César Rodríguez
 <li>Modos de interacción:
 <ul>
 <li><strong>Manual</strong>: el usuario ajusta traslaciones/rotaciones y puntos de control directamente.</li>
-<li><strong>Semi-automática</strong>: algoritmo propone una solución que el operador revisa y refina.</li>
+<li><strong>Semi-automática</strong>: el algoritmo propone una solución que el operador revisa y refina.</li>
 <li><strong>Automática con supervisión</strong>: registro automático seguido de evaluación y aceptación/rechazo por el usuario.</li>
 </ul></li>
 </ul>
@@ -394,7 +394,7 @@ César Rodríguez
 <p><strong>Atlas de pacientes</strong></p>
 </div>
 <div class="callout-content">
-<p>Es posible construir una base de datos de pacientes, denominada <span class="alert"><strong><em>atlas</em></strong></span>, con vistas a realizar multiples registros con vistas a la <strong><em>segmentación</em></strong> de volúmenes</p>
+<p>Es posible construir una base de datos de pacientes, denominada <span class="alert"><strong><em>atlas</em></strong></span>, que permita realizar multiples registros con vistas a la <strong><em>segmentación</em></strong> de volúmenes</p>
 </div>
 </div>
 </div>
@@ -403,8 +403,8 @@ César Rodríguez
 <h2></h2>
 <h4 id="impacto-de-la-variabilidad-de-los-estudios-en-el-registro">Impacto de la variabilidad de los estudios en el registro</h4>
 <ul>
-<li><strong>Extensión</strong>: coberturas diferentes (p.&nbsp;ej. cráneo-caudal o volúmenes oblicuos) reducen la región disponible para el registro y su evaluación.</li>
-<li><strong>Parámetros de exploración</strong>: muestreo y tamaño de vóxel afectan integridad espacial; re-muestreo (RM oblicua → axial, PET de baja resolución) puede degradar la imagen.</li>
+<li><strong>Extensión</strong>: coberturas diferentes (p.&nbsp;ej. extensión cráneo-caudal o volúmenes oblicuos) reducen la región disponible para el registro y su evaluación.</li>
+<li><strong>Parámetros de exploración</strong>: muestreo y tamaño de vóxel afectan a la integridad espacial; re-muestreo (RM oblicua → axial, PET de baja resolución) puede degradar la imagen.</li>
 <li><strong>Calidad: ruido</strong>, bajas dosis o artefactos por movimiento modifican la apariencia y dificultan la coincidencia.</li>
 </ul>
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -429,7 +429,7 @@ César Rodríguez
 <p><strong>Relevancia clínica</strong></p>
 </div>
 <div class="callout-content">
-<p>Siempre evaluar individualmente cada registro visual y cuantitativamente, recordando que estamos desarrollando un acto clínico.</p>
+<p>Siempre evaluar cada registro visualmente y cuantitativamente, recordando que estamos desarrollando un acto clínico sobre un paciente.</p>
 </div>
 </div>
 </div>
@@ -484,7 +484,7 @@ César Rodríguez
 <ul>
 <li>Se cuenta con una base de datos de pacientes con sus estudios contorneados.</li>
 <li>Se realiza un registro multiple y la métrica del registro se utiliza para realizar una evaluación del grado de similitud.</li>
-<li>El mejor registro entre estructuras se utiliza para crear el contorno conrrespondiente.</li>
+<li>El mejor registro entre estructuras se utiliza para crear el contorno correspondiente.</li>
 </ul>
 </section>
 <section id="section-10" class="slide level2 smaller">
@@ -492,16 +492,16 @@ César Rodríguez
 <h4 id="transmisión-de-contornos-entre-diferentes-modalidades-de-imagen">Transmisión de contornos entre diferentes modalidades de imagen</h4>
 <p><span class="alert"><em>PET CT con CT planificación</em></span></p>
 <ul>
-<li>El PET aporta información metabólica <span class="math inline">\(\implies\)</span> es <em>posible contornear cuantitativamente mediante umbrales tejido tumoral no visible</em> en otros estuios.</li>
+<li>El PET aporta información metabólica <span class="math inline">\(\implies\)</span> es <em>posible contornear cuantitativamente mediante umbrales adecuados tejido tumoral no visible</em> en otros estudios.</li>
 <li>El PET carece de suficiente calidad de imagen para poder realizar correspondencias anatómicas</li>
 <li>Mediante équipos híbridos se adquieren <em>en el mismo estudio</em> un PET y un CT que están corregistrados: comparten el mismo sistema de coordenadas y se asume que el paciente no se ha movido entre ellos.</li>
 <li>El registro de la parte CT del estudio híbrido con el CT de planificación permite trasladar la información del PET al CT de planificación.</li>
 </ul>
 <p><span class="alert"><em>Resonancia magnética con CT de planificación</em></span></p>
 <ul>
-<li><em>Diferentes secuencias</em> de adquisión en la resonancia magnética aportan <em>información anatómica y funcional</em> no disponible en el CT de planificación.</li>
-<li>Las deformaciones espaciales inherentes al modo de reconstrucción de la imagen de resonancia magnética pueden introducir incertidumbres en la delimitación de volúmenes realizada directamente en las imágens de resonancia.</li>
-<li>El registro rigido parcial (centrado en las regiones relevantes) o el registro deformable sirven para mitigar estas incertidumbres.</li>
+<li><em>Diferentes secuencias</em> de adquisición en la resonancia magnética aportan <em>información anatómica y funcional</em> no disponible en el CT de planificación.</li>
+<li>Las deformaciones espaciales inherentes al modo de reconstrucción de la imagen de resonancia magnética pueden introducir incertidumbres en la delimitación de volúmenes realizada directamente en las imágenes de resonancia.</li>
+<li>El registro rígido parcial (centrado en las regiones relevantes) o el registro deformable sirven para mitigar estas incertidumbres.</li>
 </ul>
 </section>
 <section id="section-11" class="slide level2 smaller">
@@ -575,7 +575,7 @@ César Rodríguez
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="images/LogoUCM.jpg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Radiobiología. Física de la radioterapia</p>
+<p>Registro de imágenes. Física de la radioterapia</p>
 </div>
 </div></div>
 
