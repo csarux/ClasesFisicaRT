@@ -1,0 +1,318 @@
+---
+title: "Registro de imágenes"
+subtitle: "Aplicación en delimitación de estructuras, posicionamiento del paciente, adaptación y seguimiento de planes"
+format: 
+  clean-revealjs:
+    multiplex: false
+    chalkboard: true
+    logo: images/LogoUCM.jpg
+    footer: "Registro de imágenes. Física de la radioterapia"
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: César Rodríguez
+    email: cesaro02@ucm.es
+    affiliations: Universidad Complutense de Madrid
+---
+
+## {.smaller}
+
+### Registro y Fusión de Imágenes
+
+:::{.callout-note icon="true"}
+## Registro de imágenes
+Proceso de determinar la transformación geométrica que relaciona puntos idénticos (anatómicos) en dos series de imágenes: un conjunto de datos en movimiento (Estudio A) y un conjunto de datos fuente estacionario (Estudio B).
+:::
+
+:::{.callout-note icon="true"}
+## Fusión de imágenes
+Visualización combinada de los datos mapeados del conjunto de datos en movimiento con el conjunto de datos estacionario.
+:::
+
+:::{.callout-note icon="true"}
+## Transformación
+Función que se aplica a la imagen en movimiento (Estudio A) para alinearla con la imagen estacionaria (Estudio B).
+:::
+
+:::{.callout-note icon="true"}
+## Métrica de registro o similaridad
+Medida que cuantifica el grado en que el par de estudios de imagen están alineados.
+:::
+
+---
+
+## {.smaller}
+
+#### Tipos de registro 
+
+**Rígido** — un registro donde la transformación preserva la distancia entre todos los puntos en la imagen. Un registro rígido puede incluir traslación en todas las direcciones así como rotaciones en todas las direcciones. También puede ser referido como de tres (solo traslaciones) o seis grados de libertad (traslaciones y giros).
+
+**Afín** — un registro que incluye las transformaciones del registro rígido y añade las transformaciones adicionales de escalado, cizallamiento y reflexión de plano. La distancia entre todos los puntos no se mantiene, como en el registro rígido, sin embargo, las líneas paralelas permanecen paralelas después de la transformación. También puede ser referido como de nueve grados de libertad (traslaciones, giros y escalado espacial).
+
+**Deformable** — una transformación de registro también puede ser espacialmente variante donde el número de grados de libertad puede ser tan grande como tres veces el número de vóxeles en el conjunto de datos fuente (por ejemplo, un vector de desplazamiento único para cada vóxel en el conjunto de datos fuente). 
+
+---
+
+### Elementos del registro
+
+a. Dimensionalidad
+a. Naturaleza de la base del registro
+a. Naturaleza de la transformación
+a. Interacción
+a. Procedimiento de optimización
+a. Modalidades implicadas
+a. Sujeto
+
+---
+
+## {.smaller}
+
+#### Dimensionalidad
+
+- Las imágenes en radioterapia pueden tener una dimensionalidad de 2D o 3D. 
+
+:::{.callout-tip icon="true"}
+## Particularidades del registro 2D a 2D
+Los mismos principios del registro entre imágenes tridimensionales se aplican para un registro de 2D a 2D, solo que con menos parámetros, al reflejar únicamente la traslación en dos dimensiones y la rotación en una dimensión. Debido a la limitación inherente en los datos, el registro de 2D a 2D generalmente se limita a registros rígidos en aplicaciones prácticas.
+:::
+
+#### Naturaleza de la base del registro
+
+- **Extrínseca**: se utilizan marcos invasivos o no invasivos, moldes o fiduciales. 
+- **Intrínseca**: se utilizan características de la imagen o propiedades de los vóxeles
+
+Para realizar el registro se establece una [***métrica de registro***]{.alert} que cuantifica el grado de alineamiento del par de estudios de imagen. 
+
+Los registros pueden clasificarse en [***basados en geometría***]{.alert} o [***basados en intensidad***]{.alert}. Las métricas basadas en geometría utilizan características extraídas de los datos de la imagen, como puntos de referencia anatómicos o artificiales y límites de órganos, mientras que las métricas basadas en intensidad utilizan directamente los datos de los vóxeles de la imagen.
+
+---
+
+## {.smaller}
+
+#### Naturaleza de la transformación
+
+:::{.columns}
+::: {.column width="60%"}
+
+- La tarea fundamental del registro de imágenes es encontrar la transformación geométrica $T$ que se aplica a la imagen en movimiento (Estudio A) para alinearla con la imagen estacionaria (Estudio B).
+- Esta transformación se puede escribir como $X_B = T(X_A, \{\beta\})$, donde:
+  - $X_A$ es la coordenada de un punto en el conjunto de datos en movimiento A.
+  - $X_B$ es la coordenada del mismo punto anatómico en el conjunto de datos estacionario B.
+  - $\{\beta\}$ es el conjunto de parámetros de la transformación.
+:::
+
+:::{.column width="40%"}
+![Flujo de registro de imágenes](images/TransformacionRegistro.png)
+
+:::{.callout-note icon="true"}
+## Invertibilidad
+Idealmente la transformación $T$ es invertible pero no siempre lo es, en cuyo caso la dirección en la que se establece la transformación es relevante.
+:::
+
+:::
+:::
+
+- El resultado del proceso de registro de imágenes son los parámetros $\{\beta\}$ para un par particular de estudios de imagen.
+- El número de parámetros^[Este número puede ir desde dos o tres, dependiendo de la dimensionalidad de la imagen en el caso del registro rígido, a tres veces el número de vóxeles de la imagen para el registro deformable.] necesarios para determinar la transformación depende de la forma de $T$, que a su vez depende del sitio anatómico, la aplicación clínica y las modalidades de imagen involucradas. 
+
+---
+
+## {.smaller}
+
+#### Interacción
+
+- Modos de interacción:
+  - **Manual**: el usuario ajusta traslaciones/rotaciones y puntos de control directamente.
+  - **Semi-automática**: el algoritmo propone una solución que el operador revisa y refina.
+  - **Automática con supervisión**: registro automático seguido de evaluación y aceptación/rechazo por el usuario.
+
+:::{.callout-tip icon="true"}
+## Herramientas interactivas habituales
+- Deslizadores de transparencia / fusión para comparar imágenes.
+- Vistas sincronizadas multiplanares (MPR) y rebanado en tiempo real.
+- Puntos de control (landmarks) y edición de campos de desplazamiento locales.
+- Propagación y edición de contornos (contour propagation) con herramientas de corrección.
+- Visualización de mapas de diferencia y de incertidumbre.
+- Indicadores de calidad en tiempo real (p. ej. similitud, diferencia de centros de masa, DSC).
+- Controles de undo/redo, bloqueo de regiones y ajuste por regiones de interés (ROI).
+:::
+
+:::{.callout-note icon="true"}
+## Rol del operador y consideraciones de flujo
+La interacción humana es crítica para validar resultados, corregir artefactos y [***asegurar pertinencia clínica***]{.alert}. Los flujos eficaces combinan automatización (para velocidad y reproducibilidad) con pasos de revisión manual y pruebas de calidad documentadas.
+:::
+
+---
+
+## {.smaller}
+
+#### Procedimiento de optimización
+
+- Objetivo
+  - Encontrar los parámetros de la transformación que maximizan la métrica de similitud
+
+- Esquema general
+  - Métodos iterativos: probar parámetros → evaluar métrica → converger
+  - Balance entre exploración (evitar óptimos locales) y eficiencia
+
+- Tipos de métodos
+  - Basados en gradiente
+    - Usan derivadas de la métrica para guiar la búsqueda
+    - Ventajas: convergencia rápida localmente
+    - Inconvenientes: sensibles a óptimos locales
+  - Estocásticos / globales
+    - Muestrean el espacio de parámetros de forma controlada
+    - Ventajas: mejor exploración global
+    - Inconvenientes: mayor coste computacional
+
+---
+
+## {.smaller}
+
+#### Modalidades implicadas
+
+:::{.callout-note icon=true}
+### Modalidades de imagen utilizadas en radioterapia
+CT, PET, SPECT, MR, CBCT (kilovoltaje y megavoltaje)
+:::
+
+La diferente información aportada por diferentes modalidades complica el registro
+
+#### Sujeto
+
+El registro no siempre se realiza sobre imágenes correspondientes al mismo paciente
+
+:::{.callout-tip icon=true}
+### Atlas de pacientes
+Es posible construir una base de datos de pacientes, denominada [***atlas***]{.alert}, que permita realizar multiples registros con vistas a la ***segmentación*** de volúmenes
+:::
+
+---
+
+## {.smaller}
+
+#### Impacto de la variabilidad de los estudios en el registro 
+
+- **Extensión**: coberturas diferentes (p. ej. extensión cráneo-caudal o volúmenes oblicuos) reducen la región disponible para el registro y su evaluación.
+- **Parámetros de exploración**: muestreo y tamaño de vóxel afectan a la integridad espacial; re-muestreo (RM oblicua → axial, PET de baja resolución) puede degradar la imagen.
+- **Calidad: ruido**, bajas dosis o artefactos por movimiento modifican la apariencia y dificultan la coincidencia.
+
+:::{.callout-tip icon=true}
+### Estrategias de mitigación
+Recorte, re-muestreo controlado, filtrado, opciones del sistema de registro
+:::
+
+:::{.callout-important icon=true}
+### Relevancia clínica
+Siempre evaluar cada registro visualmente y cuantitativamente, recordando que estamos desarrollando un acto clínico sobre un paciente.
+:::
+
+---
+
+## {.smaller}
+
+### Aplicaciones del registro de imagen en radioterapia
+
+#### Disminución de incertidumbres de posicionamiento mediante IGRT
+
+- Antes de iniciar el tratamiento, con el paciente colocado en los dispositivos inmovilizadores, se adquieren imágenes que se comparan con las imágenes de simulación.
+
+- Mediante registro rígido entre ambos conjuntos de imagen se determinan los movimientos que tiene que realizar la mesa de tratamiento para obtener la mejor disposición de tratamiento posible.
+
+- El registro rígido puede ser de tres o seis grados de libertad dependiendo de las posibilidades mecánicas de la mesa de tratamiento.
+
+:::{.callout-warning}
+### Limitaciones angulares
+Normalmente los aceleradores limitan los giros de balanceo y cabeceo a no más de tres grados para no inducir otros desplazamientos del paciente.
+:::
+
+:::{.columns}
+::: {.column width="50%"}
+![](images/IGRT_CBCT_TB.png){height="220px" fig-align="right"}
+:::
+
+:::{.column width="50%"}
+![](images/IGRT_App_Varian.png){height="220px" fig-align="left"}
+:::
+:::
+
+---
+
+## {.smaller}
+
+#### Transmisión de contornos para estudios de planificación
+
+[*Entre estudios del mismo paciente*]{.alert}
+
+- Se cuenta con dos estudios realizados en diferentes momentos, uno de ellos contorneado.
+- Se realiza un registro entre ambos estudios.
+- El registro permite trasladar los contornos al estudio no contorneado.
+
+[*Entre estudios de distintos pacientes*]{.alert}
+
+- Se cuenta con una base de datos de pacientes con sus estudios contorneados.
+- Se realiza un registro multiple y la métrica del registro se utiliza para realizar una evaluación del grado de similitud.
+- El mejor registro entre estructuras se utiliza para crear el contorno correspondiente.
+
+---
+
+## {.smaller}
+
+#### Transmisión de contornos entre diferentes modalidades de imagen
+
+[*PET CT con CT planificación*]{.alert}
+
+- El PET aporta información metabólica $\implies$ es *posible contornear cuantitativamente mediante umbrales adecuados tejido tumoral no visible* en otros estudios.
+- El PET carece de suficiente calidad de imagen para poder realizar correspondencias anatómicas
+- Mediante équipos híbridos se adquieren *en el mismo estudio* un PET y un CT que están corregistrados: comparten el mismo sistema de coordenadas y se asume que el paciente no se ha movido entre ellos.
+- El registro de la parte CT del estudio híbrido con el CT de planificación permite trasladar la información del PET al CT de planificación.
+
+[*Resonancia magnética con CT de planificación*]{.alert}
+
+- *Diferentes secuencias* de adquisición en la resonancia magnética aportan *información anatómica y funcional* no disponible en el CT de planificación.
+- Las deformaciones espaciales inherentes al modo de reconstrucción de la imagen de resonancia magnética pueden introducir incertidumbres en la delimitación de volúmenes realizada directamente en las imágenes de resonancia.
+- El registro rígido parcial (centrado en las regiones relevantes) o el registro deformable sirven para mitigar estas incertidumbres.
+
+
+## {.smaller}
+
+#### Flujo de trabajo para el registro de imagen durante la delineación de estructuras
+
+![^[Tomado de [AAPM TG132: Image registration](https://aapm.onlinelibrary.wiley.com/doi/epdf/10.1002/mp.12256)]](images/FlujoRegistroContouring.png){fig-align="center"}
+
+---
+
+## {.smaller}
+
+#### Acumulación de dosis en radioterapia adaptativa
+
+:::{.callout-note}
+### Radioterapia adaptativa
+La [***radioterapia adaptativa***]{.alert} (ART, por sus siglas en inglés) es un proceso en el que el plan de tratamiento de radioterapia se modifica durante el curso del mismo para tener en cuenta los cambios anatómicos y biológicos que ocurren en el paciente.
+:::
+
+:::{.callout-tip}
+### Procesos de la radioterapia adaptativa
+Resimulación (adquisión y delimitación de volúmenes), reoptimización del plan, acumulación de dosis y reevaluación
+:::
+
+:::{.callout-warning}
+### Consideraciones para planes en diferentes geometrías
+Las distribuciones de dosis (tanto valores en el espacio como DVH) no son directamente sumables si están referidas a geometrías diferentes. La **dosis** va **ligada al tejido en el que se ha absorbido**.
+:::
+
+Para poder acumular la dosis calculada en CTs de planificación diferentes:
+
+- Se realiza un registro deformable entre los diferentes estudios
+- Se calcula la dosis sobre cada uno de estudios según el plan optimizado en la geometría del estudio
+- Se emplea la información del registro para referir todas las distribuciones de dosis a una misma geometría o disposición anatómica.
+
+
+---
+
+## {.smaller}
+
+#### Empleo del registro de imagen dentro del flujo de trabajo de la radioterapia adaptativa
+
+![](images/FlujoRegistroART.png){fig-align="center"}
